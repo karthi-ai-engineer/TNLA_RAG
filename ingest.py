@@ -75,6 +75,11 @@ def preflight() -> None:
                         "re-clone or run scripts/p15_roster.py.")
     if problems:
         raise SystemExit("Preflight failed:\n  - " + "\n  - ".join(problems))
+    from vrag.roster import load_roster
+    log.info("preflight: GEMINI_API_KEY present")
+    log.info("preflight: ffmpeg / ffprobe found")
+    log.info("preflight: roster loaded — %d members",
+             load_roster()["sitting_members"])
 
 
 def main() -> int:
@@ -174,8 +179,11 @@ def main() -> int:
         log.info("[8/8] proxy        SKIP (%s exists)", proxy.name)
     else:
         log.info("[8/8] proxy        transcoding H.264 rendition (longest step, no API)")
+        # -progress pipe:1 streams machine-readable out_time_ms/speed lines to
+        # stdout so the ingest UI can render a real percentage bar.
         subprocess.run([
-            "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+            "ffmpeg", "-hide_banner", "-loglevel", "error", "-nostats",
+            "-progress", "pipe:1", "-y",
             "-i", str(video),
             "-c:v", "libx264", "-preset", "fast", "-crf", "23",
             "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",

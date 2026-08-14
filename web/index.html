@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TNLA Video RAG</title>
+<link rel="icon" type="image/png" href="/static/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -302,14 +303,12 @@
   </div>
   <div class="r">
     <span style="display:flex;align-items:center;gap:6px"><span class="pulse" id="livePulse"></span><span id="liveLabel">Index live</span></span>
-    <span class="sep">/</span><span class="mono">node chennai-01</span>
-    <span class="sep">/</span><span class="mono">v2.4</span>
   </div>
 </div>
 
 <header>
   <div class="brand">
-    <div class="logo"><div><span>TN</span></div></div>
+    <div class="logo"><div><img src="/static/logo.png" alt="Government of Tamil Nadu" style="width:88%;height:88%;object-fit:contain"></div></div>
     <div style="min-width:0">
       <div class="brand-title">
         <span class="ta">தமிழ்நாடு சட்டப்பேரவை</span>
@@ -328,6 +327,7 @@
       <button class="tab active" data-tab="chat">Chat</button>
       <button class="tab" data-tab="graph">Knowledge Graph</button>
       <button class="tab" data-tab="speakers">Speakers</button>
+      <a class="tab" href="/ingest" style="text-decoration:none;display:block">Ingest video</a>
     </div>
     <div class="avatar"><div>TN</div></div>
   </div>
@@ -958,6 +958,12 @@ function selectNode(n){
 
 sizeGraph();
 init();
+// deep-link: /?tab=graph or /?tab=speakers
+const wantTab = new URLSearchParams(location.search).get("tab");
+if (wantTab === "graph" || wantTab === "speakers"){
+  const t = document.querySelector(`.tab[data-tab=${wantTab}]`);
+  if (t) t.click();
+}
 </script>
 </body>
 </html>

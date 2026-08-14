@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingest — TNLA Video RAG</title>
+<link rel="icon" type="image/png" href="/static/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --maroon:#9d2140;--maroon-d:#8e1c39;--maroon-dd:#7a1531;--rose:#c4526b;
+    --gold:#c49434;--gold-d:#946f1c;--teal:#5b9d90;--teal-d:#2f7a6d;--teal-dd:#2a6b60;
+    --slate:#3d4f7d;--slate-d:#33456f;--ink:#1a1a1c;
+    --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+    --tamil:'Noto Sans Tamil','Nirmala UI','Tamil MN','InaiMathi',sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:radial-gradient(1000px 560px at 6% -12%,rgba(157,33,64,.16),transparent 62%),
+      radial-gradient(900px 520px at 97% -8%,rgba(196,148,52,.16),transparent 60%),
+      radial-gradient(860px 620px at 62% 112%,rgba(61,79,125,.12),transparent 64%),
+      linear-gradient(180deg,#fcfbf9,#f4f3ef);
+    color:var(--ink);
+    font:14px/1.5 -apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Helvetica,'Noto Sans Tamil','Nirmala UI','Tamil MN','InaiMathi',sans-serif;
+    letter-spacing:-0.004em;-webkit-font-smoothing:antialiased;min-height:100vh;overflow-x:auto}
+  button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
+  a{color:inherit;text-decoration:none}
+  @keyframes tnPulse{0%,100%{opacity:.45;transform:scale(.85)}50%{opacity:1;transform:scale(1.2)}}
+  @keyframes tnSpin{to{transform:rotate(360deg)}}
+  @keyframes tnSweep{0%{transform:translateX(-120%)}100%{transform:translateX(320%)}}
+  @keyframes tnRise{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+  @keyframes tnPop{0%{opacity:0;transform:scale(.82)}60%{transform:scale(1.06)}100%{opacity:1;transform:scale(1)}}
+  @keyframes tnFlash{0%{box-shadow:0 0 0 0 rgba(157,33,64,.42)}70%{box-shadow:0 0 0 14px rgba(157,33,64,0)}100%{box-shadow:0 0 0 0 rgba(157,33,64,0)}}
+  @keyframes tnSlideIn{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:none}}
+  @keyframes tnWave{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+  .grid-overlay{position:fixed;inset:0;pointer-events:none;
+    background-image:linear-gradient(rgba(26,26,28,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(26,26,28,.045) 1px,transparent 1px);
+    background-size:74px 74px;mask-image:radial-gradient(920px 620px at 50% 0%,#000,transparent 76%);
+    -webkit-mask-image:radial-gradient(920px 620px at 50% 0%,#000,transparent 76%)}
+  .govbar{position:relative;display:flex;align-items:center;justify-content:space-between;gap:16px;height:30px;padding:0 26px;
+    background:linear-gradient(90deg,#8e1c39,#6b2444 48%,#2f3a5e);color:rgba(255,255,255,.88);
+    font-size:10.5px;letter-spacing:.06em;text-transform:uppercase}
+  .govbar .ta{font-family:var(--tamil);text-transform:none;letter-spacing:0;font-size:11.5px}
+  .govbar .sep{opacity:.45}.govbar .accent{color:#e8c98a}
+  .govbar .mono{font-family:var(--mono);text-transform:none}
+  .pulse{width:5px;height:5px;border-radius:50%;background:#7fd8c8;box-shadow:0 0 8px #7fd8c8;animation:tnPulse 2.4s ease-in-out infinite;display:inline-block}
+  .pulse.err{background:#e8853f;box-shadow:0 0 8px #e8853f}
+  header{position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px 26px;padding:15px 26px;
+    background:rgba(255,255,255,.72);backdrop-filter:saturate(180%) blur(22px);border-bottom:1px solid rgba(26,26,28,.09)}
+  .brand{display:flex;align-items:center;gap:14px;min-width:0}
+  .logo{width:46px;height:46px;flex:none;border-radius:14px;background:conic-gradient(from 210deg,#9d2140,#c49434,#4f7f74,#3d4f7d,#9d2140);padding:1.6px;box-shadow:0 10px 24px -12px rgba(157,33,64,.75)}
+  .logo>div{width:100%;height:100%;border-radius:12.4px;background:linear-gradient(165deg,#fff,#f6f4f0);display:flex;align-items:center;justify-content:center}
+  .logo span{font-family:'Iowan Old Style',Georgia,serif;font-size:15px;font-weight:700;letter-spacing:.04em;background:linear-gradient(180deg,#9d2140,#6b2444);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .bt .ta{font-family:var(--tamil);font-size:15.5px;font-weight:600}
+  .bt .en{font-size:15.5px;font-weight:600;color:rgba(26,26,28,.55);white-space:nowrap}
+  .bsub{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:rgba(26,26,28,.42);margin-top:3px}
+  .bsub b{background:linear-gradient(90deg,#9d2140,#b8862c);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
+  .tabs{display:flex;align-items:center;gap:3px;padding:3px;background:rgba(26,26,28,.055);border-radius:12px}
+  .tab{padding:7px 15px;border-radius:9px;font-size:13px;color:rgba(26,26,28,.55);white-space:nowrap;display:block}
+  .tab.active{background:linear-gradient(180deg,#a3264a,#8e1c39);color:#fff;box-shadow:0 6px 16px -8px rgba(157,33,64,.85);font-weight:600}
+  .avatar{width:34px;height:34px;border-radius:50%;padding:1.6px;background:linear-gradient(140deg,#5b9d90,#3d4f7d)}
+  .avatar>div{width:100%;height:100%;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600;color:#33456f}
+  main{position:relative;display:flex;flex-direction:column;gap:16px;padding:20px 26px 56px;max-width:1180px;min-width:900px;margin:0 auto}
+  .card{background:#fff;border:1px solid rgba(26,26,28,.09);border-radius:20px;box-shadow:0 1px 3px rgba(26,26,28,.06),0 26px 60px -44px rgba(52,42,34,.45);overflow:hidden}
+  .mono{font-family:var(--mono)}
+
+  /* ---- idle ---- */
+  #idleView{display:none;grid-template-columns:minmax(0,1fr) 320px;gap:16px;align-items:start}
+  .pick-head{display:flex;align-items:center;gap:11px;padding:15px 18px;background:linear-gradient(90deg,rgba(163,38,74,.10),rgba(196,148,52,.10));border-bottom:1px solid rgba(26,26,28,.07)}
+  .pick-head .t{font-size:14px;font-weight:600}
+  .pick-head .sub{font-family:var(--mono);font-size:11px;color:rgba(26,26,28,.42)}
+  .worker{margin-left:auto;padding:3px 9px;border-radius:99px;background:#fff;border:1px solid rgba(47,122,109,.3);color:var(--teal-dd);font-size:10.5px;font-weight:600}
+  .worker.busy{border-color:rgba(196,148,52,.4);color:var(--gold-d)}
+  .cols,.vrow{display:grid;grid-template-columns:minmax(0,1fr) 92px 74px 96px 62px;gap:12px;align-items:center;padding:13px 18px}
+  .cols{padding:9px 18px;border-bottom:1px solid rgba(26,26,28,.06);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(26,26,28,.4)}
+  .vrow{border-top:1px solid rgba(26,26,28,.06);cursor:pointer;border-left:2px solid transparent}
+  .vrow:hover{background:rgba(26,26,28,.02)}
+  .vrow.sel{background:linear-gradient(90deg,rgba(163,38,74,.07),rgba(163,38,74,0));border-left-color:#a3264a}
+  .vrow .radio{width:20px;height:20px;flex:none;border-radius:50%;border:1.5px solid rgba(26,26,28,.2);display:flex;align-items:center;justify-content:center}
+  .vrow.sel .radio{border:2px solid #a3264a}
+  .vrow.sel .radio i{width:9px;height:9px;border-radius:50%;background:#a3264a}
+  .vrow .fname{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .vrow.sel .fname{font-weight:600}
+  .vrow .fsub{font-size:11px;color:rgba(26,26,28,.45)}
+  .vrow .fsub.warn{color:rgba(196,148,52,.95)}
+  .vrow .m{font-family:var(--mono);font-size:12px;color:rgba(26,26,28,.6)}
+  .dropzone{margin:16px 18px 18px;padding:22px;border:1.5px dashed rgba(26,26,28,.16);border-radius:16px;
+    background:linear-gradient(180deg,rgba(255,255,255,.6),rgba(246,244,240,.7));
+    display:flex;flex-direction:column;align-items:center;gap:7px;cursor:pointer}
+  .dropzone.hot{border-color:#a3264a;background:rgba(163,38,74,.05)}
+  .dz-ico{width:34px;height:34px;border-radius:11px;background:linear-gradient(150deg,rgba(163,38,74,.14),rgba(196,148,52,.16));display:flex;align-items:center;justify-content:center}
+  .selcard{padding:16px 17px;background:#fff;border:1px solid rgba(26,26,28,.09);border-radius:18px;box-shadow:0 1px 3px rgba(26,26,28,.06)}
+  .k{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:rgba(26,26,28,.4)}
+  .selname{margin-top:8px;font-size:14px;font-weight:600;line-height:1.35;word-break:break-all}
+  .facts{margin-top:12px;display:flex;flex-direction:column;gap:7px;font-size:12px;color:rgba(26,26,28,.6)}
+  .facts>div{display:flex;justify-content:space-between}
+  .facts .v{font-family:var(--mono);color:var(--ink)}
+  #ingestBtn{margin-top:15px;display:flex;align-items:center;justify-content:center;gap:8px;height:42px;width:100%;border-radius:13px;
+    background:linear-gradient(150deg,#a3264a,#7a1531);color:#fff;font-size:14px;font-weight:600;
+    box-shadow:0 12px 26px -14px rgba(122,21,49,.95);animation:tnFlash 2.6s ease-out infinite}
+  #ingestBtn:disabled{opacity:.5;animation:none}
+  .sidecard{padding:14px 16px;background:rgba(255,255,255,.66);border:1px solid rgba(26,26,28,.08);border-radius:16px}
+  .whatruns{margin-top:10px;display:flex;flex-direction:column;gap:6px;font-size:12px;color:rgba(26,26,28,.62);line-height:1.45}
+
+  /* ---- running ---- */
+  #runView{display:none;flex-direction:column;gap:14px}
+  .jobcard{position:relative;padding:17px 20px 18px}
+  .jobtop{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap}
+  .jobname{font-size:15px;font-weight:600;letter-spacing:-0.015em}
+  .jobchip{padding:2px 9px;border-radius:99px;font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+  .jobchip.running{background:rgba(163,38,74,.10);border:1px solid rgba(163,38,74,.3);color:var(--maroon-d)}
+  .jobchip.failed{background:rgba(163,38,74,.12);border:1px solid rgba(163,38,74,.4);color:var(--maroon-dd)}
+  .jobchip.done{background:rgba(47,122,109,.12);border:1px solid rgba(47,122,109,.36);color:var(--teal-dd)}
+  .jobnow{display:flex;align-items:center;gap:9px;font-size:13px;color:rgba(26,26,28,.6);margin-top:5px}
+  .jobdot{width:6px;height:6px;border-radius:50%;background:#a3264a;box-shadow:0 0 8px #a3264a;animation:tnPulse 1.6s ease-in-out infinite}
+  .jstats{display:grid;grid-template-columns:repeat(3,minmax(108px,1fr));gap:9px;flex:0 1 auto}
+  .jstat{padding:8px 12px;border-radius:12px}
+  .jstat .k{font-size:9.5px}
+  .jstat .v{margin-top:3px;font-family:var(--mono);font-size:15px;font-weight:600}
+  .jstat.m{background:linear-gradient(160deg,rgba(163,38,74,.10),rgba(255,255,255,.9));border:1px solid rgba(163,38,74,.22)}
+  .jstat.m .v{color:var(--maroon-d)}
+  .jstat.s{background:linear-gradient(160deg,rgba(61,79,125,.10),rgba(255,255,255,.9));border:1px solid rgba(61,79,125,.22)}
+  .jstat.s .v{color:var(--slate-d)}
+  .jstat.g{background:linear-gradient(160deg,rgba(196,148,52,.12),rgba(255,255,255,.9));border:1px solid rgba(196,148,52,.26)}
+  .jstat.g .v{color:var(--gold-d)}
+  .gbar{position:relative;height:9px;margin-top:16px;border-radius:99px;background:rgba(26,26,28,.08);overflow:hidden}
+  .gbar .fill{position:absolute;left:0;top:0;bottom:0;border-radius:99px;background:linear-gradient(90deg,#8e1c39,#a3264a 38%,#c49434 72%,#5b9d90);transition:width .3s linear}
+  .gbar .sweep{position:absolute;left:0;top:0;bottom:0;width:26%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.75),transparent);animation:tnSweep 1.5s linear infinite}
+  .jmeta{display:flex;align-items:center;gap:14px;margin-top:11px;flex-wrap:wrap;font-size:11.5px;color:rgba(26,26,28,.5)}
+  .jmeta .pc{font-family:var(--mono);font-weight:600;color:var(--ink)}
+  .jmeta .sep{opacity:.4}
+  .jmeta .cache{color:var(--teal-dd)}
+
+  /* done banner */
+  #doneCard{display:none;padding:20px;background:linear-gradient(140deg,rgba(47,122,109,.12),rgba(255,255,255,.94) 55%,rgba(196,148,52,.12));
+    border:1px solid rgba(47,122,109,.28);border-radius:20px;box-shadow:0 20px 50px -34px rgba(42,107,96,.7);animation:tnRise .5s cubic-bezier(.2,.8,.2,1) both}
+  .done-head{display:flex;align-items:center;gap:11px}
+  .done-tick{width:30px;height:30px;border-radius:50%;background:linear-gradient(150deg,#5b9d90,#2a6b60);display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;animation:tnPop .5s both}
+  .done-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-top:16px}
+  .done-cell{padding:11px 12px;background:rgba(255,255,255,.8);border:1px solid rgba(26,26,28,.08);border-radius:13px}
+  .done-cell .v{margin-top:4px;font-size:18px;font-weight:600;letter-spacing:-0.02em}
+  #openBtn{margin-top:16px;display:flex;align-items:center;justify-content:center;gap:9px;height:46px;border-radius:14px;
+    background:linear-gradient(150deg,#a3264a,#7a1531);color:#fff;font-size:14.5px;font-weight:600;box-shadow:0 14px 30px -16px rgba(122,21,49,.95)}
+
+  /* stage cards */
+  .stagewrap{display:grid;grid-template-columns:46px minmax(0,1fr);gap:14px;align-items:stretch}
+  .rail{position:relative;display:flex;flex-direction:column;align-items:center}
+  .node{width:34px;height:34px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-size:12.5px;font-weight:600;z-index:2;
+    background:rgba(26,26,28,.05);border:1.5px solid rgba(26,26,28,.12);color:rgba(26,26,28,.4)}
+  .stage.run .node{background:linear-gradient(150deg,#a3264a,#7a1531);border-color:#7a1531;color:#fff;box-shadow:0 8px 20px -10px rgba(122,21,49,.9)}
+  .stage.done .node{background:rgba(47,122,109,.12);border-color:rgba(47,122,109,.4);color:var(--teal-dd)}
+  .stage.fail .node{background:linear-gradient(150deg,#c4526b,#8e1c39);border-color:#7a1531;color:#fff}
+  .spin{position:absolute;top:-3px;width:40px;height:40px;border-radius:50%;border:2px solid rgba(163,38,74,.18);border-top-color:#a3264a;animation:tnSpin .9s linear infinite;display:none}
+  .stage.run .spin{display:block}
+  .railline{flex:1;width:2px;margin-top:4px;border-radius:2px;background:rgba(26,26,28,.1)}
+  .stage.run .railline{background:rgba(163,38,74,.35)}
+  .stage.done .railline{background:rgba(47,122,109,.35)}
+  .scard{padding:14px 16px;background:rgba(255,255,255,.55);border:1px solid rgba(26,26,28,.08);border-radius:16px;opacity:.72;transition:opacity .3s}
+  .stage.run .scard{background:#fff;border-color:rgba(163,38,74,.3);box-shadow:0 18px 40px -30px rgba(157,33,64,.75);opacity:1}
+  .stage.done .scard{background:#fff;border-color:rgba(26,26,28,.09);box-shadow:0 1px 3px rgba(26,26,28,.05);opacity:1}
+  .stage.fail .scard{background:#fff;border-color:rgba(163,38,74,.45);box-shadow:0 18px 44px -28px rgba(157,33,64,.85);opacity:1}
+  .shead{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .shead .t{font-size:13.5px;font-weight:600}
+  .schip{padding:2px 8px;border-radius:99px;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    background:rgba(26,26,28,.05);border:1px solid rgba(26,26,28,.14);color:rgba(26,26,28,.4)}
+  .stage.run .schip{background:rgba(163,38,74,.10);border-color:rgba(163,38,74,.3);color:var(--maroon-d)}
+  .stage.done .schip{background:rgba(47,122,109,.10);border-color:rgba(47,122,109,.28);color:var(--teal-dd)}
+  .stage.fail .schip{background:rgba(163,38,74,.12);border-color:rgba(163,38,74,.4);color:var(--maroon-dd)}
+  .shead .note{font-size:11.5px;color:rgba(26,26,28,.45)}
+  .sbar{position:relative;height:4px;margin-top:11px;border-radius:99px;background:rgba(26,26,28,.08);overflow:hidden;display:none}
+  .stage.run .sbar{display:block}
+  .sbar div{position:absolute;left:0;top:0;bottom:0;border-radius:99px;background:linear-gradient(90deg,#a3264a,#c49434);transition:width .3s linear}
+  .sbody{margin-top:12px}
+  .sbody:empty{display:none}
+  .qd{font-size:12px;color:rgba(26,26,28,.35)}
+  .ministat{display:flex;flex-wrap:wrap;gap:8px}
+  .ministat>div{padding:8px 11px;background:rgba(255,255,255,.75);border:1px solid rgba(26,26,28,.09);border-radius:11px;min-width:96px;animation:tnPop .38s both}
+  .ministat .kk{font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;color:rgba(26,26,28,.45)}
+  .ministat .vv{margin-top:3px;font-size:15px;font-weight:600;letter-spacing:-0.02em}
+  .check{display:flex;align-items:center;gap:8px;font-size:12.5px;animation:tnRise .3s both;color:rgba(26,26,28,.7)}
+  .check b{color:var(--teal-dd)}
+  .livebox{margin-top:10px;padding:12px 13px;background:linear-gradient(140deg,rgba(163,38,74,.07),rgba(255,255,255,.85));border:1px solid rgba(163,38,74,.18);border-radius:13px}
+  .livebox .lk{display:flex;align-items:center;gap:7px;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--maroon-d)}
+  .livebox .lk i{width:4px;height:4px;border-radius:99px;background:#a3264a;animation:tnPulse 1s ease-in-out infinite}
+  .liveline{margin-top:8px;font-family:var(--tamil);font-size:14.5px;line-height:1.6;animation:tnRise .45s both}
+  .warnrow{display:flex;align-items:center;gap:8px;padding:7px 10px;background:rgba(196,148,52,.10);border:1px solid rgba(196,148,52,.28);
+    border-radius:10px;font-size:12px;color:#7d5c17;animation:tnSlideIn .34s both;margin-top:6px}
+  .filmstrip{display:flex;gap:7px;overflow:hidden;margin-top:10px}
+  .filmstrip img{flex:1 1 0;min-width:0;aspect-ratio:16/9;border-radius:9px;object-fit:cover;animation:tnPop .4s both;background:#22212a}
+  .castwrap{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+  .castchip{display:flex;align-items:center;gap:8px;padding:5px 10px 5px 5px;border-radius:99px;animation:tnPop .4s both;border:1px solid}
+  .castchip img,.castchip .ph{width:22px;height:22px;border-radius:99px;object-fit:cover;background:#fff}
+  .castchip .ph{display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700}
+  .castchip span{font-size:12px;font-weight:500}
+  .castchip .pt{font-size:10.5px;font-weight:600}
+  .vchip{padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:600;white-space:nowrap;animation:tnPop .34s both;border:1px solid;margin:2px}
+  .vchip.ok{background:rgba(47,122,109,.10);border-color:rgba(47,122,109,.28);color:var(--teal-dd)}
+  .vchip.warn{background:rgba(196,148,52,.12);border-color:rgba(196,148,52,.32);color:#7d5c17}
+  .reid{margin-top:10px;padding:15px 16px;background:linear-gradient(130deg,rgba(163,38,74,.14),rgba(255,255,255,.92) 60%,rgba(196,148,52,.14));
+    border:1px solid rgba(163,38,74,.3);border-radius:15px;animation:tnRise .5s both}
+  .reid .rk{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--maroon-d);font-weight:700}
+  .reid .rt{margin-top:7px;font-size:15px;font-weight:600;line-height:1.4}
+  .batchgrid{display:grid;grid-template-columns:repeat(30,minmax(0,1fr));gap:3px;margin-top:10px}
+  .batchgrid div{height:9px;border-radius:2px;background:rgba(26,26,28,.09)}
+  .batchgrid div.on{background:linear-gradient(180deg,#a3264a,#7a1531);animation:tnPop .3s both}
+  .failbox{padding:11px 12px;background:rgba(163,38,74,.07);border:1px solid rgba(163,38,74,.26);border-radius:12px;
+    font-family:var(--mono);font-size:11.5px;line-height:1.55;color:var(--maroon-dd);white-space:pre-wrap;animation:tnRise .34s both}
+  #resumeBtn{display:flex;align-items:center;gap:8px;padding:9px 17px;border-radius:12px;background:linear-gradient(150deg,#a3264a,#7a1531);
+    color:#fff;font-size:13.5px;font-weight:600;box-shadow:0 12px 26px -14px rgba(122,21,49,.95);animation:tnFlash 2.2s ease-out infinite;margin-top:11px}
+  .wavebar{position:relative;height:26px;border-radius:8px;background:linear-gradient(90deg,rgba(163,38,74,.10),rgba(196,148,52,.10));
+    overflow:hidden;display:flex;align-items:flex-end;gap:2px;padding:0 4px;margin-top:10px}
+  .wavebar div{flex:1;border-radius:2px;background:rgba(26,26,28,.12);transform-origin:bottom}
+  .wavebar div.on{background:#a3264a;opacity:.8;animation:tnWave 1.1s ease-in-out infinite}
+
+  /* raw log */
+  .logbox{background:#141317;border:1px solid rgba(26,26,28,.2);border-radius:16px;overflow:hidden;box-shadow:0 20px 46px -34px rgba(20,19,23,.9)}
+  .loghead{display:flex;align-items:center;gap:10px;padding:11px 15px;border-bottom:1px solid rgba(255,255,255,.08);cursor:pointer}
+  .loghead .lt{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+  .loghead .lc{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,.32)}
+  .loghead .tg{margin-left:auto;font-size:11.5px;color:rgba(255,255,255,.45)}
+  #logBody{display:flex;flex-direction:column;gap:3px;padding:13px 15px;max-height:200px;overflow-y:auto}
+  .lrow{display:flex;gap:11px;font-family:var(--mono);font-size:11.5px;line-height:1.5}
+  .lrow .t{flex:none;color:rgba(255,255,255,.28);width:44px}
+  .lrow .g{flex:none;width:64px}
+  .lrow .x{color:rgba(255,255,255,.72);word-break:break-all}
+</style>
+</head>
+<body>
+<div class="grid-overlay"></div>
+
+<div class="govbar">
+  <div style="display:flex;align-items:center;gap:10px">
+    <span class="ta">தமிழ்நாடு அரசு</span><span class="sep">/</span><span>Government of Tamil Nadu</span>
+    <span class="sep">/</span><span class="accent">Assembly Secretariat</span>
+  </div>
+  <div style="display:none"><span class="pulse" id="workerPulse"></span><span id="workerLabel"></span></div>
+</div>
+
+<header>
+  <div class="brand">
+    <div class="logo"><div><img src="/static/logo.png" alt="Government of Tamil Nadu" style="width:88%;height:88%;object-fit:contain"></div></div>
+    <div style="min-width:0">
+      <div class="bt" style="display:flex;align-items:baseline;gap:9px">
+        <span class="ta">தமிழ்நாடு சட்டப்பேரவை</span><span class="en">Legislative Assembly</span>
+      </div>
+      <div class="bsub"><b>Video RAG</b><span style="opacity:.4">·</span><span>Ingestion pipeline</span></div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;flex:none">
+    <div class="tabs">
+      <a class="tab" href="/">Chat</a>
+      <a class="tab" href="/?tab=graph">Knowledge Graph</a>
+      <a class="tab" href="/?tab=speakers">Speakers</a>
+      <span class="tab active">Ingest video</span>
+    </div>
+    <div class="avatar"><div>TN</div></div>
+  </div>
+</header>
+
+<main>
+  <!-- ============ IDLE ============ -->
+  <div id="idleView">
+    <div class="card">
+      <div class="pick-head">
+        <span class="t">Ingest a session</span>
+        <span class="sub" id="pickCount">data/videos · scanning…</span>
+        <span class="worker" id="workerChip">worker idle</span>
+      </div>
+      <div class="cols"><span>File</span><span>Duration</span><span>Codec</span><span>Resolution</span><span style="text-align:right">Size</span></div>
+      <div id="videoRows"></div>
+      <div class="dropzone" id="dropzone">
+        <div class="dz-ico"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 12V3M3.5 6.5L7 3l3.5 3.5" fill="none" stroke="#8e1c39" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <span style="font-size:13px;font-weight:500" id="dzTitle">Drop an assembly recording here — or click to browse</span>
+        <span style="font-size:11.5px;color:rgba(26,26,28,.45)">mp4 / mkv · large files can also be copied straight into data/videos/</span>
+        <input type="file" id="fileInput" accept=".mp4,.mkv" style="display:none">
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="selcard">
+        <div class="k">Selected</div>
+        <div class="selname" id="selName">—</div>
+        <div class="facts">
+          <div><span>Pipeline stages</span><span class="v">9</span></div>
+          <div><span>Estimated time</span><span class="v" id="estTime">—</span></div>
+          <div><span>Estimated cost</span><span class="v" id="estCost">—</span></div>
+          <div><span>Roster</span><span class="v">227 members</span></div>
+        </div>
+        <button id="ingestBtn" disabled>
+          <svg width="11" height="13" viewBox="0 0 11 13"><path d="M0 0l11 6.5L0 13z" fill="#fff"/></svg>Ingest
+        </button>
+        <div style="margin-top:9px;text-align:center;font-size:11px;color:rgba(26,26,28,.4)">One ingest at a time · runs server-side</div>
+      </div>
+      <div class="sidecard">
+        <div class="k">What runs</div>
+        <div class="whatruns">
+          <span>Preflight → Audio → Transcription</span>
+          <span>Frames &amp; vision → Speaker attribution</span>
+          <span>Face verification → Search index</span>
+          <span>Knowledge graph → Browser proxy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ RUNNING / DONE / FAILED ============ -->
+  <div id="runView">
+    <div class="card jobcard">
+      <div class="jobtop">
+        <div style="display:flex;flex-direction:column;gap:5px;min-width:260px;flex:1">
+          <div style="display:flex;align-items:center;gap:9px">
+            <span class="jobname" id="jobName">—</span>
+            <span class="jobchip running" id="jobChip">running</span>
+          </div>
+          <div class="jobnow"><span class="jobdot" id="jobDot"></span><span id="jobNow">starting…</span></div>
+        </div>
+        <div class="jstats">
+          <div class="jstat m"><div class="k">Elapsed</div><div class="v" id="jElapsed">0:00</div></div>
+          <div class="jstat s"><div class="k">Remaining</div><div class="v" id="jRemain">—</div></div>
+          <div class="jstat g"><div class="k">Est. spend</div><div class="v" id="jCost">$0.00</div></div>
+        </div>
+      </div>
+      <div class="gbar"><div class="fill" id="gFill" style="width:0%"></div><div class="sweep" id="gSweep"></div></div>
+      <div class="jmeta">
+        <span class="pc" id="jPct">0%</span>
+        <span class="sep">·</span><span id="jStage">stage 1 of 9</span>
+        <span class="sep">·</span><span id="jCalls">0 API calls</span>
+        <span class="sep">·</span><span class="cache" id="jFinal"></span>
+      </div>
+    </div>
+
+    <div id="doneCard">
+      <div class="done-head">
+        <div class="done-tick">✓</div>
+        <span style="font-size:16px;font-weight:600">Session ingested and searchable</span>
+      </div>
+      <div class="done-grid" id="doneGrid"></div>
+      <a id="openBtn" href="/">Open this session →</a>
+    </div>
+
+    <div id="stageList" style="display:flex;flex-direction:column;gap:10px"></div>
+
+    <div class="logbox">
+      <div class="loghead" id="logToggle">
+        <span class="lt">Raw log</span>
+        <span class="pulse" style="width:5px;height:5px"></span>
+        <span class="lc" id="logCount">0 lines</span>
+        <span class="tg" id="logTg">Collapse</span>
+      </div>
+      <div id="logBody"></div>
+    </div>
+  </div>
+</main>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const esc = s => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const clock = s => Math.floor(s/60) + ":" + String(Math.floor(s%60)).padStart(2,"0");
+const fmtDur = s => s >= 3600 ? Math.floor(s/3600) + ":" + String(Math.floor(s%3600/60)).padStart(2,"0") + ":" + String(Math.floor(s%60)).padStart(2,"0") : clock(s);
+const num = n => Math.round(n).toLocaleString("en-IN");
+
+const STAGE_NOTES = {
+  preflight: "Environment & roster checks", audio: "16 kHz WAV · silence map · chunking",
+  transcribe: "Tamil ASR with clock re-anchoring", frames: "Scene cuts · chyrons · standing speaker",
+  attribute: "Announcements → turns → cast", faceverify: "Photo-lineup match per turn",
+  index: "Embedding batches → vectors", graph: "Entities and relations with provenance",
+  proxy: "ffmpeg faststart re-encode",
+};
+const PARTY_C = { DMK:["#a3264a","rgba(163,38,74,.10)","rgba(163,38,74,.26)"],
+  TVK:["#946f1c","rgba(196,148,52,.12)","rgba(196,148,52,.3)"],
+  AIADMK:["#2a6b60","rgba(47,122,109,.10)","rgba(47,122,109,.26)"],
+  BJP:["#33456f","rgba(61,79,125,.10)","rgba(61,79,125,.26)"]};
+const TAGC = { INGEST:"#7fd8c8", AUDIO:"#c8a24a", TRANSC:"#e07a92", PARALL:"#8fb2e8",
+  FRAMES:"#8fb2e8", ATTRIB:"#e07a92", FACEVE:"#e8c98a", RETRIE:"#8fb2e8",
+  GRAPH:"#7fd8c8", GEMINI:"#c8a24a", RAW:"#8fa0bd" };
+
+let selVid = null, CANDS = [], logOpen = true, pollTimer = null, jobStartSeen = false;
+
+/* ---------------- idle: candidates ---------------- */
+async function loadCandidates(){
+  try{
+    const out = await (await fetch("/api/ingest/candidates")).json();
+    CANDS = out.videos;
+    if (out.job_state === "running"){ showRun(); return; }
+    $("#workerChip").textContent = "worker idle"; $("#workerChip").classList.remove("busy");
+    const fresh = CANDS.filter(v => v.state !== "complete");
+    $("#pickCount").textContent = `data/videos · ${fresh.length} not ingested`;
+    $("#videoRows").innerHTML = CANDS.map(v => {
+      const sub = v.state === "complete" ? "already ingested — re-select to re-run (skips finished stages)"
+        : v.state === "partial" ? `partial artifacts — will resume (${v.stages_done}/7 stages on disk)` : "no artifacts on disk";
+      return `<div class="vrow${v.video_id === selVid ? " sel" : ""}" onclick="selectVid('${v.video_id}')">
+        <div style="display:flex;align-items:center;gap:11px;min-width:0">
+          <div class="radio">${v.video_id === selVid ? "<i></i>" : ""}</div>
+          <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
+            <span class="fname">${esc(v.file)}</span>
+            <span class="fsub${v.state === "partial" ? " warn" : ""}">${sub}</span>
+          </div>
+        </div>
+        <span class="m" style="color:var(--ink)">${fmtDur(v.duration)}</span>
+        <span class="m">${esc(v.codec)}</span>
+        <span class="m">${v.width}×${v.height}</span>
+        <span class="m" style="text-align:right">${v.size_mb >= 1000 ? (v.size_mb/1000).toFixed(1) + " GB" : v.size_mb + " MB"}</span>
+      </div>`;
+    }).join("") || `<div style="padding:20px 18px;color:rgba(26,26,28,.45)">No videos found — drop one below or copy it into data/videos/</div>`;
+    if (!selVid && CANDS.length) selectVid((CANDS.find(v => v.state !== "complete") || CANDS[0]).video_id);
+  }catch(e){
+    $("#workerLabel").textContent = "server unreachable";
+    $("#workerPulse").classList.add("err");
+  }
+}
+function selectVid(vid){
+  selVid = vid;
+  const v = CANDS.find(x => x.video_id === vid);
+  document.querySelectorAll(".vrow").forEach(r => r.classList.remove("sel"));
+  document.querySelectorAll(".vrow .radio").forEach(r => r.innerHTML = "");
+  const rows = [...document.querySelectorAll(".vrow")];
+  const idx = CANDS.indexOf(v);
+  if (rows[idx]){ rows[idx].classList.add("sel"); rows[idx].querySelector(".radio").innerHTML = "<i></i>"; }
+  $("#selName").textContent = v ? v.file : "—";
+  if (v && v.duration){
+    const mins = v.duration / 60;
+    $("#estTime").textContent = "~" + Math.max(2, Math.round(mins * 0.28 + 2)) + " min";
+    $("#estCost").textContent = "$" + Math.max(0.2, mins * 0.045).toFixed(2);
+  } else { $("#estTime").textContent = "—"; $("#estCost").textContent = "—"; }
+  $("#ingestBtn").disabled = !v;
+}
+
+$("#ingestBtn").onclick = async () => {
+  if (!selVid) return;
+  $("#ingestBtn").disabled = true;
+  try{
+    const r = await fetch("/api/ingest/start", { method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ video_id: selVid }) });
+    if (!r.ok) throw new Error((await r.json()).detail || r.statusText);
+    showRun();
+  }catch(e){ alert("Could not start: " + e.message); $("#ingestBtn").disabled = false; }
+};
+
+/* upload */
+const dz = $("#dropzone");
+dz.onclick = () => $("#fileInput").click();
+dz.ondragover = e => { e.preventDefault(); dz.classList.add("hot"); };
+dz.ondragleave = () => dz.classList.remove("hot");
+dz.ondrop = e => { e.preventDefault(); dz.classList.remove("hot");
+  if (e.dataTransfer.files[0]) uploadFile(e.dataTransfer.files[0]); };
+$("#fileInput").onchange = e => { if (e.target.files[0]) uploadFile(e.target.files[0]); };
+async function uploadFile(f){
+  $("#dzTitle").textContent = `Uploading ${f.name} (${(f.size/1e6).toFixed(0)} MB)…`;
+  const fd = new FormData(); fd.append("file", f);
+  try{
+    const r = await fetch("/api/ingest/upload", { method: "POST", body: fd });
+    if (!r.ok) throw new Error((await r.json()).detail || r.statusText);
+    const out = await r.json();
+    $("#dzTitle").textContent = "Uploaded ✓";
+    await loadCandidates(); selectVid(out.video_id);
+  }catch(e){ $("#dzTitle").textContent = "Upload failed: " + e.message; }
+  setTimeout(() => $("#dzTitle").textContent = "Drop an assembly recording here — or click to browse", 4000);
+}
+
+/* ---------------- running ---------------- */
+function showRun(){
+  $("#idleView").style.display = "none";
+  $("#runView").style.display = "flex";
+  if (!pollTimer){ poll(); pollTimer = setInterval(poll, 1500); }
+}
+function showIdle(){
+  $("#runView").style.display = "none";
+  $("#idleView").style.display = "grid";
+  clearInterval(pollTimer); pollTimer = null;
+  loadCandidates();
+}
+
+async function poll(){
+  let st;
+  try{ st = await (await fetch("/api/ingest/status")).json(); }
+  catch(e){ $("#workerLabel").textContent = "server unreachable"; $("#workerPulse").classList.add("err"); return; }
+  $("#workerPulse").classList.remove("err");
+  if (st.state === "idle"){ showIdle(); return; }
+  $("#workerLabel").textContent = st.state === "running" ? "Ingest worker busy" : "Ingest worker online";
+  renderJob(st);
+}
+
+function renderJob(st){
+  $("#jobName").textContent = (st.video_id || "—") + ".mp4";
+  const chip = $("#jobChip");
+  chip.textContent = st.state === "done" ? "complete" : st.state === "failed" ? "stage failed" : "running";
+  chip.className = "jobchip " + (st.state === "done" ? "done" : st.state === "failed" ? "failed" : "running");
+  $("#jobDot").style.background = st.state === "failed" ? "#c4526b" : st.state === "done" ? "#5b9d90" : "#a3264a";
+  $("#gSweep").style.display = st.state === "running" ? "block" : "none";
+
+  // overall progress: weighted by rough stage durations
+  const W = { preflight:1, audio:2, transcribe:14, frames:9, attribute:2, faceverify:4, index:1, graph:3, proxy:10 };
+  let total = 0, got = 0;
+  st.stages.forEach(s => { const w = W[s.key] || 1; total += w;
+    got += w * (s.status === "done" ? 1 : s.status === "run" ? (s.pct || 0)/100 : 0); });
+  const pct = st.state === "done" ? 100 : 100 * got / total;
+  $("#gFill").style.width = pct + "%";
+  $("#jPct").textContent = pct.toFixed(0) + "%";
+  $("#jElapsed").textContent = fmtDur(st.elapsed || 0);
+  $("#jRemain").textContent = st.state !== "running" ? "0:00"
+    : pct > 3 ? fmtDur(Math.max(0, st.elapsed * (100 - pct)/pct)) : "—";
+  $("#jCost").textContent = st.final.tokens ? "$" + (st.final.tokens/1e6 * 0.9).toFixed(2)
+    : "$" + (st.est_cost || 0).toFixed(2);
+  $("#jStage").textContent = "stage " + Math.min(9, (st.stage_index || 0) + 1) + " of 9";
+  $("#jCalls").textContent = num(st.final.calls || st.calls || 0) + " API calls";
+  $("#jFinal").textContent = st.final.tokens ? num(st.final.tokens) + " tokens (final)" : "";
+
+  const cur = st.stages[st.stage_index] || st.stages[0];
+  $("#jobNow").textContent = st.state === "failed" ? `${cur.title} failed — resume available`
+    : st.state === "done" ? "All nine stages finished · artifacts written to disk"
+    : liveNow(cur);
+
+  renderStages(st);
+  renderLog(st);
+
+  if (st.state === "done"){
+    $("#doneCard").style.display = "block";
+    const s = st.summary || {};
+    $("#doneGrid").innerHTML = [
+      ["Segments", num(s.segments || 0)], ["Cast", s.cast ?? "—"],
+      ["Attributed", (s.attributed_pct ?? "—") + "%", "#2a6b60"],
+      ["Graph", (s.nodes ?? "—") + " / " + (s.edges ?? "—")],
+      ["Total time", fmtDur(st.elapsed || 0)],
+      ["Total cost", st.final.tokens ? "$" + (st.final.tokens/1e6 * 0.9).toFixed(2) + " est" : "—", "#946f1c"],
+    ].map(c => `<div class="done-cell"><div class="k">${c[0]}</div><div class="v" style="${c[2] ? "color:" + c[2] : ""}">${c[1]}</div></div>`).join("");
+    $("#openBtn").href = "/";
+  } else $("#doneCard").style.display = "none";
+}
+
+function liveNow(cur){
+  const d = cur.detail || {};
+  if (cur.key === "transcribe" && d.batch) return `Transcribing chunk ${d.batch[0]} of ${d.batch[1]}…`;
+  if (cur.key === "frames" && d.batch) return `Vision batch ${d.batch[0]} of ${d.batch[1]}…`;
+  if (cur.key === "proxy" && d.pct) return `Encoding browser proxy — ${d.pct}%${d.speed ? " at " + d.speed + "× realtime" : ""}`;
+  return cur.title + " — " + (STAGE_NOTES[cur.key] || "") + "…";
+}
+
+/* ---------- stage cards ---------- */
+function renderStages(st){
+  const host = $("#stageList");
+  st.stages.forEach((s, i) => {
+    let el = document.getElementById("stg-" + s.key);
+    if (!el){
+      el = document.createElement("div");
+      el.id = "stg-" + s.key;
+      el.innerHTML = `<div class="stagewrap stage">
+        <div class="rail"><div class="node"></div><div class="spin"></div><div class="railline"></div></div>
+        <div class="scard">
+          <div class="shead"><span class="t">${s.title}</span><span class="schip"></span>
+            <span class="note">${STAGE_NOTES[s.key] || ""}</span>
+            <span class="note" style="margin-left:auto;font-family:var(--mono)" data-x="pct"></span></div>
+          <div class="sbar"><div style="width:0%"></div></div>
+          <div class="sbody"></div>
+        </div></div>`;
+      host.appendChild(el);
+    }
+    const wrap = el.firstElementChild;
+    const state = s.status === "fail" ? "fail" : s.status;
+    wrap.className = "stagewrap stage " + state;
+    wrap.querySelector(".node").textContent = state === "done" ? "✓" : state === "fail" ? "!" : String(i);
+    wrap.querySelector(".schip").textContent = s.detail.skipped ? "cached" : state === "wait" ? "queued" : state === "run" ? "running" : state;
+    wrap.querySelector(".sbar div").style.width = (s.pct || 0) + "%";
+    wrap.querySelector("[data-x=pct]").textContent = state === "run" && s.pct ? s.pct.toFixed(0) + "%" : "";
+    const body = wrap.querySelector(".sbody");
+    const html = state === "fail" ? failBody(st) : stageBody(s, st, state);
+    if (body.dataset.h !== html){ body.dataset.h = html; body.innerHTML = html; }
+  });
+}
+
+function mini(items){
+  return `<div class="ministat">` + items.filter(x => x[1] !== undefined && x[1] !== null).map(x =>
+    `<div><div class="kk">${x[0]}</div><div class="vv" style="${x[2] ? "color:" + x[2] : ""}">${x[1]}</div></div>`).join("") + `</div>`;
+}
+
+function stageBody(s, st, state){
+  const d = s.detail || {};
+  if (state === "wait") return `<div class="qd">queued</div>`;
+  if (d.skipped) return `<div class="qd">artifact already on disk — stage skipped, zero cost</div>`;
+  switch (s.key){
+    case "preflight": {
+      const checks = d.checks || [];
+      return checks.map(c => `<div class="check"><b>✓</b><span>${esc(c)}</span></div>`).join("")
+        || `<div class="qd">checking environment…</div>`;
+    }
+    case "audio": {
+      const bars = d.chunks ? Array.from({length: Math.min(40, d.chunks)}, (_, k) =>
+        `<div class="on" style="height:${30 + (k*37)%62}%;animation-delay:${k*40}ms"></div>`).join("") : "";
+      return mini([["Silences", d.silences && num(d.silences)], ["Speech", d.speech_pct && d.speech_pct + "%"],
+                   ["Chunks", d.chunks]])
+        + (bars ? `<div class="wavebar">${bars}</div>` : "");
+    }
+    case "transcribe": {
+      const warns = (st.warnings || []).map(w => `<div class="warnrow">⚠ ${esc(w)}</div>`).join("");
+      return mini([["Chunk", d.batch && d.batch[0] + " / " + d.batch[1]],
+                   ["Segments", d.segments && num(d.segments)],
+                   ["Numeric flags", d.numeric_flags]])
+        + (d.live_line ? `<div class="livebox"><div class="lk"><i></i>live transcript</div>
+            <div class="liveline" data-k="${esc(d.live_line).slice(0,20)}">${esc(d.live_line)}</div></div>` : "")
+        + warns;
+    }
+    case "frames": {
+      const frames = (st.latest_frames || []).map(n =>
+        `<img src="/frame/${st.video_id}/${n}" alt="" loading="lazy">`).join("");
+      return mini([["Scene cuts", d.cuts && num(d.cuts)], ["Planned", d.planned && num(d.planned)],
+                   ["Extracted", (d.extracted_live || d.extracted) && num(d.extracted_live || d.extracted)],
+                   ["Chyrons", d.chyrons], ["Standing", d.standing && num(d.standing)],
+                   ["Vision", d.batch && d.batch[0] + " / " + d.batch[1]]])
+        + (frames ? `<div class="filmstrip">${frames}</div>` : "");
+    }
+    case "attribute": {
+      const cast = (d.cast_list || []).map(m => {
+        const pc = PARTY_C[m.party] || ["#5a5560","rgba(26,26,28,.06)","rgba(26,26,28,.16)"];
+        const img = m.portrait ? `<img src="/roster/${m.portrait}">`
+          : `<div class="ph" style="color:${pc[0]};border:1px solid ${pc[2]}">${esc((m.name||"?").slice(0,2))}</div>`;
+        return `<div class="castchip" style="background:${pc[1]};border-color:${pc[2]}">${img}
+          <span>${esc(m.name)}</span><span class="pt" style="color:${pc[0]}">${esc(m.party || "")}</span></div>`;
+      }).join("");
+      return mini([["Announcements", d.announcements], ["Turns", d.turns || d.turns_raw],
+                   ["Attributed", d.attributed_pct && d.attributed_pct + "%", "#2a6b60"], ["Cast", d.cast]])
+        + (cast ? `<div class="castwrap">${cast}</div>` : "");
+    }
+    case "faceverify": {
+      const reid = (d.reid || []).map(e => `<div class="reid"><div class="rk">re-identification</div>
+        <div class="rt">${esc(e)}</div></div>`).join("");
+      return mini([["Lineups", d.batch && d.batch[0] + " / " + d.batch[1]]])
+        + (d.verdicts ? `<div style="margin-top:8px"><span class="vchip ok">verdicts ${esc(d.verdicts)}</span></div>` : "")
+        + reid;
+    }
+    case "index": {
+      const b = d.batch || [0, 0];
+      const cells = b[1] ? Array.from({length: Math.min(60, b[1])}, (_, k) =>
+        `<div class="${k < b[0] * Math.min(60, b[1]) / b[1] ? "on" : ""}"></div>`).join("") : "";
+      return mini([["Batches", b[1] ? b[0] + " / " + b[1] : undefined],
+                   ["Vectors", d.vectors && num(d.vectors)], ["Dim", d.dim]])
+        + (cells ? `<div class="batchgrid">${cells}</div>` : "");
+    }
+    case "graph":
+      return mini([["Extraction", d.batch && d.batch[0] + " / " + d.batch[1]],
+                   ["Nodes", d.nodes && num(d.nodes)], ["Edges", d.edges && num(d.edges)]]);
+    case "proxy":
+      return mini([["Encoded", d.pct !== undefined ? d.pct + "%" : undefined],
+                   ["Speed", d.speed && d.speed + "× realtime"], ["Output", st.video_id + ".mp4"]]);
+  }
+  return "";
+}
+
+function failBody(st){
+  return `<div class="failbox">${esc(st.error || "stage failed — see raw log")}</div>
+    <button id="resumeBtn" onclick="resumeJob()">↻ Resume</button>
+    <div style="margin-top:8px;font-size:12px;color:rgba(26,26,28,.55)">
+      Completed stages are on disk and the call cache is warm — resume restarts exactly here, not from the top.</div>`;
+}
+async function resumeJob(){
+  const st = await (await fetch("/api/ingest/status")).json();
+  if (!st.video_id) return;
+  try{
+    const r = await fetch("/api/ingest/start", { method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ video_id: st.video_id }) });
+    if (!r.ok) throw new Error((await r.json()).detail || r.statusText);
+  }catch(e){ alert("Resume failed: " + e.message); }
+}
+
+/* ---------- raw log ---------- */
+$("#logToggle").onclick = () => {
+  logOpen = !logOpen;
+  $("#logBody").style.display = logOpen ? "flex" : "none";
+  $("#logTg").textContent = logOpen ? "Collapse" : "Expand";
+};
+function renderLog(st){
+  const rows = (st.log || []).map(l =>
+    `<div class="lrow"><span class="t">${clock(l.t)}</span>
+     <span class="g" style="color:${TAGC[l.tag] || "#7fd8c8"}">${esc(l.tag)}</span>
+     <span class="x">${esc(l.txt)}</span></div>`).join("");
+  const body = $("#logBody");
+  if (body.dataset.h !== rows){
+    body.dataset.h = rows; body.innerHTML = rows;
+    body.scrollTop = body.scrollHeight;
+  }
+  $("#logCount").textContent = (st.log || []).length + " lines";
+}
+
+/* ---------------- boot ---------------- */
+(async function boot(){
+  const st = await (await fetch("/api/ingest/status")).json().catch(() => ({state: "idle"}));
+  if (st.state === "idle"){ $("#idleView").style.display = "grid"; loadCandidates(); }
+  else showRun();
+})();
+</script>
+</body>
+</html>

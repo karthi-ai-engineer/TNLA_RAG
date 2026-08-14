@@ -262,6 +262,10 @@ def transcribe_span(client, wav_path, abs_start: float, duration: float,
     log.info("span %s: %d segments, %.1f-%.1fs covered",
              label, len(segs),
              segs[0]["t_start"] if segs else 0, segs[-1]["t_end"] if segs else 0)
+    if segs:
+        # One-line preview so a live UI can show the transcript arriving.
+        from vrag.logging_setup import preview
+        log.info("span %s last: %s", label, preview(segs[-1]["text_ta"], 110))
     return segs
 
 

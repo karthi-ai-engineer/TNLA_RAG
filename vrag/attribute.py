@@ -186,18 +186,39 @@ Transcript:
 {transcript}"""
 
 
+INTRO_BATCH = 150   # segments per call — a 3.5h session in ONE call blew the
+                    # output cap (thinking tokens count against it); windows
+                    # keep every call small no matter how long the video is.
+
+
 def find_introductions(client, segments: list[dict]) -> list[dict]:
-    lines = "\n".join(f"[{s['id']}] {s['text_ta']}" for s in segments)
-    out = client.generate_json(
-        [gemini.text_part(_INTRO_PROMPT.format(transcript=lines))],
-        schema=_INTRO_SCHEMA,
-        timeout=config.TIMEOUT_TEXT,
-        namespace="introductions",
-        max_output_tokens=16384,
-    )
-    intros = out.get("introductions") or []
+    from vrag.parallel import thread_map
+
+    batches = [segments[i:i + INTRO_BATCH]
+               for i in range(0, len(segments), INTRO_BATCH)]
+    log.info("attribute: scanning for announcements in %d batch(es)", len(batches))
+
+    def run_batch(batch: list[dict]) -> list[dict]:
+        lines = "\n".join(f"[{s['id']}] {s['text_ta']}" for s in batch)
+        out = client.generate_json(
+            [gemini.text_part(_INTRO_PROMPT.format(transcript=lines))],
+            schema=_INTRO_SCHEMA,
+            timeout=config.TIMEOUT_TEXT,
+            namespace="introductions",
+            max_output_tokens=32768,
+        )
+        return out.get("introductions") or []
+
+    results = thread_map(run_batch, batches, workers=client.max_workers,
+                         desc="introductions")
     known_ids = {s["id"] for s in segments}
-    intros = [i for i in intros if i["segment_id"] in known_ids]
+    seen: set[str] = set()
+    intros = []
+    for batch_out in results:
+        for i in batch_out:
+            if i["segment_id"] in known_ids and i["segment_id"] not in seen:
+                seen.add(i["segment_id"])
+                intros.append(i)
     log.info("attribute: %d introduction announcements found", len(intros))
     return intros
 

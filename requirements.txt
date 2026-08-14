@@ -6,6 +6,7 @@ rank_bm25>=0.2.2
 networkx>=3.4
 fastapi>=0.115
 uvicorn[standard]>=0.32
+python-multipart>=0.0.9
 
 # Optional — only for scripts/export_neo4j.py (view-only graph mirror)
 neo4j>=5.25

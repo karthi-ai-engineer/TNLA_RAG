@@ -11,9 +11,10 @@ Run:
 from __future__ import annotations
 
 import logging
+import pathlib
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -62,6 +63,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="TNLA Video RAG", lifespan=lifespan)
 
 app.mount("/roster", StaticFiles(directory=ROSTER_DIR), name="roster")
+app.mount("/static", StaticFiles(directory=config.ROOT / "web"), name="static")
 
 
 # ---------------------------------------------------------------------------
@@ -151,3 +153,71 @@ def index_page():
     if not html.exists():
         raise HTTPException(500, "web/index.html missing")
     return HTMLResponse(html.read_text(encoding="utf-8"))
+
+
+# ---------------------------------------------------------------------------
+# Ingest UI + job control
+# ---------------------------------------------------------------------------
+@app.get("/ingest")
+def ingest_page():
+    html = (config.ROOT / "web" / "ingest.html")
+    if not html.exists():
+        raise HTTPException(500, "web/ingest.html missing")
+    return HTMLResponse(html.read_text(encoding="utf-8"))
+
+
+@app.get("/api/ingest/candidates")
+def ingest_candidates():
+    from vrag.ingest_job import JOB, list_candidates
+    return {"videos": list_candidates(), "job_state": JOB.state,
+            "job_video": JOB.video_id}
+
+
+class IngestStart(BaseModel):
+    video_id: str
+
+
+@app.post("/api/ingest/start")
+def ingest_start(body: IngestStart):
+    from vrag.ingest_job import JOB
+    matches = [p for p in config.VIDEO_DIR.glob("*.*")
+               if p.stem == body.video_id and p.suffix.lower() in (".mp4", ".mkv")]
+    if not matches:
+        raise HTTPException(404, f"no video named {body.video_id} in data/videos")
+    try:
+        JOB.start(matches[0], body.video_id)
+    except RuntimeError as exc:
+        raise HTTPException(409, str(exc))
+    return {"ok": True, "video_id": body.video_id}
+
+
+@app.get("/api/ingest/status")
+def ingest_status():
+    from vrag.ingest_job import JOB
+    st = JOB.status()
+    # When a job completes, make the new video immediately askable.
+    if st["state"] == "done" and st["video_id"] and \
+            st["video_id"] not in STATE["indexes"]:
+        try:
+            STATE["indexes"][st["video_id"]] = HybridIndex(st["video_id"])
+        except Exception:                                  # noqa: BLE001
+            pass
+    return st
+
+
+@app.post("/api/ingest/upload")
+async def ingest_upload(file: UploadFile):
+    name = pathlib.Path(file.filename or "upload.mp4").name
+    if not name.lower().endswith((".mp4", ".mkv")):
+        raise HTTPException(400, "only .mp4 / .mkv accepted")
+    dest = config.VIDEO_DIR / name
+    tmp = dest.with_suffix(dest.suffix + ".uploading")
+    try:
+        with tmp.open("wb") as out:
+            while chunk := await file.read(4 * 1024 * 1024):
+                out.write(chunk)
+        tmp.replace(dest)
+    except Exception:
+        tmp.unlink(missing_ok=True)
+        raise
+    return {"ok": True, "video_id": dest.stem, "size_mb": round(dest.stat().st_size / 1e6)}
