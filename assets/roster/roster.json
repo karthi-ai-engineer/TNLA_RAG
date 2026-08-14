@@ -1,0 +1,5247 @@
+{
+  "schema_version": 1,
+  "assembly": "17",
+  "source_generated_at": "2026-08-13T10:09:09+00:00",
+  "sitting_members": 227,
+  "vacant_seats": 7,
+  "members": [
+    {
+      "member_id": "tnla-ac-001-s-vijayakumar",
+      "name": "S.VIJAYAKUMAR",
+      "constituency_number": 1,
+      "constituency_name": "Gummidipoondi",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_001_S.VIJAYAKUMAR.jpg",
+      "tamil_name": "எஸ். விஜயகுமார்",
+      "tamil_aliases": [
+        "விஜயகுமார்"
+      ],
+      "en_aliases": [
+        "S. Vijayakumar",
+        "Vijayakumar S"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-002-dr-ravi-m-s",
+      "name": "DR.RAVI.M.S",
+      "constituency_number": 2,
+      "constituency_name": "Ponneri (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_002_DR.RAVI.M.S.jpg",
+      "tamil_name": "எம்.எஸ். ரவி",
+      "tamil_aliases": [
+        "ரவி",
+        "டாக்டர் ரவி"
+      ],
+      "en_aliases": [
+        "M.S. Ravi",
+        "Ravi M.S."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-003-g-hari",
+      "name": "G.HARI",
+      "constituency_number": 3,
+      "constituency_name": "Tiruttani",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_003_G.HARI.jpg",
+      "tamil_name": "ஜி. ஹரி",
+      "tamil_aliases": [
+        "ஹரி"
+      ],
+      "en_aliases": [
+        "G. Hari",
+        "Hari G"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-004-dr-t-arunkumar",
+      "name": "DR. T. ARUNKUMAR",
+      "constituency_number": 4,
+      "constituency_name": "Thiruvallur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_004_DR._T._ARUNKUMAR.jpg",
+      "tamil_name": "டி. அருண்குமார்",
+      "tamil_aliases": [
+        "அருண்குமார்",
+        "டாக்டர் அருண்குமார்"
+      ],
+      "en_aliases": [
+        "Arunkumar T",
+        "T. Arunkumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-005-prakasam-r",
+      "name": "PRAKASAM.R",
+      "constituency_number": 5,
+      "constituency_name": "Poonamallee (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_005_PRAKASAM.R.jpg",
+      "tamil_name": "ஆர். பிரகாசம்",
+      "tamil_aliases": [
+        "பிரகாசம்"
+      ],
+      "en_aliases": [
+        "Prakasam R",
+        "R. Prakasam"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-006-r-ramesh-kumar",
+      "name": "R.RAMESH KUMAR",
+      "constituency_number": 6,
+      "constituency_name": "Avadi",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_006_R.RAMESH_KUMAR.jpg",
+      "tamil_name": "ஆர். ரமேஷ் குமார்",
+      "tamil_aliases": [
+        "ரமேஷ் குமார்",
+        "ரமேஷ்குமார்"
+      ],
+      "en_aliases": [
+        "R. Ramesh Kumar",
+        "Ramesh Kumar R"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-007-rhevanth-charan",
+      "name": "RHEVANTH CHARAN",
+      "constituency_number": 7,
+      "constituency_name": "Maduravoyal",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_007_RHEVANTH_CHARAN.jpg",
+      "tamil_name": "ரேவந்த் சரண்",
+      "tamil_aliases": [
+        "ரேவந்த்"
+      ],
+      "en_aliases": [
+        "Rhevanth Charan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-008-balamurugan-g",
+      "name": "BALAMURUGAN.G",
+      "constituency_number": 8,
+      "constituency_name": "Ambattur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_008_BALAMURUGAN.G.jpg",
+      "tamil_name": "ஜி. பாலமுருகன்",
+      "tamil_aliases": [
+        "பாலமுருகன்"
+      ],
+      "en_aliases": [
+        "Balamurugan G",
+        "G. Balamurugan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-009-m-l-vijayprabhu",
+      "name": "M.L.VIJAYPRABHU",
+      "constituency_number": 9,
+      "constituency_name": "Madavaram",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_009_M.L.VIJAYPRABHU.jpg",
+      "tamil_name": "எம்.எல். விஜய்பிரபு",
+      "tamil_aliases": [
+        "விஜய்பிரபு",
+        "விஜய் பிரபு"
+      ],
+      "en_aliases": [
+        "M.L. Vijayprabhu",
+        "Vijayprabhu M.L."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-010-senthil-kumar-n",
+      "name": "SENTHIL KUMAR. N",
+      "constituency_number": 10,
+      "constituency_name": "Thiruvottiyur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_010_SENTHIL_KUMAR._N.jpg",
+      "tamil_name": "என். செந்தில்குமார்",
+      "tamil_aliases": [
+        "செந்தில்குமார்",
+        "செந்தில் குமார்"
+      ],
+      "en_aliases": [
+        "N. Senthil Kumar",
+        "Senthil Kumar N"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-011-n-marie-wilson",
+      "name": "N. MARIE WILSON",
+      "constituency_number": 11,
+      "constituency_name": "Dr.Radhakrishnan Nagar",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Finance, Planning & Development"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_011_N._MARIE_WILSON.jpg",
+      "tamil_name": "என். மேரி வில்சன்",
+      "tamil_aliases": [
+        "மேரி வில்சன்"
+      ],
+      "en_aliases": [
+        "Marie Wilson N",
+        "N. Marie Wilson"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-012-c-joseph-vijay",
+      "name": "C. JOSEPH VIJAY",
+      "constituency_number": 12,
+      "constituency_name": "Perambur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Chief Minister — Public, General Administration, Home, Police & other CM portfolios"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_012_C._JOSEPH_VIJAY.jpg",
+      "tamil_name": "சி. ஜோசப் விஜய்",
+      "tamil_aliases": [
+        "ஜோசப் விஜய்",
+        "விஜய்"
+      ],
+      "en_aliases": [
+        "C. Joseph Vijay",
+        "Vijay"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-013-v-s-babu",
+      "name": "V. S. BABU",
+      "constituency_number": 13,
+      "constituency_name": "Kolathur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_013_V._S._BABU.jpg",
+      "tamil_name": "வி.எஸ். பாபு",
+      "tamil_aliases": [
+        "பாபு"
+      ],
+      "en_aliases": [
+        "Babu V.S.",
+        "V.S. Babu"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-014-aadhav-arjuna",
+      "name": "AADHAV ARJUNA",
+      "constituency_number": 14,
+      "constituency_name": "Villivakkam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Public Works & Sports Development"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_014_AADHAV_ARJUNA.jpg",
+      "tamil_name": "ஆதவ் அர்ஜுனா",
+      "tamil_aliases": [
+        "ஆதவ்",
+        "அர்ஜுனா"
+      ],
+      "en_aliases": [
+        "Aadhav Arjuna"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-015-m-r-pallavi",
+      "name": "M. R. PALLAVI",
+      "constituency_number": 15,
+      "constituency_name": "Thiru-Vi-Ka-Nagar (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_015_M._R._PALLAVI.jpg",
+      "tamil_name": "எம்.ஆர். பல்லவி",
+      "tamil_aliases": [
+        "பல்லவி"
+      ],
+      "en_aliases": [
+        "M.R. Pallavi",
+        "Pallavi M.R."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-016-rajmohan",
+      "name": "RAJMOHAN",
+      "constituency_number": 16,
+      "constituency_name": "Egmore (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — School Education, Tamil Development, Information & Publicity"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_016_RAJMOHAN.jpg",
+      "tamil_name": "ராஜ்மோகன்",
+      "tamil_aliases": [
+        "ராஜ் மோகன்"
+      ],
+      "en_aliases": [
+        "Raj Mohan",
+        "Rajmohan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-017-k-v-vijay-damu",
+      "name": "K.V. VIJAY DAMU",
+      "constituency_number": 17,
+      "constituency_name": "Royapuram",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_017_K.V._VIJAY_DAMU.jpg",
+      "tamil_name": "கே.வி. விஜய் தாமு",
+      "tamil_aliases": [
+        "விஜய் தாமு",
+        "தாமு"
+      ],
+      "en_aliases": [
+        "K.V. Vijay Damu",
+        "Vijay Damu"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-018-p-k-sekarbabu",
+      "name": "P K SEKARBABU",
+      "constituency_number": 18,
+      "constituency_name": "Harbour",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Hindu Religious & Charitable Endowments / CMDA (2021–2026)"
+      ],
+      "portrait": "images/AC_018_P_K_SEKARBABU.jpg",
+      "tamil_name": "பி.கே. சேகர்பாபு",
+      "tamil_aliases": [
+        "சேகர்பாபு",
+        "சேகர் பாபு"
+      ],
+      "en_aliases": [
+        "P.K. Sekar Babu",
+        "Sekarbabu P.K."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-019-udhayanidhi-stalin",
+      "name": "UDHAYANIDHI STALIN",
+      "constituency_number": 19,
+      "constituency_name": "Chepauk-Thiruvallikeni",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "Leader of the Opposition"
+      ],
+      "former_roles": [
+        "Former Deputy Chief Minister",
+        "former Minister — Youth Welfare & Sports / Special Programme Implementation (2022–2026)"
+      ],
+      "portrait": "images/AC_019_UDHAYANIDHI_STALIN.jpg",
+      "tamil_name": "உதயநிதி ஸ்டாலின்",
+      "tamil_aliases": [
+        "உதயநிதி",
+        "உதயா"
+      ],
+      "en_aliases": [
+        "Udhayanidhi",
+        "Udhayanidhi Stalin"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-020-prabhakar-j-c-d",
+      "name": "PRABHAKAR.J.C.D",
+      "constituency_number": 20,
+      "constituency_name": "Thousand Lights",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Speaker, Tamil Nadu Legislative Assembly"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_020_PRABHAKAR.J.C.D.jpg",
+      "tamil_name": "ஜே.சி.டி. பிரபாகர்",
+      "tamil_aliases": [
+        "பிரபாகர்"
+      ],
+      "en_aliases": [
+        "J.C.D. Prabhakar",
+        "Prabhakar J.C.D."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-021-v-k-ramkumar",
+      "name": "V.K.RAMKUMAR",
+      "constituency_number": 21,
+      "constituency_name": "Anna Nagar",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_021_V.K.RAMKUMAR.jpg",
+      "tamil_name": "வி.கே. ராம்குமார்",
+      "tamil_aliases": [
+        "ராம்குமார்",
+        "ராம் குமார்"
+      ],
+      "en_aliases": [
+        "Ramkumar V.K.",
+        "V.K. Ramkumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-022-sabarinathan-r",
+      "name": "SABARINATHAN.R",
+      "constituency_number": 22,
+      "constituency_name": "Virugampakkam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Government Chief Whip (Cabinet rank)"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_022_SABARINATHAN.R.jpg",
+      "tamil_name": "ஆர். சபரிநாதன்",
+      "tamil_aliases": [
+        "சபரிநாதன்"
+      ],
+      "en_aliases": [
+        "R. Sabarinathan",
+        "Sabarinathan R"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-023-arul-prakasam-m",
+      "name": "ARUL PRAKASAM. M",
+      "constituency_number": 23,
+      "constituency_name": "Saidapet",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_023_ARUL_PRAKASAM._M.jpg",
+      "tamil_name": "எம். அருள் பிரகாசம்",
+      "tamil_aliases": [
+        "அருள் பிரகாசம்",
+        "அருள்பிரகாசம்"
+      ],
+      "en_aliases": [
+        "Arul Prakasam M",
+        "M. Arul Prakasam"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-024-anand-n",
+      "name": "ANAND N",
+      "constituency_number": 24,
+      "constituency_name": "Thiyagarayanagar",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Rural Development & Water Resources"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_024_ANAND_N.jpg",
+      "tamil_name": "என். ஆனந்த்",
+      "tamil_aliases": [
+        "ஆனந்த்"
+      ],
+      "en_aliases": [
+        "Anand N",
+        "N. Anand"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-025-venkataramanan-p",
+      "name": "VENKATARAMANAN. P",
+      "constituency_number": 25,
+      "constituency_name": "Mylapore",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Food & Civil Supplies"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_025_VENKATARAMANAN._P.jpg",
+      "tamil_name": "பி. வெங்கடரமணன்",
+      "tamil_aliases": [
+        "வெங்கடரமணன்"
+      ],
+      "en_aliases": [
+        "P. Venkataramanan",
+        "Venkataramanan P"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-026-kumar-r",
+      "name": "KUMAR. R",
+      "constituency_number": 26,
+      "constituency_name": "Velachery",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Artificial Intelligence, Information Technology & Digital Services"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_026_KUMAR._R.jpg",
+      "tamil_name": "ஆர். குமார்",
+      "tamil_aliases": [
+        "குமார்"
+      ],
+      "en_aliases": [
+        "Kumar R",
+        "R. Kumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-027-ecr-p-saravanan",
+      "name": "ECR P SARAVANAN",
+      "constituency_number": 27,
+      "constituency_name": "Shozhinganallur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_027_ECR_P_SARAVANAN.jpg",
+      "tamil_name": "ஈ.சி.ஆர். பி. சரவணன்",
+      "tamil_aliases": [
+        "ஈசிஆர் சரவணன்",
+        "சரவணன்"
+      ],
+      "en_aliases": [
+        "ECR P. Saravanan",
+        "ECR Saravanan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-028-m-harish",
+      "name": "M.HARISH",
+      "constituency_number": 28,
+      "constituency_name": "Alandur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_028_M.HARISH.jpg",
+      "tamil_name": "எம். ஹரிஷ்",
+      "tamil_aliases": [
+        "ஹரிஷ்"
+      ],
+      "en_aliases": [
+        "Harish M",
+        "M. Harish"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-029-thennarasu-k",
+      "name": "THENNARASU.K",
+      "constituency_number": 29,
+      "constituency_name": "Sriperumbudur (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Non-Resident Tamils Welfare"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_029_THENNARASU.K.jpg",
+      "tamil_name": "கே. தென்னரசு",
+      "tamil_aliases": [
+        "தென்னரசு"
+      ],
+      "en_aliases": [
+        "K. Thennarasu",
+        "Thennarasu K"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-030-j-kamatchi",
+      "name": "J.KAMATCHI",
+      "constituency_number": 30,
+      "constituency_name": "Pallavaram",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_030_J.KAMATCHI.jpg",
+      "tamil_name": "ஜே. காமாட்சி",
+      "tamil_aliases": [
+        "காமாட்சி"
+      ],
+      "en_aliases": [
+        "J. Kamatchi",
+        "Kamatchi J"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-031-d-sarathkumar",
+      "name": "D.SARATHKUMAR",
+      "constituency_number": 31,
+      "constituency_name": "Tambaram",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Human Resources Management"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_031_D.SARATHKUMAR.jpg",
+      "tamil_name": "டி. சரத்குமார்",
+      "tamil_aliases": [
+        "சரத்குமார்",
+        "டி.சரத்குமார்"
+      ],
+      "en_aliases": [
+        "D. Sarathkumar",
+        "Sarathkumar D"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-032-s-thiyagarajan",
+      "name": "S. THIYAGARAJAN",
+      "constituency_number": 32,
+      "constituency_name": "Chengalpattu",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_032_S._THIYAGARAJAN.jpg",
+      "tamil_name": "எஸ். தியாகராஜன்",
+      "tamil_aliases": [
+        "தியாகராஜன்",
+        "எஸ்.தியாகராஜன்"
+      ],
+      "en_aliases": [
+        "S. Thiyagarajan",
+        "Thiyagarajan S"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-033-b-vijayaraj",
+      "name": "B.VIJAYARAJ",
+      "constituency_number": 33,
+      "constituency_name": "Thiruporur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_033_B.VIJAYARAJ.jpg",
+      "tamil_name": "பி. விஜயராஜ்",
+      "tamil_aliases": [
+        "விஜயராஜ்",
+        "பி.விஜயராஜ்"
+      ],
+      "en_aliases": [
+        "B. Vijayaraj",
+        "Vijayaraj B"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-034-rajasekar-e",
+      "name": "RAJASEKAR. E",
+      "constituency_number": 34,
+      "constituency_name": "Cheyyur (SC)",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_034_RAJASEKAR._E.jpg",
+      "tamil_name": "இ. ராஜசேகர்",
+      "tamil_aliases": [
+        "ராஜசேகர்",
+        "இ.ராஜசேகர்"
+      ],
+      "en_aliases": [
+        "E. Rajasekar",
+        "Rajasekar E"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-036-munirathinam-j",
+      "name": "MUNIRATHINAM.J",
+      "constituency_number": 36,
+      "constituency_name": "Uthiramerur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_036_MUNIRATHINAM.J.jpg",
+      "tamil_name": "ஜே. முனிரத்தினம்",
+      "tamil_aliases": [
+        "முனிரத்தினம்",
+        "ஜே.முனிரத்தினம்"
+      ],
+      "en_aliases": [
+        "J. Munirathinam",
+        "Munirathinam J"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-037-r-v-ranjithkumar",
+      "name": "R.V. RANJITHKUMAR",
+      "constituency_number": 37,
+      "constituency_name": "Kancheepuram",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Forests"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_037_R.V._RANJITHKUMAR.jpg",
+      "tamil_name": "ஆர்.வி. ரஞ்சித்குமார்",
+      "tamil_aliases": [
+        "ரஞ்சித்குமார்",
+        "ஆர்.வி.ரஞ்சித்குமார்"
+      ],
+      "en_aliases": [
+        "R.V. Ranjithkumar",
+        "Ranjithkumar R.V."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-038-v-gandhiraj",
+      "name": "V. GANDHIRAJ",
+      "constituency_number": 38,
+      "constituency_name": "Arakkonam (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Co-operation"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_038_V._GANDHIRAJ.jpg",
+      "tamil_name": "வி. காந்திராஜ்",
+      "tamil_aliases": [
+        "காந்திராஜ்",
+        "வி.காந்திராஜ்"
+      ],
+      "en_aliases": [
+        "Gandhiraj V",
+        "V. Gandhiraj"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-039-g-kapil",
+      "name": "G.KAPIL",
+      "constituency_number": 39,
+      "constituency_name": "Sholingur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_039_G.KAPIL.jpg",
+      "tamil_name": "ஜி. கபில்",
+      "tamil_aliases": [
+        "கபில்",
+        "ஜி.கபில்"
+      ],
+      "en_aliases": [
+        "G. Kapil",
+        "Kapil G"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-040-dr-m-sudhakar",
+      "name": "DR M SUDHAKAR",
+      "constituency_number": 40,
+      "constituency_name": "Katpadi",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_040_DR_M_SUDHAKAR.jpg",
+      "tamil_name": "டாக்டர் எம். சுதாகர்",
+      "tamil_aliases": [
+        "எம். சுதாகர்",
+        "சுதாகர்"
+      ],
+      "en_aliases": [
+        "Dr. M. Sudhakar",
+        "M. Sudhakar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-041-thahira",
+      "name": "THAHIRA",
+      "constituency_number": 41,
+      "constituency_name": "Ranipet",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_041_THAHIRA.jpg",
+      "tamil_name": "தாஹிரா",
+      "tamil_aliases": [
+        "தஹிரா"
+      ],
+      "en_aliases": [
+        "Thahira"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-042-s-m-sukumar",
+      "name": "S.M.SUKUMAR",
+      "constituency_number": 42,
+      "constituency_name": "Arcot",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_042_S.M.SUKUMAR.jpg",
+      "tamil_name": "எஸ்.எம். சுகுமார்",
+      "tamil_aliases": [
+        "சுகுமார்",
+        "எஸ்.எம்.சுகுமார்"
+      ],
+      "en_aliases": [
+        "S.M. Sukumar",
+        "Sukumar S.M."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-043-m-m-vinoth-kannan",
+      "name": "M.M.VINOTH KANNAN",
+      "constituency_number": 43,
+      "constituency_name": "Vellore",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_043_M.M.VINOTH_KANNAN.jpg",
+      "tamil_name": "எம்.எம். வினோத் கண்ணன்",
+      "tamil_aliases": [
+        "வினோத் கண்ணன்",
+        "எம்.எம்.வினோத்கண்ணன்"
+      ],
+      "en_aliases": [
+        "M.M. Vinoth Kannan",
+        "Vinoth Kannan M.M."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-044-d-velazhagan",
+      "name": "D.VELAZHAGAN",
+      "constituency_number": 44,
+      "constituency_name": "Anaikattu",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_044_D.VELAZHAGAN.jpg",
+      "tamil_name": "டி. வேல்அழகன்",
+      "tamil_aliases": [
+        "வேல்அழகன்",
+        "டி.வேல்அழகன்"
+      ],
+      "en_aliases": [
+        "D. Velazhagan",
+        "Velazhagan D"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-045-thenral-kumar-e",
+      "name": "THENRAL KUMAR. E",
+      "constituency_number": 45,
+      "constituency_name": "Kilvaithinankuppam (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_045_THENRAL_KUMAR._E.jpg",
+      "tamil_name": "இ. தென்றல் குமார்",
+      "tamil_aliases": [
+        "தென்றல் குமார்",
+        "இ.தென்றல்குமார்"
+      ],
+      "en_aliases": [
+        "E. Thenral Kumar",
+        "Thenral Kumar E"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-046-k-sindu",
+      "name": "K.SINDU",
+      "constituency_number": 46,
+      "constituency_name": "Gudiyattam (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_046_K.SINDU.jpg",
+      "tamil_name": "கே. சிந்து",
+      "tamil_aliases": [
+        "சிந்து",
+        "கே.சிந்து"
+      ],
+      "en_aliases": [
+        "K. Sindu",
+        "Sindu K"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-047-syed-farooq-basha-ssb",
+      "name": "SYED FAROOQ BASHA SSB",
+      "constituency_number": 47,
+      "constituency_name": "Vaniyambadi",
+      "party": "Indian Union Muslim League",
+      "party_code": "IUML",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_047_SYED_FAROOQ_BASHA_SSB.jpg",
+      "tamil_name": "சையத் பாரூக் பாஷா எஸ்.எஸ்.பி",
+      "tamil_aliases": [
+        "சையத் பாரூக் பாஷா",
+        "பாரூக் பாஷா"
+      ],
+      "en_aliases": [
+        "Syed Farooq Basha",
+        "Syed Farooq Basha SSB"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-048-vilwanathan-a-c",
+      "name": "VILWANATHAN. A.C.",
+      "constituency_number": 48,
+      "constituency_name": "Ambur",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_048_VILWANATHAN._A.C..jpg",
+      "tamil_name": "ஏ.சி. வில்வநாதன்",
+      "tamil_aliases": [
+        "வில்வநாதன்",
+        "ஏ.சி.வில்வநாதன்"
+      ],
+      "en_aliases": [
+        "A.C. Vilwanathan",
+        "Vilwanathan A.C."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-049-veeramani-k-c",
+      "name": "VEERAMANI K.C.",
+      "constituency_number": 49,
+      "constituency_name": "Jolarpet",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Commercial Taxes & Registration (AIADMK government)"
+      ],
+      "portrait": "images/AC_049_VEERAMANI_K.C..jpg",
+      "tamil_name": "கே.சி. வீரமணி",
+      "tamil_aliases": [
+        "வீரமணி",
+        "கே.சி.வீரமணி"
+      ],
+      "en_aliases": [
+        "K.C. Veeramani",
+        "Veeramani K.C."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-050-dr-thirupathi-n",
+      "name": "DR.THIRUPATHI. N",
+      "constituency_number": 50,
+      "constituency_name": "Tiruppattur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_050_DR.THIRUPATHI._N.jpg",
+      "tamil_name": "டாக்டர் என். திருப்பதி",
+      "tamil_aliases": [
+        "என். திருப்பதி",
+        "திருப்பதி"
+      ],
+      "en_aliases": [
+        "Dr. N. Thirupathi",
+        "Thirupathi N"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-051-n-elaiyaraja",
+      "name": "N ELAIYARAJA",
+      "constituency_number": 51,
+      "constituency_name": "Uthangarai (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_051_N_ELAIYARAJA.jpg",
+      "tamil_name": "என். இளையராஜா",
+      "tamil_aliases": [
+        "இளையராஜா",
+        "என்.இளையராஜா"
+      ],
+      "en_aliases": [
+        "Elaiyaraja N",
+        "N. Elaiyaraja"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-052-e-c-govindarasan",
+      "name": "E.C. GOVINDARASAN",
+      "constituency_number": 52,
+      "constituency_name": "Bargur",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_052_E.C._GOVINDARASAN.jpg",
+      "tamil_name": "இ.சி. கோவிந்தராசன்",
+      "tamil_aliases": [
+        "கோவிந்தராசன்",
+        "இ.சி.கோவிந்தராசன்"
+      ],
+      "en_aliases": [
+        "E.C. Govindarasan",
+        "Govindarasan E.C."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-053-mukundhan-p",
+      "name": "MUKUNDHAN.P",
+      "constituency_number": 53,
+      "constituency_name": "Krishnagiri",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_053_MUKUNDHAN.P.jpg",
+      "tamil_name": "பி. முகுந்தன்",
+      "tamil_aliases": [
+        "முகுந்தன்",
+        "பி.முகுந்தன்"
+      ],
+      "en_aliases": [
+        "Mukundhan P",
+        "P. Mukundhan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-054-srinivasan-p-s",
+      "name": "SRINIVASAN.P.S",
+      "constituency_number": 54,
+      "constituency_name": "Veppanahalli",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_054_SRINIVASAN.P.S.jpg",
+      "tamil_name": "பி.எஸ். சீனிவாசன்",
+      "tamil_aliases": [
+        "சீனிவாசன்",
+        "பி.எஸ்.சீனிவாசன்"
+      ],
+      "en_aliases": [
+        "P.S. Srinivasan",
+        "Srinivasan P.S."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-055-balakrishnareddy-p",
+      "name": "BALAKRISHNAREDDY. P",
+      "constituency_number": 55,
+      "constituency_name": "Hosur",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Youth Welfare & Sports",
+        "Animal Husbandry (AIADMK government)"
+      ],
+      "portrait": "images/AC_055_BALAKRISHNAREDDY._P.jpg",
+      "tamil_name": "பி. பாலகிருஷ்ண ரெட்டி",
+      "tamil_aliases": [
+        "பாலகிருஷ்ண ரெட்டி",
+        "பாலகிருஷ்ணரெட்டி"
+      ],
+      "en_aliases": [
+        "Balakrishna Reddy P",
+        "P. Balakrishna Reddy"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-056-ramachandran-t",
+      "name": "RAMACHANDRAN. T",
+      "constituency_number": 56,
+      "constituency_name": "Thalli",
+      "party": "Communist Party of India",
+      "party_code": "CPI",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_056_RAMACHANDRAN._T.jpg",
+      "tamil_name": "டி. ராமச்சந்திரன்",
+      "tamil_aliases": [
+        "ராமச்சந்திரன்",
+        "டி.ராமச்சந்திரன்"
+      ],
+      "en_aliases": [
+        "Ramachandran T",
+        "T. Ramachandran"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-057-anbalagan-k-p",
+      "name": "ANBALAGAN. K.P.",
+      "constituency_number": 57,
+      "constituency_name": "Palacodu",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Higher Education / Agriculture (AIADMK government)"
+      ],
+      "portrait": "images/AC_057_ANBALAGAN._K.P..jpg",
+      "tamil_name": "கே.பி. அன்பழகன்",
+      "tamil_aliases": [
+        "அன்பழகன்",
+        "கே.பி.அன்பழகன்"
+      ],
+      "en_aliases": [
+        "Anbalagan K.P.",
+        "K.P. Anbalagan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-058-gajendran-s",
+      "name": "GAJENDRAN. S.",
+      "constituency_number": 58,
+      "constituency_name": "Pennagaram",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_058_GAJENDRAN._S..jpg",
+      "tamil_name": "எஸ். கஜேந்திரன்",
+      "tamil_aliases": [
+        "கஜேந்திரன்",
+        "எஸ்.கஜேந்திரன்"
+      ],
+      "en_aliases": [
+        "Gajendran S",
+        "S. Gajendran"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-059-sowmiya-anbumani",
+      "name": "SOWMIYA ANBUMANI",
+      "constituency_number": 59,
+      "constituency_name": "Dharmapuri",
+      "party": "Pattali Makkal Katchi",
+      "party_code": "PMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_059_SOWMIYA_ANBUMANI.jpg",
+      "tamil_name": "சௌமியா அன்புமணி",
+      "tamil_aliases": [
+        "சௌமியா",
+        "அன்புமணி"
+      ],
+      "en_aliases": [
+        "Anbumani Sowmiya",
+        "Sowmiya Anbumani"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-060-maragatham-vetrivel",
+      "name": "MARAGATHAM VETRIVEL",
+      "constituency_number": 60,
+      "constituency_name": "Pappireddipatti",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_060_MARAGATHAM_VETRIVEL.jpg",
+      "tamil_name": "மரகதம் வெற்றிவேல்",
+      "tamil_aliases": [
+        "மரகதம்",
+        "வெற்றிவேல்"
+      ],
+      "en_aliases": [
+        "Maragatham Vetrivel",
+        "Vetrivel Maragatham"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-061-sampathkumar-v",
+      "name": "SAMPATHKUMAR. V",
+      "constituency_number": 61,
+      "constituency_name": "Harur (SC)",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_061_SAMPATHKUMAR._V.jpg",
+      "tamil_name": "வி. சம்பத்குமார்",
+      "tamil_aliases": [
+        "சம்பத்குமார்",
+        "வி.சம்பத்குமார்"
+      ],
+      "en_aliases": [
+        "Sampathkumar V",
+        "V. Sampathkumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-062-s-velu",
+      "name": "S.VELU",
+      "constituency_number": 62,
+      "constituency_name": "Chengam (SC)",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_062_S.VELU.jpg",
+      "tamil_name": "எஸ். வேலு",
+      "tamil_aliases": [
+        "வேலு",
+        "எஸ்.வேலு"
+      ],
+      "en_aliases": [
+        "S. Velu",
+        "Velu S"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-063-velu-e-v",
+      "name": "VELU. E.V",
+      "constituency_number": 63,
+      "constituency_name": "Tiruvannamalai",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Public Works",
+        "Highways & Minor Ports (2021–2026)"
+      ],
+      "portrait": "images/AC_063_VELU._E.V.jpg",
+      "tamil_name": "எ.வ. வேலு",
+      "tamil_aliases": [
+        "எ.வ.வேலு",
+        "வேலு"
+      ],
+      "en_aliases": [
+        "E. V. Velu",
+        "E.V. Velu"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-064-ramachandran-s",
+      "name": "RAMACHANDRAN.S",
+      "constituency_number": 64,
+      "constituency_name": "Kilpennathur",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_064_RAMACHANDRAN.S.jpg",
+      "tamil_name": "எஸ். ராமச்சந்திரன்",
+      "tamil_aliases": [
+        "ராமச்சந்திரன்",
+        "எஸ்.ராமச்சந்திரன்"
+      ],
+      "en_aliases": [
+        "Ramachandran S",
+        "S. Ramachandran"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-065-agri-krishnamurthy-s-s",
+      "name": "AGRI KRISHNAMURTHY. S S",
+      "constituency_number": 65,
+      "constituency_name": "Kalasapakkam",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Agriculture (AIADMK government)"
+      ],
+      "portrait": "images/AC_065_AGRI_KRISHNAMURTHY._S_S.jpg",
+      "tamil_name": "அக்ரி எஸ்.எஸ். கிருஷ்ணமூர்த்தி",
+      "tamil_aliases": [
+        "அக்ரி கிருஷ்ணமூர்த்தி",
+        "எஸ்.எஸ். கிருஷ்ணமூர்த்தி"
+      ],
+      "en_aliases": [
+        "Agri Krishnamurthy",
+        "Agri S.S. Krishnamurthy"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-066-abishek-r",
+      "name": "ABISHEK. R",
+      "constituency_number": 66,
+      "constituency_name": "Polur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_066_ABISHEK._R.jpg",
+      "tamil_name": "ஆர். அபிஷேக்",
+      "tamil_aliases": [
+        "அபிஷேக்",
+        "ஆர்.அபிஷேக்"
+      ],
+      "en_aliases": [
+        "Abishek R",
+        "R. Abishek"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-067-jayasudha-l",
+      "name": "JAYASUDHA. L",
+      "constituency_number": 67,
+      "constituency_name": "Arani",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_067_JAYASUDHA._L.jpg",
+      "tamil_name": "எல். ஜெயசுதா",
+      "tamil_aliases": [
+        "ஜெயசுதா",
+        "எல்.ஜெயசுதா"
+      ],
+      "en_aliases": [
+        "Jayasudha L",
+        "L. Jayasudha"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-068-mukkur-n-subramanian",
+      "name": "MUKKUR N. SUBRAMANIAN",
+      "constituency_number": 68,
+      "constituency_name": "Cheyyar",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Information Technology (AIADMK government)"
+      ],
+      "portrait": "images/AC_068_MUKKUR_N._SUBRAMANIAN.jpg",
+      "tamil_name": "முக்கூர் என். சுப்பிரமணியன்",
+      "tamil_aliases": [
+        "முக்கூர் சுப்பிரமணியன்",
+        "என். சுப்பிரமணியன்"
+      ],
+      "en_aliases": [
+        "Mukkur N. Subramanian",
+        "N. Subramanian"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-069-ambethkumar-s",
+      "name": "AMBETHKUMAR. S",
+      "constituency_number": 69,
+      "constituency_name": "Vandavasi (SC)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_069_AMBETHKUMAR._S.jpg",
+      "tamil_name": "எஸ். அம்பேத்குமார்",
+      "tamil_aliases": [
+        "அம்பேத்குமார்",
+        "எஸ்.அம்பேத்குமார்"
+      ],
+      "en_aliases": [
+        "Ambethkumar S",
+        "S. Ambethkumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-070-ganeshkumar-a",
+      "name": "GANESHKUMAR A",
+      "constituency_number": 70,
+      "constituency_name": "Gingee",
+      "party": "Pattali Makkal Katchi",
+      "party_code": "PMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_070_GANESHKUMAR_A.jpg",
+      "tamil_name": "ஏ. கணேஷ்குமார்",
+      "tamil_aliases": [
+        "கணேஷ்குமார்",
+        "ஏ.கணேஷ்குமார்"
+      ],
+      "en_aliases": [
+        "A. Ganeshkumar",
+        "Ganeshkumar A"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-071-shanmugam-c-ve",
+      "name": "SHANMUGAM C VE",
+      "constituency_number": 71,
+      "constituency_name": "Mailam",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Law, Courts & Prisons",
+        "Mines & Minerals (AIADMK government)"
+      ],
+      "portrait": "images/AC_071_SHANMUGAM_C_VE.jpg",
+      "tamil_name": "சி.வி. சண்முகம்",
+      "tamil_aliases": [
+        "சி.வி.சண்முகம்",
+        "சண்முகம்"
+      ],
+      "en_aliases": [
+        "C. Ve. Shanmugam",
+        "C.V. Shanmugam"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-072-vanni-arasu",
+      "name": "VANNI ARASU",
+      "constituency_number": 72,
+      "constituency_name": "Tindivanam (SC)",
+      "party": "Viduthalai Chiruthaigal Katchi",
+      "party_code": "VCK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Social Justice"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_072_VANNI_ARASU.jpg",
+      "tamil_name": "வன்னி அரசு",
+      "tamil_aliases": [
+        "வன்னியரசு"
+      ],
+      "en_aliases": [
+        "Vanni Arasu",
+        "Vanniarasu"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-073-gowtham-d",
+      "name": "GOWTHAM D",
+      "constituency_number": 73,
+      "constituency_name": "Vanur (SC)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_073_GOWTHAM_D.jpg",
+      "tamil_name": "டி. கௌதம்",
+      "tamil_aliases": [
+        "கௌதம்",
+        "டி.கௌதம்"
+      ],
+      "en_aliases": [
+        "D. Gowtham",
+        "Gowtham D"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-074-lakshmanan-r",
+      "name": "LAKSHMANAN R",
+      "constituency_number": 74,
+      "constituency_name": "Viluppuram",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_074_LAKSHMANAN_R.jpg",
+      "tamil_name": "ஆர். லட்சுமணன்",
+      "tamil_aliases": [
+        "லட்சுமணன்",
+        "ஆர்.லட்சுமணன்"
+      ],
+      "en_aliases": [
+        "Lakshmanan R",
+        "R. Lakshmanan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-075-sivakumar-c",
+      "name": "SIVAKUMAR C",
+      "constituency_number": 75,
+      "constituency_name": "Vikravandi",
+      "party": "Pattali Makkal Katchi",
+      "party_code": "PMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_075_SIVAKUMAR_C.jpg",
+      "tamil_name": "சி. சிவகுமார்",
+      "tamil_aliases": [
+        "சிவகுமார்",
+        "சி.சிவகுமார்"
+      ],
+      "en_aliases": [
+        "C. Sivakumar",
+        "Sivakumar C"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-076-palanisamy-s",
+      "name": "PALANISAMY S",
+      "constituency_number": 76,
+      "constituency_name": "Tirukkoyilur",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_076_PALANISAMY_S.jpg",
+      "tamil_name": "எஸ். பழனிசாமி",
+      "tamil_aliases": [
+        "பழனிசாமி",
+        "எஸ்.பழனிசாமி"
+      ],
+      "en_aliases": [
+        "Palanisamy S",
+        "S. Palanisamy"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-077-vasanthavel-g-r",
+      "name": "VASANTHAVEL G R",
+      "constituency_number": 77,
+      "constituency_name": "Ulundurpettai",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_077_VASANTHAVEL_G_R.jpg",
+      "tamil_name": "ஜி.ஆர். வசந்தவேல்",
+      "tamil_aliases": [
+        "வசந்தவேல்",
+        "ஜி.ஆர்.வசந்தவேல்"
+      ],
+      "en_aliases": [
+        "G.R. Vasanthavel",
+        "Vasanthavel G R"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-078-karthikeyan-k",
+      "name": "KARTHIKEYAN K",
+      "constituency_number": 78,
+      "constituency_name": "Rishivandiyam",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_078_KARTHIKEYAN_K.jpg",
+      "tamil_name": "கே. கார்த்திகேயன்",
+      "tamil_aliases": [
+        "கார்த்திகேயன்",
+        "கே.கார்த்திகேயன்"
+      ],
+      "en_aliases": [
+        "K. Karthikeyan",
+        "Karthikeyan K"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-079-rakesh-r",
+      "name": "RAKESH R",
+      "constituency_number": 79,
+      "constituency_name": "Sankarapuram",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_079_RAKESH_R.jpg",
+      "tamil_name": "ஆர். ராகேஷ்",
+      "tamil_aliases": [
+        "ராகேஷ்",
+        "ஆர்.ராகேஷ்"
+      ],
+      "en_aliases": [
+        "R. Rakesh",
+        "Rakesh R"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-080-arul-vignesh-c",
+      "name": "ARUL VIGNESH C",
+      "constituency_number": 80,
+      "constituency_name": "Kallakurichi (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_080_ARUL_VIGNESH_C.jpg",
+      "tamil_name": "சி. அருள் விக்னேஷ்",
+      "tamil_aliases": [
+        "அருள் விக்னேஷ்",
+        "சி.அருள் விக்னேஷ்"
+      ],
+      "en_aliases": [
+        "Arul Vignesh C",
+        "C. Arul Vignesh"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-081-nallathambi-a",
+      "name": "NALLATHAMBI. A",
+      "constituency_number": 81,
+      "constituency_name": "Gangavalli (SC)",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_081_NALLATHAMBI._A.jpg",
+      "tamil_name": "ஏ. நல்லதம்பி",
+      "tamil_aliases": [
+        "நல்லதம்பி",
+        "ஏ.நல்லதம்பி"
+      ],
+      "en_aliases": [
+        "A. Nallathambi",
+        "Nallathambi A"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-082-jayasankaran-a-p",
+      "name": "JAYASANKARAN. A.P.",
+      "constituency_number": 82,
+      "constituency_name": "Attur (SC)",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_082_JAYASANKARAN._A.P..jpg",
+      "tamil_name": "ஏ.பி. ஜெயசங்கரன்",
+      "tamil_aliases": [
+        "ஜெயசங்கரன்",
+        "ஏ.பி.ஜெயசங்கரன்"
+      ],
+      "en_aliases": [
+        "A.P. Jayasankaran",
+        "Jayasankaran A P"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-083-usharani-p",
+      "name": "USHARANI. P",
+      "constituency_number": 83,
+      "constituency_name": "Yercaud (ST)",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_083_USHARANI._P.jpg",
+      "tamil_name": "பி. உஷாராணி",
+      "tamil_aliases": [
+        "உஷாராணி",
+        "பி.உஷாராணி"
+      ],
+      "en_aliases": [
+        "P. Usharani",
+        "Usharani P"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-084-mani-r",
+      "name": "MANI. R",
+      "constituency_number": 84,
+      "constituency_name": "Omalur",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_084_MANI._R.jpg",
+      "tamil_name": "ஆர். மணி",
+      "tamil_aliases": [
+        "மணி",
+        "ஆர்.மணி"
+      ],
+      "en_aliases": [
+        "Mani R",
+        "R. Mani"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-085-venkatachalam-g",
+      "name": "VENKATACHALAM. G",
+      "constituency_number": 85,
+      "constituency_name": "Mettur",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_085_VENKATACHALAM._G.jpg",
+      "tamil_name": "ஜி. வெங்கடாசலம்",
+      "tamil_aliases": [
+        "வெங்கடாசலம்",
+        "ஜி.வெங்கடாசலம்"
+      ],
+      "en_aliases": [
+        "G. Venkatachalam",
+        "Venkatachalam G"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-086-edappadi-palaniswami-k",
+      "name": "EDAPPADI PALANISWAMI. K",
+      "constituency_number": 86,
+      "constituency_name": "Edappadi",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Chief Minister of Tamil Nadu (2017–2021)",
+        "former Minister"
+      ],
+      "portrait": "images/AC_086_EDAPPADI_PALANISWAMI._K.jpg",
+      "tamil_name": "எடப்பாடி கே. பழனிசாமி",
+      "tamil_aliases": [
+        "எடப்பாடி பழனிசாமி",
+        "இபிஎஸ்",
+        "பழனிசாமி"
+      ],
+      "en_aliases": [
+        "EPS",
+        "Edappadi K. Palaniswami",
+        "Edappadi Palanisamy"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-087-vetrivel-s",
+      "name": "VETRIVEL. S",
+      "constituency_number": 87,
+      "constituency_name": "Sankari",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_087_VETRIVEL._S.jpg",
+      "tamil_name": "எஸ். வெற்றிவேல்",
+      "tamil_aliases": [
+        "வெற்றிவேல்",
+        "எஸ்.வெற்றிவேல்"
+      ],
+      "en_aliases": [
+        "S. Vetrivel",
+        "Vetrivel S"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-088-lakshmanan-s",
+      "name": "LAKSHMANAN.S",
+      "constituency_number": 88,
+      "constituency_name": "Salem (West)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_088_LAKSHMANAN.S.jpg",
+      "tamil_name": "எஸ். லட்சுமணன்",
+      "tamil_aliases": [
+        "லட்சுமணன்",
+        "எஸ்.லட்சுமணன்"
+      ],
+      "en_aliases": [
+        "Lakshmanan S",
+        "S. Lakshmanan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-089-sivakumar-k",
+      "name": "SIVAKUMAR. K",
+      "constituency_number": 89,
+      "constituency_name": "Salem (North)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_089_SIVAKUMAR._K.jpg",
+      "tamil_name": "கே. சிவகுமார்",
+      "tamil_aliases": [
+        "சிவகுமார்",
+        "கே.சிவகுமார்"
+      ],
+      "en_aliases": [
+        "K. Sivakumar",
+        "Sivakumar K"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-090-vijay-tamilan-parthiban-a",
+      "name": "VIJAY TAMILAN PARTHIBAN. A",
+      "constituency_number": 90,
+      "constituency_name": "Salem (South)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Transport"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_090_VIJAY_TAMILAN_PARTHIBAN._A.jpg",
+      "tamil_name": "ஏ. விஜய் தமிழன் பார்த்திபன்",
+      "tamil_aliases": [
+        "விஜய் தமிழன் பார்த்திபன்",
+        "பார்த்திபன்"
+      ],
+      "en_aliases": [
+        "A. Vijay Tamilan Parthiban",
+        "Vijay Tamilan Parthiban"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-091-palanivel-m-s",
+      "name": "PALANIVEL. M.S",
+      "constituency_number": 91,
+      "constituency_name": "Veerapandi",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_091_PALANIVEL._M.S.jpg",
+      "tamil_name": "எம்.எஸ். பழனிவேல்",
+      "tamil_aliases": [
+        "பழனிவேல்",
+        "எம்.எஸ்.பழனிவேல்"
+      ],
+      "en_aliases": [
+        "M.S. Palanivel",
+        "Palanivel M S"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-092-logesh-tamilselvan-d",
+      "name": "LOGESH TAMILSELVAN D",
+      "constituency_number": 92,
+      "constituency_name": "Rasipuram (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Commercial Taxes & Registration"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_092_LOGESH_TAMILSELVAN_D.jpg",
+      "tamil_name": "டி. லோகேஷ் தமிழ்செல்வன்",
+      "tamil_aliases": [
+        "லோகேஷ் தமிழ்செல்வன்",
+        "லோகேஷ்"
+      ],
+      "en_aliases": [
+        "D. Logesh Tamilselvan",
+        "Logesh Tamilselvan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-093-p-chandrasekar",
+      "name": "P CHANDRASEKAR",
+      "constituency_number": 93,
+      "constituency_name": "Senthamangalam (ST)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_093_P_CHANDRASEKAR.jpg",
+      "tamil_name": "பி. சந்திரசேகர்",
+      "tamil_aliases": [
+        "சந்திரசேகர்",
+        "பி. சந்திரசேகரன்"
+      ],
+      "en_aliases": [
+        "P. Chandrasekar",
+        "P. Chandrasekhar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-094-dilip-c-s",
+      "name": "DILIP C S",
+      "constituency_number": 94,
+      "constituency_name": "Namakkal",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_094_DILIP_C_S.jpg",
+      "tamil_name": "சி. எஸ். திலீப்",
+      "tamil_aliases": [
+        "திலீப்",
+        "சி.எஸ். திலீப்"
+      ],
+      "en_aliases": [
+        "C.S. Dilip",
+        "Dilip C.S."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-095-sekar-s",
+      "name": "SEKAR S",
+      "constituency_number": 95,
+      "constituency_name": "Paramathi-Velur",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_095_SEKAR_S.jpg",
+      "tamil_name": "எஸ். சேகர்",
+      "tamil_aliases": [
+        "சேகர்",
+        "எஸ்.சேகர்"
+      ],
+      "en_aliases": [
+        "S. Sekar",
+        "Sekar S."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-096-arunraj-k-g",
+      "name": "ARUNRAJ K G",
+      "constituency_number": 96,
+      "constituency_name": "Tiruchengodu",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Health, Medical Education & Family Welfare"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_096_ARUNRAJ_K_G.jpg",
+      "tamil_name": "கே. ஜி. அருண்ராஜ்",
+      "tamil_aliases": [
+        "அருண்ராஜ்",
+        "கே.ஜி. அருண்ராஜ்"
+      ],
+      "en_aliases": [
+        "Arunraj K.G.",
+        "K.G. Arunraj"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-097-c-vijayalakshmi",
+      "name": "C.VIJAYALAKSHMI",
+      "constituency_number": 97,
+      "constituency_name": "Kumarapalayam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Milk & Dairy Development"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_097_C.VIJAYALAKSHMI.jpg",
+      "tamil_name": "சி. விஜயலட்சுமி",
+      "tamil_aliases": [
+        "விஜயலட்சுமி",
+        "சி.விஜயலட்சுமி"
+      ],
+      "en_aliases": [
+        "C. Vijayalakshmi",
+        "Vijayalakshmi C."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-098-m-vijay-balaji",
+      "name": "M.VIJAY BALAJI",
+      "constituency_number": 98,
+      "constituency_name": "Erode (East)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Handlooms, Textiles & Khadi"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_098_M.VIJAY_BALAJI.jpg",
+      "tamil_name": "எம். விஜய் பாலாஜி",
+      "tamil_aliases": [
+        "விஜய் பாலாஜி",
+        "எம்.விஜய் பாலாஜி"
+      ],
+      "en_aliases": [
+        "M. Vijay Balaji",
+        "Vijay Balaji M."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-099-ananth-moghan-k-k",
+      "name": "ANANTH MOGHAN K.K.",
+      "constituency_number": 99,
+      "constituency_name": "Erode (West)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_099_ANANTH_MOGHAN_K.K..jpg",
+      "tamil_name": "கே. கே. ஆனந்த் மோகன்",
+      "tamil_aliases": [
+        "ஆனந்த் மோகன்",
+        "கே.கே. ஆனந்த் மோகன்"
+      ],
+      "en_aliases": [
+        "Ananth Moghan K.K.",
+        "K.K. Ananth Moghan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-100-d-shanmugan",
+      "name": "D.SHANMUGAN",
+      "constituency_number": 100,
+      "constituency_name": "Modakkurichi",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_100_D.SHANMUGAN.jpg",
+      "tamil_name": "டி. சண்முகன்",
+      "tamil_aliases": [
+        "சண்முகன்",
+        "டி.சண்முகன்"
+      ],
+      "en_aliases": [
+        "D. Shanmugan",
+        "Shanmugan D."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-102-nsn-nataraj",
+      "name": "NSN NATARAJ",
+      "constituency_number": 102,
+      "constituency_name": "Kangayam",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_102_NSN_NATARAJ.jpg",
+      "tamil_name": "என். எஸ். என். நடராஜ்",
+      "tamil_aliases": [
+        "நடராஜ்",
+        "என்.எஸ்.என். நடராஜ்"
+      ],
+      "en_aliases": [
+        "N.S.N. Nataraj",
+        "NSN Nataraj"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-104-karuppanan-k-c",
+      "name": "KARUPPANAN. K.C",
+      "constituency_number": 104,
+      "constituency_name": "Bhavani",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Environment (AIADMK government)"
+      ],
+      "portrait": "images/AC_104_KARUPPANAN._K.C.jpg",
+      "tamil_name": "கே. சி. கருப்பணன்",
+      "tamil_aliases": [
+        "கருப்பணன்",
+        "கே.சி.கருப்பணன்"
+      ],
+      "en_aliases": [
+        "K.C. Karuppanan",
+        "Karuppanan K.C."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-105-haribaskar-p",
+      "name": "HARIBASKAR.P",
+      "constituency_number": 105,
+      "constituency_name": "Anthiyur",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_105_HARIBASKAR.P.jpg",
+      "tamil_name": "பி. ஹரிபாஸ்கர்",
+      "tamil_aliases": [
+        "ஹரிபாஸ்கர்",
+        "பி.ஹரிபாஸ்கர்"
+      ],
+      "en_aliases": [
+        "Haribaskar P.",
+        "P. Haribaskar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-106-sengottaiyan-k-a",
+      "name": "SENGOTTAIYAN.K.A",
+      "constituency_number": 106,
+      "constituency_name": "Gobichettipalayam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Revenue & Disaster Management",
+        "Leader of the House"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_106_SENGOTTAIYAN.K.A.jpg",
+      "tamil_name": "கே. ஏ. செங்கோட்டையன்",
+      "tamil_aliases": [
+        "செங்கோட்டையன்",
+        "கே.ஏ.செங்கோட்டையன்"
+      ],
+      "en_aliases": [
+        "K.A. Sengottaiyan",
+        "Sengottaiyan K.A."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-107-v-p-tamilselvi",
+      "name": "V.P.TAMILSELVI",
+      "constituency_number": 107,
+      "constituency_name": "Bhavanisagar (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_107_V.P.TAMILSELVI.jpg",
+      "tamil_name": "வி. பி. தமிழ்ச்செல்வி",
+      "tamil_aliases": [
+        "தமிழ்ச்செல்வி",
+        "வி.பி.தமிழ்ச்செல்வி"
+      ],
+      "en_aliases": [
+        "Tamilselvi V.P.",
+        "V.P. Tamilselvi"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-108-bhojarajan-m",
+      "name": "BHOJARAJAN.M",
+      "constituency_number": 108,
+      "constituency_name": "Udhagamandalam",
+      "party": "Bharatiya Janata Party",
+      "party_code": "BJP",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_108_BHOJARAJAN.M.jpg",
+      "tamil_name": "எம். போஜராஜன்",
+      "tamil_aliases": [
+        "போஜராஜன்",
+        "எம்.போஜராஜன்"
+      ],
+      "en_aliases": [
+        "Bhojarajan M.",
+        "M. Bhojarajan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-109-dhravidamani-m",
+      "name": "DHRAVIDAMANI.M",
+      "constituency_number": 109,
+      "constituency_name": "Gudalur (SC)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_109_DHRAVIDAMANI.M.jpg",
+      "tamil_name": "எம். திராவிடமணி",
+      "tamil_aliases": [
+        "திராவிடமணி",
+        "எம்.திராவிடமணி"
+      ],
+      "en_aliases": [
+        "Dhravidamani M.",
+        "M. Dhravidamani"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-110-m-raju",
+      "name": "M. RAJU",
+      "constituency_number": 110,
+      "constituency_name": "Coonoor",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_110_M._RAJU.jpg",
+      "tamil_name": "எம். ராஜு",
+      "tamil_aliases": [
+        "ராஜு",
+        "எம்.ராஜு"
+      ],
+      "en_aliases": [
+        "M. Raju",
+        "Raju M."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-111-sunilanand",
+      "name": "SUNILANAND",
+      "constituency_number": 111,
+      "constituency_name": "Mettuppalayam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_111_SUNILANAND.jpg",
+      "tamil_name": "சுனில் ஆனந்த்",
+      "tamil_aliases": [
+        "சுனிலானந்த்",
+        "சுனில்"
+      ],
+      "en_aliases": [
+        "Sunil Anand",
+        "Sunilanand"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-112-kamali-s",
+      "name": "KAMALI.S",
+      "constituency_number": 112,
+      "constituency_name": "Avanashi (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Animal Husbandry"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_112_KAMALI.S.jpg",
+      "tamil_name": "எஸ். கமலி",
+      "tamil_aliases": [
+        "கமலி",
+        "எஸ்.கமலி"
+      ],
+      "en_aliases": [
+        "Kamali S.",
+        "S. Kamali"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-113-v-sathyabama",
+      "name": "V.SATHYABAMA",
+      "constituency_number": 113,
+      "constituency_name": "Tiruppur (North)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_113_V.SATHYABAMA.jpg",
+      "tamil_name": "வி. சத்யபாமா",
+      "tamil_aliases": [
+        "சத்யபாமா",
+        "வி.சத்யபாமா"
+      ],
+      "en_aliases": [
+        "Sathyabama V.",
+        "V. Sathyabama"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-114-balamurugan-s",
+      "name": "BALAMURUGAN. S",
+      "constituency_number": 114,
+      "constituency_name": "Tiruppur (South)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_114_BALAMURUGAN._S.jpg",
+      "tamil_name": "எஸ். பாலமுருகன்",
+      "tamil_aliases": [
+        "பாலமுருகன்",
+        "எஸ்.பாலமுருகன்"
+      ],
+      "en_aliases": [
+        "Balamurugan S.",
+        "S. Balamurugan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-115-k-ramkumar",
+      "name": "K.RAMKUMAR",
+      "constituency_number": 115,
+      "constituency_name": "Palladam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_115_K.RAMKUMAR.jpg",
+      "tamil_name": "கே. ராம்குமார்",
+      "tamil_aliases": [
+        "ராம்குமார்",
+        "கே.ராம்குமார்"
+      ],
+      "en_aliases": [
+        "K. Ramkumar",
+        "Ramkumar K."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-116-nm-sukumar",
+      "name": "NM.SUKUMAR",
+      "constituency_number": 116,
+      "constituency_name": "Sulur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_116_NM.SUKUMAR.jpg",
+      "tamil_name": "என். எம். சுகுமார்",
+      "tamil_aliases": [
+        "சுகுமார்",
+        "என்.எம்.சுகுமார்"
+      ],
+      "en_aliases": [
+        "N.M. Sukumar",
+        "NM. Sukumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-117-kanimozhi-santhosh",
+      "name": "KANIMOZHI SANTHOSH",
+      "constituency_number": 117,
+      "constituency_name": "Kavundampalayam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_117_KANIMOZHI_SANTHOSH.jpg",
+      "tamil_name": "கனிமொழி சந்தோஷ்",
+      "tamil_aliases": [
+        "கனிமொழி",
+        "சந்தோஷ் கனிமொழி"
+      ],
+      "en_aliases": [
+        "Kanimozhi Santhosh",
+        "Santhosh Kanimozhi"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-118-v-sampathkumar",
+      "name": "V. SAMPATHKUMAR",
+      "constituency_number": 118,
+      "constituency_name": "Coimbatore (North)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Backward Classes Welfare"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_118_V._SAMPATHKUMAR.jpg",
+      "tamil_name": "வி. சம்பத்குமார்",
+      "tamil_aliases": [
+        "சம்பத்குமார்",
+        "வி.சம்பத்குமார்"
+      ],
+      "en_aliases": [
+        "Sampathkumar V.",
+        "V. Sampathkumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-119-s-p-velumani",
+      "name": "S.P.VELUMANI",
+      "constituency_number": 119,
+      "constituency_name": "Thondamuthur",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Municipal Administration / Rural Development (AIADMK government)"
+      ],
+      "portrait": "images/AC_119_S.P.VELUMANI.jpg",
+      "tamil_name": "எஸ். பி. வேலுமணி",
+      "tamil_aliases": [
+        "வேலுமணி",
+        "எஸ்.பி.வேலுமணி"
+      ],
+      "en_aliases": [
+        "S.P. Velumani",
+        "Velumani S.P."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-120-v-senthilbalaji",
+      "name": "V SENTHILBALAJI",
+      "constituency_number": 120,
+      "constituency_name": "Coimbatore (South)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Electricity",
+        "Prohibition & Excise (2021–2025)"
+      ],
+      "portrait": "images/AC_120_V_SENTHILBALAJI.jpg",
+      "tamil_name": "வி. செந்தில்பாலாஜி",
+      "tamil_aliases": [
+        "செந்தில்பாலாஜி",
+        "செந்தில் பாலாஜி",
+        "வி. செந்தில் பாலாஜி"
+      ],
+      "en_aliases": [
+        "Senthil Balaji V.",
+        "V. Senthilbalaji"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-121-k-s-sri-giri-prasath",
+      "name": "K.S.SRI GIRI PRASATH",
+      "constituency_number": 121,
+      "constituency_name": "Singanallur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_121_K.S.SRI_GIRI_PRASATH.jpg",
+      "tamil_name": "கே. எஸ். ஸ்ரீகிரி பிரசாத்",
+      "tamil_aliases": [
+        "ஸ்ரீகிரி பிரசாத்",
+        "கே.எஸ்.ஸ்ரீகிரி பிரசாத்"
+      ],
+      "en_aliases": [
+        "K.S. Sri Giri Prasath",
+        "Sri Giri Prasath K.S."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-122-vignesh-k",
+      "name": "VIGNESH K",
+      "constituency_number": 122,
+      "constituency_name": "Kinathukadavu",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Prohibition & Excise"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_122_VIGNESH_K.jpg",
+      "tamil_name": "கே. விக்னேஷ்",
+      "tamil_aliases": [
+        "விக்னேஷ்",
+        "கே.விக்னேஷ்"
+      ],
+      "en_aliases": [
+        "K. Vignesh",
+        "Vignesh K."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-123-k-nithyanandhan",
+      "name": "K. NITHYANANDHAN",
+      "constituency_number": 123,
+      "constituency_name": "Pollachi",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_123_K._NITHYANANDHAN.jpg",
+      "tamil_name": "கே. நித்யானந்தன்",
+      "tamil_aliases": [
+        "நித்யானந்தன்",
+        "கே.நித்யானந்தன்"
+      ],
+      "en_aliases": [
+        "K. Nithyanandhan",
+        "Nithyanandhan K."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-124-kutty-alias-sudhakar-a",
+      "name": "KUTTY (ALIAS) SUDHAKAR. A",
+      "constituency_number": 124,
+      "constituency_name": "Valparai (SC)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_124_KUTTY_ALIAS_SUDHAKAR._A.jpg",
+      "tamil_name": "அ. குட்டி (எ) சுதாகர்",
+      "tamil_aliases": [
+        "குட்டி சுதாகர்",
+        "சுதாகர்"
+      ],
+      "en_aliases": [
+        "A. Kutty alias Sudhakar",
+        "Kutty Sudhakar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-125-jayakumar-m",
+      "name": "JAYAKUMAR M.",
+      "constituency_number": 125,
+      "constituency_name": "Udumalaipettai",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_125_JAYAKUMAR_M..jpg",
+      "tamil_name": "மு. ஜெயக்குமார்",
+      "tamil_aliases": [
+        "ஜெயக்குமார்",
+        "மு. ஜெயகுமார்"
+      ],
+      "en_aliases": [
+        "Jayakumar",
+        "M. Jayakumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-126-r-jayaramakrishnan",
+      "name": "R JAYARAMAKRISHNAN",
+      "constituency_number": 126,
+      "constituency_name": "Madathukulam",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_126_R_JAYARAMAKRISHNAN.jpg",
+      "tamil_name": "ஆர். ஜெயராமகிருஷ்ணன்",
+      "tamil_aliases": [
+        "ஜெயராமகிருஷ்ணன்",
+        "இரா. ஜெயராமகிருஷ்ணன்"
+      ],
+      "en_aliases": [
+        "Jayaramakrishnan",
+        "R. Jayaramakrishnan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-127-ravimanoharan-k",
+      "name": "RAVIMANOHARAN. K",
+      "constituency_number": 127,
+      "constituency_name": "Palani",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_127_RAVIMANOHARAN._K.jpg",
+      "tamil_name": "கே. ரவிமனோகரன்",
+      "tamil_aliases": [
+        "ரவிமனோகரன்"
+      ],
+      "en_aliases": [
+        "K. Ravimanoharan",
+        "Ravimanoharan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-128-sakkarapani-r",
+      "name": "SAKKARAPANI. R",
+      "constituency_number": 128,
+      "constituency_name": "Oddanchatram",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Food & Civil Supplies (2021–2026)"
+      ],
+      "portrait": "images/AC_128_SAKKARAPANI._R.jpg",
+      "tamil_name": "அர. சக்கரபாணி",
+      "tamil_aliases": [
+        "சக்கரபாணி",
+        "ஆர். சக்கரபாணி"
+      ],
+      "en_aliases": [
+        "R. Sakkarapani",
+        "Sakkarapani"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-129-i-periasamy",
+      "name": "I. PERIASAMY",
+      "constituency_number": 129,
+      "constituency_name": "Athoor",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Rural Development & Panchayats (2021–2026)"
+      ],
+      "portrait": "images/AC_129_I._PERIASAMY.jpg",
+      "tamil_name": "இ. பெரியசாமி",
+      "tamil_aliases": [
+        "பெரியசாமி",
+        "ஐ. பெரியசாமி"
+      ],
+      "en_aliases": [
+        "I. Periasamy",
+        "Periasamy"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-130-ayyanar-r",
+      "name": "AYYANAR.R",
+      "constituency_number": 130,
+      "constituency_name": "Nilakkottai (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_130_AYYANAR.R.jpg",
+      "tamil_name": "ஆர். அய்யனார்",
+      "tamil_aliases": [
+        "அய்யனார்"
+      ],
+      "en_aliases": [
+        "Ayyanar",
+        "R. Ayyanar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-131-natham-viswanathan-r",
+      "name": "NATHAM VISWANATHAN R",
+      "constituency_number": 131,
+      "constituency_name": "Natham",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Electricity",
+        "Prohibition & Excise (AIADMK government)"
+      ],
+      "portrait": "images/AC_131_NATHAM_VISWANATHAN_R.jpg",
+      "tamil_name": "நத்தம் ஆர். விஸ்வநாதன்",
+      "tamil_aliases": [
+        "நத்தம் விஸ்வநாதன்",
+        "விஸ்வநாதன்"
+      ],
+      "en_aliases": [
+        "Natham R. Viswanathan",
+        "Natham Viswanathan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-132-senthilkumar-i-p",
+      "name": "SENTHILKUMAR. I.P",
+      "constituency_number": 132,
+      "constituency_name": "Dindigul",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_132_SENTHILKUMAR._I.P.jpg",
+      "tamil_name": "இ.பெ. செந்தில்குமார்",
+      "tamil_aliases": [
+        "செந்தில்குமார்",
+        "ஐ.பி. செந்தில்குமார்"
+      ],
+      "en_aliases": [
+        "I.P. Senthilkumar",
+        "Senthilkumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-133-saminathan-t",
+      "name": "SAMINATHAN. T",
+      "constituency_number": 133,
+      "constituency_name": "Vedasandur",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_133_SAMINATHAN._T.jpg",
+      "tamil_name": "த. சாமிநாதன்",
+      "tamil_aliases": [
+        "சாமிநாதன்"
+      ],
+      "en_aliases": [
+        "Saminathan",
+        "T. Saminathan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-134-elango-r",
+      "name": "ELANGO. R",
+      "constituency_number": 134,
+      "constituency_name": "Aravakurichi",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_134_ELANGO._R.jpg",
+      "tamil_name": "ஆர். இளங்கோ",
+      "tamil_aliases": [
+        "இளங்கோ",
+        "இரா. இளங்கோ"
+      ],
+      "en_aliases": [
+        "Elango",
+        "R. Elango"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-136-sathya-m",
+      "name": "SATHYA. M",
+      "constituency_number": 136,
+      "constituency_name": "Krishnarayapuram (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_136_SATHYA._M.jpg",
+      "tamil_name": "எம். சத்யா",
+      "tamil_aliases": [
+        "சத்யா"
+      ],
+      "en_aliases": [
+        "M. Sathya",
+        "Sathya"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-137-suriyanur-a-chandran",
+      "name": "SURIYANUR. A. CHANDRAN",
+      "constituency_number": 137,
+      "constituency_name": "Kulithalai",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_137_SURIYANUR._A._CHANDRAN.jpg",
+      "tamil_name": "சூரியனூர் அ. சந்திரன்",
+      "tamil_aliases": [
+        "சூரியனூர் சந்திரன்",
+        "சந்திரன்"
+      ],
+      "en_aliases": [
+        "Suriyanur A. Chandran",
+        "Suriyanur Chandran"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-138-r-kathiravan",
+      "name": "R. KATHIRAVAN",
+      "constituency_number": 138,
+      "constituency_name": "Manapparai",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_138_R._KATHIRAVAN.jpg",
+      "tamil_name": "ஆர். கதிரவன்",
+      "tamil_aliases": [
+        "கதிரவன்"
+      ],
+      "en_aliases": [
+        "Kathiravan",
+        "R. Kathiravan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-139-ramesh",
+      "name": "RAMESH",
+      "constituency_number": 139,
+      "constituency_name": "Srirangam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Hindu Religious & Charitable Endowments"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_139_RAMESH.jpg",
+      "tamil_name": "ரமேஷ்",
+      "tamil_aliases": [
+        "ரமேஷ்"
+      ],
+      "en_aliases": [
+        "Ramesh"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-140-k-n-nehru",
+      "name": "K.N.NEHRU",
+      "constituency_number": 140,
+      "constituency_name": "Tiruchirappalli (West)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "Deputy Leader of the Opposition"
+      ],
+      "former_roles": [
+        "Former Minister — Municipal Administration, Urban & Water Supply (2021–2026)"
+      ],
+      "portrait": "images/AC_140_K.N.NEHRU.jpg",
+      "tamil_name": "கே.என். நேரு",
+      "tamil_aliases": [
+        "நேரு",
+        "கே.என்.நேரு"
+      ],
+      "en_aliases": [
+        "K.N. Nehru",
+        "Nehru"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-142-vijayakumar-a-navalpattu-s-viji",
+      "name": "VIJAYAKUMAR (A) NAVALPATTU S. VIJI",
+      "constituency_number": 142,
+      "constituency_name": "Thiruverumbur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_142_VIJAYAKUMAR_A_NAVALPATTU_S._VIJI.jpg",
+      "tamil_name": "விஜயகுமார் (எ) நவல்பட்டு எஸ். விஜி",
+      "tamil_aliases": [
+        "நவல்பட்டு விஜி",
+        "விஜயகுமார்"
+      ],
+      "en_aliases": [
+        "Navalpattu Viji",
+        "Vijayakumar alias Navalpattu S. Viji"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-143-leemarose-martin",
+      "name": "LEEMAROSE MARTIN",
+      "constituency_number": 143,
+      "constituency_name": "Lalgudi",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_143_LEEMAROSE_MARTIN.jpg",
+      "tamil_name": "லீமாரோஸ் மார்ட்டின்",
+      "tamil_aliases": [
+        "லீமாரோஸ்"
+      ],
+      "en_aliases": [
+        "Leemarose",
+        "Leemarose Martin"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-144-kathiravan-s",
+      "name": "KATHIRAVAN. S",
+      "constituency_number": 144,
+      "constituency_name": "Manachanallur",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_144_KATHIRAVAN._S.jpg",
+      "tamil_name": "எஸ். கதிரவன்",
+      "tamil_aliases": [
+        "கதிரவன்"
+      ],
+      "en_aliases": [
+        "Kathiravan",
+        "S. Kathiravan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-145-m-vignesh",
+      "name": "M.VIGNESH",
+      "constituency_number": 145,
+      "constituency_name": "Musiri",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_145_M.VIGNESH.jpg",
+      "tamil_name": "எம். விக்னேஷ்",
+      "tamil_aliases": [
+        "விக்னேஷ்"
+      ],
+      "en_aliases": [
+        "M. Vignesh",
+        "Vignesh"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-146-ravisankar-m",
+      "name": "RAVISANKAR.M",
+      "constituency_number": 146,
+      "constituency_name": "Thuraiyur (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Deputy Speaker, Tamil Nadu Legislative Assembly"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_146_RAVISANKAR.M.jpg",
+      "tamil_name": "எம். ரவிசங்கர்",
+      "tamil_aliases": [
+        "ரவிசங்கர்"
+      ],
+      "en_aliases": [
+        "M. Ravisankar",
+        "Ravisankar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-147-sivakumar-k",
+      "name": "SIVAKUMAR. K",
+      "constituency_number": 147,
+      "constituency_name": "Perambalur (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_147_SIVAKUMAR._K.jpg",
+      "tamil_name": "கே. சிவகுமார்",
+      "tamil_aliases": [
+        "சிவகுமார்"
+      ],
+      "en_aliases": [
+        "K. Sivakumar",
+        "Sivakumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-148-sivasankar-s-s",
+      "name": "SIVASANKAR. S.S",
+      "constituency_number": 148,
+      "constituency_name": "Kunnam",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Transport / Electricity (2021–2026)"
+      ],
+      "portrait": "images/AC_148_SIVASANKAR._S.S.jpg",
+      "tamil_name": "எஸ்.எஸ். சிவசங்கர்",
+      "tamil_aliases": [
+        "சிவசங்கர்",
+        "எஸ். எஸ். சிவசங்கர்"
+      ],
+      "en_aliases": [
+        "S.S. Sivasankar",
+        "Sivasankar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-149-rajendran-s",
+      "name": "RAJENDRAN S",
+      "constituency_number": 149,
+      "constituency_name": "Ariyalur",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_149_RAJENDRAN_S.jpg",
+      "tamil_name": "எஸ். ராஜேந்திரன்",
+      "tamil_aliases": [
+        "ராஜேந்திரன்"
+      ],
+      "en_aliases": [
+        "Rajendran",
+        "S. Rajendran"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-150-vaithilingam-g",
+      "name": "VAITHILINGAM G.",
+      "constituency_number": 150,
+      "constituency_name": "Jayankondam",
+      "party": "Pattali Makkal Katchi",
+      "party_code": "PMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_150_VAITHILINGAM_G..jpg",
+      "tamil_name": "ஜி. வைத்திலிங்கம்",
+      "tamil_aliases": [
+        "வைத்திலிங்கம்"
+      ],
+      "en_aliases": [
+        "G. Vaithilingam",
+        "Vaithilingam"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-151-ganesan-c-v",
+      "name": "GANESAN C.V",
+      "constituency_number": 151,
+      "constituency_name": "Tittakudi (SC)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Labour Welfare (2021–2026)"
+      ],
+      "portrait": "images/AC_151_GANESAN_C.V.jpg",
+      "tamil_name": "சி.வெ. கணேசன்",
+      "tamil_aliases": [
+        "கணேசன்",
+        "சி.வி. கணேசன்"
+      ],
+      "en_aliases": [
+        "C.V. Ganesan",
+        "Ganesan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-152-premallatha-vijayakant",
+      "name": "PREMALLATHA VIJAYAKANT",
+      "constituency_number": 152,
+      "constituency_name": "Vriddhachalam",
+      "party": "Desiya Murpokku Dravida Kazhagam",
+      "party_code": "DMDK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_152_PREMALLATHA_VIJAYAKANT.jpg",
+      "tamil_name": "பிரேமலதா விஜயகாந்த்",
+      "tamil_aliases": [
+        "பிரேமலதா"
+      ],
+      "en_aliases": [
+        "Premalatha",
+        "Premalatha Vijayakanth"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-153-rajendran-r",
+      "name": "RAJENDRAN.R",
+      "constituency_number": 153,
+      "constituency_name": "Neyveli",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_153_RAJENDRAN.R.jpg",
+      "tamil_name": "ஆர். ராஜேந்திரன்",
+      "tamil_aliases": [
+        "ராஜேந்திரன்"
+      ],
+      "en_aliases": [
+        "R. Rajendran",
+        "Rajendran"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-154-mohan-k",
+      "name": "MOHAN. K",
+      "constituency_number": 154,
+      "constituency_name": "Panruti",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_154_MOHAN._K.jpg",
+      "tamil_name": "கே. மோகன்",
+      "tamil_aliases": [
+        "மோகன்"
+      ],
+      "en_aliases": [
+        "K. Mohan",
+        "Mohan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-155-b-rajkumar",
+      "name": "B.RAJKUMAR",
+      "constituency_number": 155,
+      "constituency_name": "Cuddalore",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Housing & Urban Development"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_155_B.RAJKUMAR.jpg",
+      "tamil_name": "பி. ராஜ்குமார்",
+      "tamil_aliases": [
+        "ராஜ்குமார்"
+      ],
+      "en_aliases": [
+        "B. Rajkumar",
+        "Rajkumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-156-m-r-k-panneerselvam",
+      "name": "M.R.K.PANNEERSELVAM",
+      "constituency_number": 156,
+      "constituency_name": "Kurinjipadi",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Agriculture (2021–2026)"
+      ],
+      "portrait": "images/AC_156_M.R.K.PANNEERSELVAM.jpg",
+      "tamil_name": "எம்.ஆர்.கே. பன்னீர்செல்வம்",
+      "tamil_aliases": [
+        "பன்னீர்செல்வம்",
+        "எம். ஆர். கே. பன்னீர்செல்வம்"
+      ],
+      "en_aliases": [
+        "M.R.K. Panneerselvam",
+        "Panneerselvam M.R.K."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-157-arunmozhithevan-a",
+      "name": "ARUNMOZHITHEVAN . A",
+      "constituency_number": 157,
+      "constituency_name": "Bhuvanagiri",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_157_ARUNMOZHITHEVAN_._A.jpg",
+      "tamil_name": "அ. அருண்மொழிதேவன்",
+      "tamil_aliases": [
+        "அருண்மொழிதேவன்",
+        "ஏ. அருண்மொழிதேவன்"
+      ],
+      "en_aliases": [
+        "A. Arunmozhithevan",
+        "Arunmozhithevan A."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-158-thamimun-ansari-m",
+      "name": "THAMIMUN ANSARI. M",
+      "constituency_number": 158,
+      "constituency_name": "Chidambaram",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_158_THAMIMUN_ANSARI._M.jpg",
+      "tamil_name": "மு. தமிமுன் அன்சாரி",
+      "tamil_aliases": [
+        "தமிமுன் அன்சாரி",
+        "எம். தமிமுன் அன்சாரி"
+      ],
+      "en_aliases": [
+        "M. Thamimun Ansari",
+        "Thamimun Ansari M."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-159-l-e-jothimani",
+      "name": "L.E. JOTHIMANI",
+      "constituency_number": 159,
+      "constituency_name": "Kattumannarkoil (SC)",
+      "party": "Viduthalai Chiruthaigal Katchi",
+      "party_code": "VCK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_159_L.E._JOTHIMANI.jpg",
+      "tamil_name": "எல்.இ. ஜோதிமணி",
+      "tamil_aliases": [
+        "ஜோதிமணி",
+        "எல். ஈ. ஜோதிமணி"
+      ],
+      "en_aliases": [
+        "Jothimani L.E.",
+        "L.E. Jothimani"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-160-senthilselvan-r",
+      "name": "SENTHILSELVAN.R",
+      "constituency_number": 160,
+      "constituency_name": "Sirkazhi (SC)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_160_SENTHILSELVAN.R.jpg",
+      "tamil_name": "இரா. செந்தில்செல்வன்",
+      "tamil_aliases": [
+        "செந்தில்செல்வன்",
+        "ஆர். செந்தில்செல்வன்"
+      ],
+      "en_aliases": [
+        "R. Senthilselvan",
+        "Senthilselvan R."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-161-jamal-mohamed-younoos-y-n",
+      "name": "JAMAL MOHAMED YOUNOOS. Y.N",
+      "constituency_number": 161,
+      "constituency_name": "Mayiladuthurai",
+      "party": "Indian National Congress",
+      "party_code": "INC",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_161_JAMAL_MOHAMED_YOUNOOS._Y.N.jpg",
+      "tamil_name": "ஒய்.என். ஜமால் முகமது யூனுஸ்",
+      "tamil_aliases": [
+        "ஜமால் முகமது யூனுஸ்",
+        "ஒய். என். ஜமால் முகமது யூனுஸ்"
+      ],
+      "en_aliases": [
+        "Jamal Mohamed Younoos Y.N.",
+        "Y.N. Jamal Mohamed Younoos"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-162-nivedha-m-murugan",
+      "name": "NIVEDHA M MURUGAN",
+      "constituency_number": 162,
+      "constituency_name": "Poompuhar",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_162_NIVEDHA_M_MURUGAN.jpg",
+      "tamil_name": "நிவேதா எம். முருகன்",
+      "tamil_aliases": [
+        "நிவேதா முருகன்",
+        "நிவேதா எம் முருகன்"
+      ],
+      "en_aliases": [
+        "Nivedha M Murugan",
+        "Nivedha Murugan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-163-m-h-jawahirullah",
+      "name": "M.H.JAWAHIRULLAH",
+      "constituency_number": 163,
+      "constituency_name": "Nagapattinam",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_163_M.H.JAWAHIRULLAH.jpg",
+      "tamil_name": "எம்.எச். ஜவாஹிருல்லா",
+      "tamil_aliases": [
+        "ஜவாஹிருல்லா",
+        "எம். எச். ஜவாஹிருல்லா"
+      ],
+      "en_aliases": [
+        "Jawahirullah M.H.",
+        "M.H. Jawahirullah"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-164-latha-t",
+      "name": "LATHA. T",
+      "constituency_number": 164,
+      "constituency_name": "Kilvelur (SC)",
+      "party": "Communist Party of India (Marxist)",
+      "party_code": "CPI(M)",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_164_LATHA._T.jpg",
+      "tamil_name": "த. லதா",
+      "tamil_aliases": [
+        "லதா",
+        "டி. லதா"
+      ],
+      "en_aliases": [
+        "Latha T.",
+        "T. Latha"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-165-manian-o-s",
+      "name": "MANIAN. O.S",
+      "constituency_number": 165,
+      "constituency_name": "Vedaranyam",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Handlooms & Textiles (AIADMK government)"
+      ],
+      "portrait": "images/AC_165_MANIAN._O.S.jpg",
+      "tamil_name": "ஓ.எஸ். மணியன்",
+      "tamil_aliases": [
+        "மணியன்",
+        "ஓ. எஸ். மணியன்"
+      ],
+      "en_aliases": [
+        "Manian O.S.",
+        "O.S. Manian"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-166-marimuthu-k",
+      "name": "MARIMUTHU.K",
+      "constituency_number": 166,
+      "constituency_name": "Thiruthuraipoondi (SC)",
+      "party": "Communist Party of India",
+      "party_code": "CPI",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_166_MARIMUTHU.K.jpg",
+      "tamil_name": "கே. மாரிமுத்து",
+      "tamil_aliases": [
+        "மாரிமுத்து",
+        "கே மாரிமுத்து"
+      ],
+      "en_aliases": [
+        "K. Marimuthu",
+        "Marimuthu K."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-167-kamaraj-s",
+      "name": "KAMARAJ. S",
+      "constituency_number": 167,
+      "constituency_name": "Mannargudi",
+      "party": "Amma Makkal Munnetra Kazhagam",
+      "party_code": "AMMK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_167_KAMARAJ._S.jpg",
+      "tamil_name": "எஸ். காமராஜ்",
+      "tamil_aliases": [
+        "காமராஜ்",
+        "எஸ் காமராஜ்"
+      ],
+      "en_aliases": [
+        "Kamaraj S.",
+        "S. Kamaraj"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-168-kalaivanan-poondi-k",
+      "name": "KALAIVANAN POONDI K",
+      "constituency_number": 168,
+      "constituency_name": "Thiruvarur",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_168_KALAIVANAN_POONDI_K.jpg",
+      "tamil_name": "பூண்டி கே. கலைவாணன்",
+      "tamil_aliases": [
+        "பூண்டி கலைவாணன்",
+        "கலைவாணன்"
+      ],
+      "en_aliases": [
+        "Kalaivanan Poondi K.",
+        "Poondi K. Kalaivanan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-169-kamaraj-r",
+      "name": "KAMARAJ. R",
+      "constituency_number": 169,
+      "constituency_name": "Nannilam",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Food & Civil Supplies (AIADMK government)"
+      ],
+      "portrait": "images/AC_169_KAMARAJ._R.jpg",
+      "tamil_name": "ஆர். காமராஜ்",
+      "tamil_aliases": [
+        "காமராஜ்",
+        "ஆர் காமராஜ்"
+      ],
+      "en_aliases": [
+        "Kamaraj R.",
+        "R. Kamaraj"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-170-govi-chezhiaan",
+      "name": "GOVI.CHEZHIAAN",
+      "constituency_number": 170,
+      "constituency_name": "Thiruvidaimarudur (SC)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Higher Education (2024–2026)"
+      ],
+      "portrait": "images/AC_170_GOVI.CHEZHIAAN.jpg",
+      "tamil_name": "கோவி. செழியன்",
+      "tamil_aliases": [
+        "கோவி செழியன்",
+        "செழியன்"
+      ],
+      "en_aliases": [
+        "Govi Chezhian",
+        "Govi. Chezhiaan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-171-vinoth",
+      "name": "VINOTH",
+      "constituency_number": 171,
+      "constituency_name": "Kumbakonam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Agriculture & Farmers Welfare"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_171_VINOTH.jpg",
+      "tamil_name": "வினோத்",
+      "tamil_aliases": [
+        "வினோத்"
+      ],
+      "en_aliases": [
+        "Vinoth"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-172-a-m-shahjahan",
+      "name": "A.M. SHAHJAHAN",
+      "constituency_number": 172,
+      "constituency_name": "Papanasam",
+      "party": "Indian Union Muslim League",
+      "party_code": "IUML",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Minorities Welfare"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_172_A.M._SHAHJAHAN.jpg",
+      "tamil_name": "ஏ.எம். ஷாஜகான்",
+      "tamil_aliases": [
+        "ஷாஜகான்",
+        "ஏ. எம். ஷாஜகான்"
+      ],
+      "en_aliases": [
+        "A.M. Shahjahan",
+        "Shahjahan A.M."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-173-durai-chandrasekaran",
+      "name": "DURAI. CHANDRASEKARAN",
+      "constituency_number": 173,
+      "constituency_name": "Thiruvaiyaru",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_173_DURAI._CHANDRASEKARAN.jpg",
+      "tamil_name": "துரை. சந்திரசேகரன்",
+      "tamil_aliases": [
+        "துரை சந்திரசேகரன்",
+        "சந்திரசேகரன்"
+      ],
+      "en_aliases": [
+        "Durai Chandrasekaran",
+        "Durai. Chandrasekaran"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-174-r-vijaysaravanan",
+      "name": "R. VIJAYSARAVANAN",
+      "constituency_number": 174,
+      "constituency_name": "Thanjavur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_174_R._VIJAYSARAVANAN.jpg",
+      "tamil_name": "ஆர். விஜயசரவணன்",
+      "tamil_aliases": [
+        "விஜயசரவணன்",
+        "ஆர் விஜயசரவணன்"
+      ],
+      "en_aliases": [
+        "R. Vijaysaravanan",
+        "Vijaysaravanan R."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-175-r-vaithilingam",
+      "name": "R. VAITHILINGAM",
+      "constituency_number": 175,
+      "constituency_name": "Orathanadu",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Housing & Urban Development (AIADMK government)"
+      ],
+      "portrait": "images/AC_175_R._VAITHILINGAM.jpg",
+      "tamil_name": "ஆர். வைத்திலிங்கம்",
+      "tamil_aliases": [
+        "வைத்திலிங்கம்",
+        "ஆர் வைத்திலிங்கம்"
+      ],
+      "en_aliases": [
+        "R. Vaithilingam",
+        "Vaithilingam R."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-176-annadurai-k",
+      "name": "ANNADURAI K",
+      "constituency_number": 176,
+      "constituency_name": "Pattukkottai",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_176_ANNADURAI_K.jpg",
+      "tamil_name": "கே. அண்ணாதுரை",
+      "tamil_aliases": [
+        "அண்ணாதுரை",
+        "கே அண்ணாதுரை"
+      ],
+      "en_aliases": [
+        "Annadurai K.",
+        "K. Annadurai"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-177-ashokkumar-n",
+      "name": "ASHOKKUMAR. N",
+      "constituency_number": 177,
+      "constituency_name": "Peravurani",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_177_ASHOKKUMAR._N.jpg",
+      "tamil_name": "என். அசோக்குமார்",
+      "tamil_aliases": [
+        "அசோக்குமார்",
+        "என் அசோக்குமார்"
+      ],
+      "en_aliases": [
+        "Ashokkumar N.",
+        "N. Ashokkumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-178-n-subramanian",
+      "name": "N. SUBRAMANIAN",
+      "constituency_number": 178,
+      "constituency_name": "Gandharvakottai (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_178_N._SUBRAMANIAN.jpg",
+      "tamil_name": "என். சுப்பிரமணியன்",
+      "tamil_aliases": [
+        "சுப்பிரமணியன்",
+        "என் சுப்பிரமணியன்"
+      ],
+      "en_aliases": [
+        "N. Subramanian",
+        "Subramanian N."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-180-v-muthuraja",
+      "name": "V. MUTHURAJA",
+      "constituency_number": 180,
+      "constituency_name": "Pudukkottai",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_180_V._MUTHURAJA.jpg",
+      "tamil_name": "வி. முத்துராஜா",
+      "tamil_aliases": [
+        "முத்துராஜா",
+        "வி முத்துராஜா"
+      ],
+      "en_aliases": [
+        "Muthuraja V.",
+        "V. Muthuraja"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-181-regupathy-s",
+      "name": "REGUPATHY.S",
+      "constituency_number": 181,
+      "constituency_name": "Thirumayam",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Law / Courts / Prisons / Prevention of Corruption (2021–2026)"
+      ],
+      "portrait": "images/AC_181_REGUPATHY.S.jpg",
+      "tamil_name": "எஸ். ரகுபதி",
+      "tamil_aliases": [
+        "ரகுபதி",
+        "எஸ் ரகுபதி"
+      ],
+      "en_aliases": [
+        "Regupathy S.",
+        "S. Regupathy"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-182-siva-v-meyyanathan",
+      "name": "SIVA.V.MEYYANATHAN",
+      "constituency_number": 182,
+      "constituency_name": "Alangudi",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Backward Classes Welfare",
+        "earlier Environment (2021–2026)"
+      ],
+      "portrait": "images/AC_182_SIVA.V.MEYYANATHAN.jpg",
+      "tamil_name": "சிவ. வீ. மெய்யநாதன்",
+      "tamil_aliases": [
+        "மெய்யநாதன்",
+        "சிவ மெய்யநாதன்"
+      ],
+      "en_aliases": [
+        "Siva V Meyyanathan",
+        "Siva. V. Meyyanathan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-183-mohamed-farvas-j",
+      "name": "MOHAMED FARVAS. J",
+      "constituency_number": 183,
+      "constituency_name": "Aranthangi",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Labour Welfare & Skill Development"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_183_MOHAMED_FARVAS._J.jpg",
+      "tamil_name": "ஜே. முகமது பர்வாஸ்",
+      "tamil_aliases": [
+        "முகமது பர்வாஸ்",
+        "ஜே முகமது பர்வாஸ்"
+      ],
+      "en_aliases": [
+        "J. Mohamed Farvas",
+        "Mohamed Farvas J."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-184-dr-prabhu-tk",
+      "name": "DR.PRABHU. TK",
+      "constituency_number": 184,
+      "constituency_name": "Karaikudi",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Natural Resources"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_184_DR.PRABHU._TK.jpg",
+      "tamil_name": "டாக்டர் டி.கே. பிரபு",
+      "tamil_aliases": [
+        "டி.கே. பிரபு",
+        "பிரபு"
+      ],
+      "en_aliases": [
+        "Dr. T.K. Prabhu",
+        "Prabhu T.K."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-185-seenivasa-sethupathy-r",
+      "name": "SEENIVASA SETHUPATHY. R",
+      "constituency_number": 185,
+      "constituency_name": "Tiruppattur",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_185_SEENIVASA_SETHUPATHY._R.jpg",
+      "tamil_name": "ஆர். சீனிவாச சேதுபதி",
+      "tamil_aliases": [
+        "சீனிவாச சேதுபதி",
+        "ஆர் சீனிவாச சேதுபதி"
+      ],
+      "en_aliases": [
+        "R. Seenivasa Sethupathy",
+        "Seenivasa Sethupathy R."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-186-kulanthai-rani-a",
+      "name": "KULANTHAI RANI A",
+      "constituency_number": 186,
+      "constituency_name": "Sivaganga",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_186_KULANTHAI_RANI_A.jpg",
+      "tamil_name": "ஏ. குழந்தை ராணி",
+      "tamil_aliases": [
+        "குழந்தை ராணி",
+        "ஏ குழந்தை ராணி"
+      ],
+      "en_aliases": [
+        "A. Kulanthai Rani",
+        "Kulanthai Rani A."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-187-elangovan-d",
+      "name": "ELANGOVAN.D",
+      "constituency_number": 187,
+      "constituency_name": "Manamadurai (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_187_ELANGOVAN.D.jpg",
+      "tamil_name": "டி. இளங்கோவன்",
+      "tamil_aliases": [
+        "இளங்கோவன்"
+      ],
+      "en_aliases": [
+        "D. Elangovan",
+        "Elangovan D"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-188-p-viswanathan",
+      "name": "P.VISWANATHAN",
+      "constituency_number": 188,
+      "constituency_name": "Melur",
+      "party": "Indian National Congress",
+      "party_code": "INC",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Higher Education"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_188_P.VISWANATHAN.jpg",
+      "tamil_name": "பி. விஸ்வநாதன்",
+      "tamil_aliases": [
+        "விஸ்வநாதன்",
+        "பி. விசுவநாதன்"
+      ],
+      "en_aliases": [
+        "P. Viswanathan",
+        "Viswanathan P"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-189-karthikeyan-s",
+      "name": "KARTHIKEYAN S",
+      "constituency_number": 189,
+      "constituency_name": "Madurai East",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_189_KARTHIKEYAN_S.jpg",
+      "tamil_name": "எஸ். கார்த்திகேயன்",
+      "tamil_aliases": [
+        "கார்த்திகேயன்"
+      ],
+      "en_aliases": [
+        "Karthikeyan S",
+        "S. Karthikeyan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-190-karuppaiah-m-v",
+      "name": "KARUPPAIAH.M.V",
+      "constituency_number": 190,
+      "constituency_name": "Sholavandan (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_190_KARUPPAIAH.M.V.jpg",
+      "tamil_name": "எம். வி. கருப்பையா",
+      "tamil_aliases": [
+        "கருப்பையா",
+        "எம்.வி. கருப்பையா"
+      ],
+      "en_aliases": [
+        "Karuppaiah M.V.",
+        "M.V. Karuppaiah"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-191-a-kallanai",
+      "name": "A.KALLANAI",
+      "constituency_number": 191,
+      "constituency_name": "Madurai North",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_191_A.KALLANAI.jpg",
+      "tamil_name": "ஏ. கல்லணை",
+      "tamil_aliases": [
+        "கல்லணை"
+      ],
+      "en_aliases": [
+        "A. Kallanai",
+        "Kallanai A"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-192-m-m-gopison",
+      "name": "M.M.GOPISON",
+      "constituency_number": 192,
+      "constituency_name": "Madurai South",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_192_M.M.GOPISON.jpg",
+      "tamil_name": "எம். எம். கோபிசன்",
+      "tamil_aliases": [
+        "கோபிசன்"
+      ],
+      "en_aliases": [
+        "Gopison M.M.",
+        "M.M. Gopison"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-193-madhar-badhurudeen",
+      "name": "MADHAR BADHURUDEEN",
+      "constituency_number": 193,
+      "constituency_name": "Madurai Central",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_193_MADHAR_BADHURUDEEN.jpg",
+      "tamil_name": "மாதர் பதுருதீன்",
+      "tamil_aliases": [
+        "பதுருதீன்",
+        "மாதர் பஹ்ருதீன்"
+      ],
+      "en_aliases": [
+        "Madhar Badhurudeen",
+        "Madhar Bahrudeen"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-194-thangapandi-sr",
+      "name": "THANGAPANDI SR",
+      "constituency_number": 194,
+      "constituency_name": "Madurai West",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_194_THANGAPANDI_SR.jpg",
+      "tamil_name": "எஸ். ஆர். தங்கபாண்டி",
+      "tamil_aliases": [
+        "தங்கபாண்டி"
+      ],
+      "en_aliases": [
+        "S.R. Thangapandi",
+        "Thangapandi S.R."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-195-nirmalkumar-r",
+      "name": "NIRMALKUMAR. R.",
+      "constituency_number": 195,
+      "constituency_name": "Thiruparankundram",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Energy Resources & Law"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_195_NIRMALKUMAR._R..jpg",
+      "tamil_name": "ஆர். நிர்மல்குமார்",
+      "tamil_aliases": [
+        "நிர்மல்குமார்"
+      ],
+      "en_aliases": [
+        "Nirmalkumar R",
+        "R. Nirmalkumar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-196-manimaran-m",
+      "name": "MANIMARAN.M",
+      "constituency_number": 196,
+      "constituency_name": "Thirumangalam",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_196_MANIMARAN.M.jpg",
+      "tamil_name": "எம். மணிமாறன்",
+      "tamil_aliases": [
+        "மணிமாறன்"
+      ],
+      "en_aliases": [
+        "M. Manimaran",
+        "Manimaran M"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-197-vijay-m",
+      "name": "VIJAY. M",
+      "constituency_number": 197,
+      "constituency_name": "Usilampatti",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_197_VIJAY._M.jpg",
+      "tamil_name": "எம். விஜய்",
+      "tamil_aliases": [
+        "விஜய்"
+      ],
+      "en_aliases": [
+        "M. Vijay",
+        "Vijay M"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-198-maharajan-a",
+      "name": "MAHARAJAN.A",
+      "constituency_number": 198,
+      "constituency_name": "Andipatti",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_198_MAHARAJAN.A.jpg",
+      "tamil_name": "ஏ. மகாராஜன்",
+      "tamil_aliases": [
+        "மகாராஜன்"
+      ],
+      "en_aliases": [
+        "A. Maharajan",
+        "Maharajan A"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-199-sabari-iyngaran-g",
+      "name": "SABARI IYNGARAN G.",
+      "constituency_number": 199,
+      "constituency_name": "Periyakulam (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_199_SABARI_IYNGARAN_G..jpg",
+      "tamil_name": "ஜி. சபரி ஐயங்கரன்",
+      "tamil_aliases": [
+        "சபரி ஐயங்கரன்",
+        "சபரி ஐங்கரன்"
+      ],
+      "en_aliases": [
+        "G. Sabari Iyngaran",
+        "Sabari Iyngaran G"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-200-panneerselvam-o",
+      "name": "PANNEERSELVAM.O",
+      "constituency_number": 200,
+      "constituency_name": "Bodinayakanur",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Chief Minister of Tamil Nadu (three terms)",
+        "former Deputy Chief Minister / Finance Minister"
+      ],
+      "portrait": "images/AC_200_PANNEERSELVAM.O.jpg",
+      "tamil_name": "ஓ. பன்னீர்செல்வம்",
+      "tamil_aliases": [
+        "பன்னீர்செல்வம்",
+        "ஓ.பி.எஸ்",
+        "ஓபிஎஸ்"
+      ],
+      "en_aliases": [
+        "O. Panneerselvam",
+        "OPS"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-201-jeganathmishra-pla",
+      "name": "JEGANATHMISHRA PLA",
+      "constituency_number": 201,
+      "constituency_name": "Cumbum",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_201_JEGANATHMISHRA_PLA.jpg",
+      "tamil_name": "பி. எல். ஏ. ஜெகநாத் மிஸ்ரா",
+      "tamil_aliases": [
+        "ஜெகநாத் மிஸ்ரா",
+        "ஜெகநாத்மிஸ்ரா"
+      ],
+      "en_aliases": [
+        "Jeganath Mishra PLA",
+        "PLA Jeganathmishra"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-202-jegadeshwari-k",
+      "name": "JEGADESHWARI. K",
+      "constituency_number": 202,
+      "constituency_name": "Rajapalayam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Social Welfare & Women Empowerment"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_202_JEGADESHWARI._K.jpg",
+      "tamil_name": "கே. ஜெகதீஸ்வரி",
+      "tamil_aliases": [
+        "ஜெகதீஸ்வரி"
+      ],
+      "en_aliases": [
+        "Jegadeshwari K",
+        "K. Jegadeshwari"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-203-karthik-a",
+      "name": "KARTHIK.A",
+      "constituency_number": 203,
+      "constituency_name": "Srivilliputhur (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_203_KARTHIK.A.jpg",
+      "tamil_name": "ஏ. கார்த்திக்",
+      "tamil_aliases": [
+        "கார்த்திக்"
+      ],
+      "en_aliases": [
+        "A. Karthik",
+        "Karthik A"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-204-kadarkarairaj-a",
+      "name": "KADARKARAIRAJ. A",
+      "constituency_number": 204,
+      "constituency_name": "Sattur",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_204_KADARKARAIRAJ._A.jpg",
+      "tamil_name": "ஏ. கடற்கரைராஜ்",
+      "tamil_aliases": [
+        "கடற்கரைராஜ்"
+      ],
+      "en_aliases": [
+        "A. Kadarkarairaj",
+        "Kadarkarairaj A"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-205-keerthana-s",
+      "name": "KEERTHANA S",
+      "constituency_number": 205,
+      "constituency_name": "Sivakasi",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Industries"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_205_KEERTHANA_S.jpg",
+      "tamil_name": "எஸ். கீர்த்தனா",
+      "tamil_aliases": [
+        "கீர்த்தனா"
+      ],
+      "en_aliases": [
+        "Keerthana S",
+        "S. Keerthana"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-206-selvam-p",
+      "name": "SELVAM P",
+      "constituency_number": 206,
+      "constituency_name": "Virudhunagar",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_206_SELVAM_P.jpg",
+      "tamil_name": "பி. செல்வம்",
+      "tamil_aliases": [
+        "செல்வம்"
+      ],
+      "en_aliases": [
+        "P. Selvam",
+        "Selvam P"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-207-ramachandran-k-k-s-s-r",
+      "name": "RAMACHANDRAN. K.K.S.S.R",
+      "constituency_number": 207,
+      "constituency_name": "Aruppukkottai",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Revenue & Disaster Management (2021–2026)"
+      ],
+      "portrait": "images/AC_207_RAMACHANDRAN._K.K.S.S.R.jpg",
+      "tamil_name": "கே. கே. எஸ். எஸ். ஆர். ராமச்சந்திரன்",
+      "tamil_aliases": [
+        "கே.கே.எஸ்.எஸ்.ஆர். ராமச்சந்திரன்",
+        "ராமச்சந்திரன்",
+        "சாத்தூர் ராமச்சந்திரன்"
+      ],
+      "en_aliases": [
+        "K.K.S.S.R. Ramachandran",
+        "Sattur Ramachandran"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-208-thangam-thenarasu",
+      "name": "THANGAM THENARASU",
+      "constituency_number": 208,
+      "constituency_name": "Tiruchuli",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Finance / HRM / Statistics / Archaeology / Environment (2021–2026)"
+      ],
+      "portrait": "images/AC_208_THANGAM_THENARASU.jpg",
+      "tamil_name": "தங்கம் தென்னரசு",
+      "tamil_aliases": [
+        "தென்னரசு"
+      ],
+      "en_aliases": [
+        "Thangam Thenarasu",
+        "Thangam Thennarasu"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-209-advocate-kathiravan-k-k",
+      "name": "ADVOCATE. KATHIRAVAN. K.K",
+      "constituency_number": 209,
+      "constituency_name": "Paramakudi (SC)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_209_ADVOCATE._KATHIRAVAN._K.K.jpg",
+      "tamil_name": "வழக்கறிஞர் கே. கே. கதிரவன்",
+      "tamil_aliases": [
+        "கே. கே. கதிரவன்",
+        "கதிரவன்"
+      ],
+      "en_aliases": [
+        "Advocate Kathiravan",
+        "K.K. Kathiravan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-210-rajeev",
+      "name": "RAJEEV",
+      "constituency_number": 210,
+      "constituency_name": "Tiruvadanai",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Environment & Climate Change"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_210_RAJEEV.jpg",
+      "tamil_name": "ராஜீவ்",
+      "tamil_aliases": [
+        "ராஜீவ்"
+      ],
+      "en_aliases": [
+        "Rajeev"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-211-katharbatcha-muthuramalingam",
+      "name": "KATHARBATCHA MUTHURAMALINGAM",
+      "constituency_number": 211,
+      "constituency_name": "Ramanathapuram",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_211_KATHARBATCHA_MUTHURAMALINGAM.jpg",
+      "tamil_name": "காதர்பாட்ஷா முத்துராமலிங்கம்",
+      "tamil_aliases": [
+        "முத்துராமலிங்கம்",
+        "காதர் பாட்ஷா"
+      ],
+      "en_aliases": [
+        "Katharbatcha Muthuramalingam"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-212-r-s-rajakannappan",
+      "name": "R.S.RAJAKANNAPPAN",
+      "constituency_number": 212,
+      "constituency_name": "Mudhukulathur",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Forests / Khadi",
+        "earlier Transport (2021–2026)"
+      ],
+      "portrait": "images/AC_212_R.S.RAJAKANNAPPAN.jpg",
+      "tamil_name": "ஆர். எஸ். ராஜகண்ணப்பன்",
+      "tamil_aliases": [
+        "ராஜகண்ணப்பன்",
+        "ஆர்.எஸ். ராஜகண்ணப்பன்"
+      ],
+      "en_aliases": [
+        "R.S. Rajakannappan",
+        "Rajakannappan R.S."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-213-markandayan-g-v",
+      "name": "MARKANDAYAN G V",
+      "constituency_number": 213,
+      "constituency_name": "Vilathikulam",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_213_MARKANDAYAN_G_V.jpg",
+      "tamil_name": "ஜி. வி. மார்க்கண்டேயன்",
+      "tamil_aliases": [
+        "மார்க்கண்டேயன்",
+        "ஜி.வி. மார்க்கண்டேயன்"
+      ],
+      "en_aliases": [
+        "G.V. Markandayan",
+        "Markandayan G.V."
+      ]
+    },
+    {
+      "member_id": "tnla-ac-214-srinath",
+      "name": "SRINATH",
+      "constituency_number": 214,
+      "constituency_name": "Thoothukkudi",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Fisheries & Fishermen Welfare"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_214_SRINATH.jpg",
+      "tamil_name": "ஸ்ரீநாத்",
+      "tamil_aliases": [
+        "ஸ்ரீநாத்"
+      ],
+      "en_aliases": [
+        "Srinath"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-215-anitha-r-radhakrishnan",
+      "name": "ANITHA R. RADHAKRISHNAN",
+      "constituency_number": 215,
+      "constituency_name": "Tiruchendur",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Fisheries & Animal Husbandry (2021–2026)"
+      ],
+      "portrait": "images/AC_215_ANITHA_R._RADHAKRISHNAN.jpg",
+      "tamil_name": "அனிதா ஆர். ராதாகிருஷ்ணன்",
+      "tamil_aliases": [
+        "அனிதா ராதாகிருஷ்ணன்",
+        "ராதாகிருஷ்ணன்"
+      ],
+      "en_aliases": [
+        "Anitha R. Radhakrishnan",
+        "Anitha Radhakrishnan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-216-saravanan-g",
+      "name": "SARAVANAN. G",
+      "constituency_number": 216,
+      "constituency_name": "Srivaikuntam",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_216_SARAVANAN._G.jpg",
+      "tamil_name": "ஜி. சரவணன்",
+      "tamil_aliases": [
+        "சரவணன்"
+      ],
+      "en_aliases": [
+        "G. Saravanan",
+        "Saravanan G"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-217-p-mathanraja",
+      "name": "P .MATHANRAJA",
+      "constituency_number": 217,
+      "constituency_name": "Ottapidaram (SC)",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Micro, Small & Medium Enterprises"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_217_P_.MATHANRAJA.jpg",
+      "tamil_name": "பி. மதன்ராஜா",
+      "tamil_aliases": [
+        "மதன்ராஜா",
+        "பி.மதன்ராஜ்"
+      ],
+      "en_aliases": [
+        "Mathanraja P",
+        "P. Mathanraja"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-218-karunanithi-k",
+      "name": "KARUNANITHI.K",
+      "constituency_number": 218,
+      "constituency_name": "Kovilpatti",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_218_KARUNANITHI.K.jpg",
+      "tamil_name": "கே. கருணாநிதி",
+      "tamil_aliases": [
+        "கருணாநிதி",
+        "கே.கருணாநிதி"
+      ],
+      "en_aliases": [
+        "K. Karunanithi",
+        "Karunanithi K"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-219-dr-dhilipan-jaishankar",
+      "name": "DR. DHILIPAN JAISHANKAR",
+      "constituency_number": 219,
+      "constituency_name": "Sankarankovil (SC)",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_219_DR._DHILIPAN_JAISHANKAR.jpg",
+      "tamil_name": "டாக்டர் திலீபன் ஜெய்சங்கர்",
+      "tamil_aliases": [
+        "திலீபன் ஜெய்சங்கர்",
+        "திலீபன்"
+      ],
+      "en_aliases": [
+        "Dhilipan Jaishankar",
+        "Dr. Dhilipan Jaishankar"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-220-e-raja",
+      "name": "E. RAJA",
+      "constituency_number": 220,
+      "constituency_name": "Vasudevanallur (SC)",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_220_E._RAJA.jpg",
+      "tamil_name": "இ. ராஜா",
+      "tamil_aliases": [
+        "ராஜா",
+        "இ.ராஜா"
+      ],
+      "en_aliases": [
+        "E. Raja",
+        "Raja E"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-221-rajendran-t-m",
+      "name": "RAJENDRAN. T. M",
+      "constituency_number": 221,
+      "constituency_name": "Kadayanallur",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_221_RAJENDRAN._T._M.jpg",
+      "tamil_name": "டி. எம். ராஜேந்திரன்",
+      "tamil_aliases": [
+        "ராஜேந்திரன்",
+        "டி.எம்.ராஜேந்திரன்"
+      ],
+      "en_aliases": [
+        "Rajendran T.M.",
+        "T. M. Rajendran"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-222-dr-kalai-kathiravan",
+      "name": "DR.KALAI KATHIRAVAN",
+      "constituency_number": 222,
+      "constituency_name": "Tenkasi",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_222_DR.KALAI_KATHIRAVAN.jpg",
+      "tamil_name": "டாக்டர் கலை கதிரவன்",
+      "tamil_aliases": [
+        "கலை கதிரவன்",
+        "கலைக்கதிரவன்"
+      ],
+      "en_aliases": [
+        "Dr. Kalai Kathiravan",
+        "Kalai Kathiravan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-223-paul-manoj-pandian",
+      "name": "PAUL MANOJ PANDIAN",
+      "constituency_number": 223,
+      "constituency_name": "Alangulam",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_223_PAUL_MANOJ_PANDIAN.jpg",
+      "tamil_name": "பால் மனோஜ் பாண்டியன்",
+      "tamil_aliases": [
+        "மனோஜ் பாண்டியன்",
+        "பி.எச். மனோஜ் பாண்டியன்"
+      ],
+      "en_aliases": [
+        "Manoj Pandian",
+        "Paul Manoj Pandian"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-224-murughan-r-s",
+      "name": "MURUGHAN.R.S.",
+      "constituency_number": 224,
+      "constituency_name": "Tirunelveli",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_224_MURUGHAN.R.S..jpg",
+      "tamil_name": "ஆர். எஸ். முருகன்",
+      "tamil_aliases": [
+        "முருகன்",
+        "ஆர்.எஸ்.முருகன்"
+      ],
+      "en_aliases": [
+        "Murughan R.S.",
+        "R. S. Murughan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-226-m-abdul-wahab",
+      "name": "M.ABDUL WAHAB",
+      "constituency_number": 226,
+      "constituency_name": "Palayamkottai",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_226_M.ABDUL_WAHAB.jpg",
+      "tamil_name": "மு. அப்துல் வஹாப்",
+      "tamil_aliases": [
+        "அப்துல் வஹாப்",
+        "மு.அப்துல் வஹாப்"
+      ],
+      "en_aliases": [
+        "Abdul Wahab M",
+        "M. Abdul Wahab"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-227-reddiarpatti-v-narayanan",
+      "name": "REDDIARPATTI V. NARAYANAN",
+      "constituency_number": 227,
+      "constituency_name": "Nanguneri",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_227_REDDIARPATTI_V._NARAYANAN.jpg",
+      "tamil_name": "ரெட்டியார்பட்டி வி. நாராயணன்",
+      "tamil_aliases": [
+        "ரெட்டியார்பட்டி நாராயணன்",
+        "வி. நாராயணன்"
+      ],
+      "en_aliases": [
+        "Reddiarpatti V. Narayanan",
+        "V. Narayanan"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-228-dr-sathish-christopher",
+      "name": "DR.SATHISH CHRISTOPHER",
+      "constituency_number": 228,
+      "constituency_name": "Radhapuram",
+      "party": "Tamilaga Vettri Kazhagam",
+      "party_code": "TVK",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_228_DR.SATHISH_CHRISTOPHER.jpg",
+      "tamil_name": "டாக்டர் சதீஷ் கிறிஸ்டோபர்",
+      "tamil_aliases": [
+        "சதீஷ் கிறிஸ்டோபர்",
+        "சதீஷ்"
+      ],
+      "en_aliases": [
+        "Dr. Sathish Christopher",
+        "Sathish Christopher"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-229-thalavai-sundaram-n",
+      "name": "THALAVAI SUNDARAM. N",
+      "constituency_number": 229,
+      "constituency_name": "Kanniyakumari",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "party_code": "AIADMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [
+        "Former Minister — Revenue / Health / Public Works & Highways (AIADMK government)"
+      ],
+      "portrait": "images/AC_229_THALAVAI_SUNDARAM._N.jpg",
+      "tamil_name": "என். தளவாய் சுந்தரம்",
+      "tamil_aliases": [
+        "தளவாய் சுந்தரம்",
+        "என்.தளவாய் சுந்தரம்"
+      ],
+      "en_aliases": [
+        "N. Thalavai Sundaram",
+        "Thalavai Sundaram N"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-230-austin",
+      "name": "AUSTIN",
+      "constituency_number": 230,
+      "constituency_name": "Nagercoil",
+      "party": "Dravida Munnetra Kazhagam",
+      "party_code": "DMK",
+      "membership_state": "OPPONENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_230_AUSTIN.jpg",
+      "tamil_name": "ஆஸ்டின்",
+      "tamil_aliases": [
+        "எஸ். ஆஸ்டின்",
+        "சுரேஷ் ஆஸ்டின்"
+      ],
+      "en_aliases": [
+        "Austin S",
+        "S. Austin"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-231-tharahai-cuthbert",
+      "name": "THARAHAI CUTHBERT",
+      "constituency_number": 231,
+      "constituency_name": "Colachal",
+      "party": "Indian National Congress",
+      "party_code": "INC",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_231_THARAHAI_CUTHBERT.jpg",
+      "tamil_name": "தாரகை கத்பர்ட்",
+      "tamil_aliases": [
+        "தாரகை கைபர்ட்",
+        "தாரகை"
+      ],
+      "en_aliases": [
+        "Tharagai Cuthbert",
+        "Tharahai Cuthbert"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-232-chellaswamy-r",
+      "name": "CHELLASWAMY. R",
+      "constituency_number": 232,
+      "constituency_name": "Padmanabhapuram",
+      "party": "Communist Party of India (Marxist)",
+      "party_code": "CPI(M)",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_232_CHELLASWAMY._R.jpg",
+      "tamil_name": "ஆர். செல்லசுவாமி",
+      "tamil_aliases": [
+        "செல்லசுவாமி",
+        "ஆர்.செல்லசுவாமி"
+      ],
+      "en_aliases": [
+        "Chellaswamy R",
+        "R. Chellaswamy"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-233-praveen-t-t",
+      "name": "PRAVEEN T.T",
+      "constituency_number": 233,
+      "constituency_name": "Vilavancode",
+      "party": "Indian National Congress",
+      "party_code": "INC",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "MLA"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_233_PRAVEEN_T.T.jpg",
+      "tamil_name": "டி. டி. பிரவீன்",
+      "tamil_aliases": [
+        "பிரவீன்",
+        "டி.டி.பிரவீன்"
+      ],
+      "en_aliases": [
+        "Praveen T.T.",
+        "T. T. Praveen"
+      ]
+    },
+    {
+      "member_id": "tnla-ac-234-rajesh-kumar-s",
+      "name": "RAJESH KUMAR. S",
+      "constituency_number": 234,
+      "constituency_name": "Killiyoor",
+      "party": "Indian National Congress",
+      "party_code": "INC",
+      "membership_state": "CURRENT",
+      "current_roles": [
+        "Minister — Tourism"
+      ],
+      "former_roles": [],
+      "portrait": "images/AC_234_RAJESH_KUMAR._S.jpg",
+      "tamil_name": "எஸ். ராஜேஷ் குமார்",
+      "tamil_aliases": [
+        "ராஜேஷ் குமார்",
+        "எஸ்.ராஜேஷ்குமார்"
+      ],
+      "en_aliases": [
+        "Rajesh Kumar S",
+        "S. Rajesh Kumar"
+      ]
+    }
+  ]
+}

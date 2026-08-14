@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0}
+body{background:#f5f4f0;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:#9d2140;text-decoration:none}
+a:hover{color:#7a1531}
+::selection{background:rgba(194,38,74,.14)}
+@keyframes tnPulse{0%,100%{opacity:.5;transform:scale(.9)}50%{opacity:1;transform:scale(1.18)}}
+</style>
+</helmet>
+<div style="position:relative;min-height:100vh;background:radial-gradient(1000px 560px at 6% -12%,rgba(157,33,64,.16),transparent 62%),radial-gradient(900px 520px at 97% -8%,rgba(196,148,52,.16),transparent 60%),radial-gradient(860px 620px at 62% 112%,rgba(61,79,125,.12),transparent 64%),linear-gradient(180deg,#fcfbf9,#f4f3ef);color:#1a1a1c;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue',Helvetica,'Noto Sans Tamil',sans-serif;font-size:14px;letter-spacing:-0.004em;overflow-x:auto">
+
+  <div style="position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(26,26,28,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(26,26,28,.045) 1px,transparent 1px);background-size:74px 74px;mask-image:radial-gradient(920px 620px at 50% 0%,#000,transparent 76%);-webkit-mask-image:radial-gradient(920px 620px at 50% 0%,#000,transparent 76%)"></div>
+
+  <div style="position:relative;display:flex;align-items:center;justify-content:space-between;gap:16px;height:30px;padding:0 26px;background:linear-gradient(90deg,#8e1c39,#6b2444 48%,#2f3a5e);color:rgba(255,255,255,.88);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase">
+    <div style="display:flex;align-items:center;gap:10px">
+      <span style="font-family:'Noto Sans Tamil',sans-serif;text-transform:none;letter-spacing:0;font-size:11.5px">தமிழ்நாடு அரசு</span>
+      <span style="opacity:.45">/</span><span>Government of Tamil Nadu</span>
+      <span style="opacity:.45">/</span><span style="color:#e8c98a">Assembly Secretariat</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:13px">
+      <span style="display:flex;align-items:center;gap:6px"><span style="width:5px;height:5px;border-radius:50%;background:#7fd8c8;box-shadow:0 0 8px #7fd8c8;animation:tnPulse 2.4s ease-in-out infinite"></span>Index live</span>
+      <span style="opacity:.45">/</span><span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:none">node chennai-01</span>
+      <span style="opacity:.45">/</span><span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:none">v2.4</span>
+    </div>
+  </div>
+
+  <header style="position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px 26px;padding:15px 26px;background:rgba(255,255,255,.72);backdrop-filter:saturate(180%) blur(22px);-webkit-backdrop-filter:saturate(180%) blur(22px);border-bottom:1px solid rgba(26,26,28,.09)">
+    <div style="display:flex;align-items:center;gap:14px;min-width:0">
+      <div style="width:46px;height:46px;flex:none;border-radius:14px;background:conic-gradient(from 210deg,#9d2140,#c49434,#4f7f74,#3d4f7d,#9d2140);padding:1.6px;box-shadow:0 10px 24px -12px rgba(194,38,74,.75)">
+        <div style="width:100%;height:100%;border-radius:12.4px;background:linear-gradient(165deg,#ffffff,#f6f4f0);display:flex;align-items:center;justify-content:center">
+          <span style="font-family:'Iowan Old Style','New York',Georgia,serif;font-size:15px;font-weight:700;letter-spacing:.04em;background:linear-gradient(180deg,#9d2140,#6b2444);-webkit-background-clip:text;background-clip:text;color:transparent">TN</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:3px;min-width:0">
+        <div style="display:flex;align-items:baseline;gap:9px">
+          <span style="font-family:'Noto Sans Tamil',sans-serif;font-size:15.5px;font-weight:600;line-height:1.1">தமிழ்நாடு சட்டப்பேரவை</span>
+          <span style="font-size:15.5px;font-weight:600;line-height:1.1;letter-spacing:-0.018em;color:rgba(26,26,28,.55);white-space:nowrap">Legislative Assembly</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:rgba(26,26,28,.42)">
+          <span style="background:linear-gradient(90deg,#9d2140,#b8862c);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700">Video RAG</span>
+          <span style="opacity:.4">·</span><span>Proceedings Intelligence</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:10px;flex:none">
+      <div style="display:flex;align-items:center;gap:10px;height:36px;padding:0 13px;background:#fff;border:1px solid rgba(26,26,28,.10);border-radius:11px;box-shadow:0 1px 2px rgba(26,26,28,.05)">
+        <span style="font-size:10px;letter-spacing:.08em;color:rgba(26,26,28,.38)">SESSION</span>
+        <span style="font-size:13px;font-weight:500">Budget Session · Day 6</span>
+        <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:#2f7a6d">27:00</span>
+        <svg width="9" height="6" viewBox="0 0 9 6" style="display:block;opacity:.45"><path d="M1 1l3.5 3.5L8 1" fill="none" stroke="#1a1a1c" stroke-width="1.4" stroke-linecap="round"></path></svg>
+      </div>
+      <div style="display:flex;align-items:center;gap:3px;padding:3px;background:rgba(26,26,28,.055);border-radius:12px">
+        <div style="padding:7px 15px;border-radius:9px;background:linear-gradient(180deg,#a3264a,#8e1c39);color:#fff;box-shadow:0 6px 16px -8px rgba(194,38,74,.85);font-size:13px;font-weight:600">Chat</div>
+        <div style="padding:7px 15px;border-radius:9px;font-size:13px;color:rgba(26,26,28,.55)">Knowledge Graph</div>
+        <div style="padding:7px 15px;border-radius:9px;font-size:13px;color:rgba(26,26,28,.55)">Speakers</div>
+      </div>
+      <div style="width:34px;height:34px;border-radius:50%;padding:1.6px;background:linear-gradient(140deg,#5b9d90,#3d4f7d)">
+        <div style="width:100%;height:100%;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600;letter-spacing:.03em;color:#33456f">KR</div>
+      </div>
+    </div>
+  </header>
+
+  <main style="position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,468px);gap:20px;align-items:start;padding:20px 26px 44px;max-width:1600px;min-width:1120px;margin:0 auto">
+
+    <section style="display:flex;flex-direction:column;gap:16px;min-width:0">
+
+      <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px">
+        <div style="padding:12px 14px;background:linear-gradient(160deg,rgba(163,38,74,.14),rgba(255,255,255,.9));border:1px solid rgba(163,38,74,.22);border-radius:14px;box-shadow:0 1px 2px rgba(26,26,28,.04)">
+          <div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(26,26,28,.45)">Segments indexed</div>
+          <div style="margin-top:5px;font-size:21px;font-weight:600;letter-spacing:-0.025em;color:#8e1c39">312</div>
+        </div>
+        <div style="padding:12px 14px;background:linear-gradient(160deg,rgba(196,148,52,.16),rgba(255,255,255,.9));border:1px solid rgba(196,148,52,.26);border-radius:14px;box-shadow:0 1px 2px rgba(26,26,28,.04)">
+          <div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(26,26,28,.45)">Members identified</div>
+          <div style="margin-top:5px;font-size:21px;font-weight:600;letter-spacing:-0.025em;color:#946f1c">27</div>
+        </div>
+        <div style="padding:12px 14px;background:linear-gradient(160deg,rgba(91,157,144,.18),rgba(255,255,255,.9));border:1px solid rgba(47,122,109,.24);border-radius:14px;box-shadow:0 1px 2px rgba(26,26,28,.04)">
+          <div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(26,26,28,.45)">Face match</div>
+          <div style="margin-top:5px;font-size:21px;font-weight:600;letter-spacing:-0.025em;color:#2f7a6d">96.4<span style="font-size:12px;font-weight:500;opacity:.6">%</span></div>
+        </div>
+        <div style="padding:12px 14px;background:linear-gradient(160deg,rgba(61,79,125,.16),rgba(255,255,255,.9));border:1px solid rgba(61,79,125,.24);border-radius:14px;box-shadow:0 1px 2px rgba(26,26,28,.04)">
+          <div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(26,26,28,.45)">Answer latency</div>
+          <div style="margin-top:5px;font-size:21px;font-weight:600;letter-spacing:-0.025em;color:#33456f">1.8<span style="font-size:12px;font-weight:500;opacity:.6">s</span></div>
+        </div>
+      </div>
+
+      <div style="background:#fff;border:1px solid rgba(26,26,28,.09);border-radius:20px;box-shadow:0 1px 3px rgba(26,26,28,.06),0 26px 60px -40px rgba(52,42,34,.45);overflow:hidden">
+        <div style="position:relative;aspect-ratio:16/9;background:#17161a">
+          <svg width="100%" height="100%" viewBox="0 0 160 90" preserveAspectRatio="none" style="display:block;position:absolute;inset:0">
+            <defs><pattern id="tnstripe" width="6" height="6" patternTransform="rotate(35)" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#191820"></rect><rect width="2" height="6" fill="#22212a"></rect></pattern></defs>
+            <rect width="160" height="90" fill="url(#tnstripe)"></rect>
+          </svg>
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px">
+            <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;letter-spacing:.14em;color:rgba(255,255,255,.42)">ASSEMBLY FLOOR FEED</div>
+            <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;color:rgba(255,255,255,.26)">drop video here · TNLA_trimmed.mp4</div>
+          </div>
+
+          <div style="position:absolute;left:14px;top:14px;display:flex;align-items:center;gap:8px">
+            <div style="display:flex;align-items:center;gap:7px;padding:6px 11px;background:rgba(23,22,26,.62);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(196,82,107,.5);border-radius:9px">
+              <span style="width:5px;height:5px;border-radius:50%;background:#c4526b;box-shadow:0 0 8px #c4526b;animation:tnPulse 1.8s ease-in-out infinite"></span>
+              <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;color:#e6b6bf">SEGMENT S009</span>
+            </div>
+          </div>
+
+          <div style="position:absolute;right:14px;top:14px;width:188px;padding:11px 12px;background:rgba(23,22,26,.62);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(91,157,144,.45);border-radius:13px">
+            <div style="display:flex;align-items:center;gap:7px;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#7fd8c8">
+              <span style="width:4px;height:4px;border-radius:50%;background:#5b9d90"></span>Live recognition
+            </div>
+            <div style="margin-top:9px;display:flex;align-items:center;gap:9px">
+              <div style="width:34px;height:34px;flex:none;border-radius:9px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8px;color:rgba(255,255,255,.42);text-align:center;line-height:1.1">face<br>crop</div>
+              <div style="display:flex;flex-direction:column;gap:3px;min-width:0">
+                <span style="font-size:12px;font-weight:600;color:#fff">U. Stalin</span>
+                <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9.5px;color:#7fd8c8">0.98 conf</span>
+              </div>
+            </div>
+            <div style="margin-top:9px;height:3px;border-radius:99px;background:rgba(255,255,255,.14);overflow:hidden">
+              <div style="width:88%;height:100%;background:linear-gradient(90deg,#5b9d90,#3d4f7d)"></div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:0;right:0;bottom:0;padding:38px 16px 14px;background:linear-gradient(180deg,rgba(20,19,23,0),rgba(20,19,23,.9))">
+            <div style="display:flex;align-items:flex-end;gap:2px;height:26px;margin-bottom:10px">
+              <div style="flex:1;height:34%;border-radius:2px;background:rgba(196,82,107,.6)"></div>
+              <div style="flex:1;height:62%;border-radius:2px;background:rgba(196,82,107,.8)"></div>
+              <div style="flex:1;height:46%;border-radius:2px;background:rgba(196,82,107,.6)"></div>
+              <div style="flex:1;height:84%;border-radius:2px;background:#c4526b"></div>
+              <div style="flex:1;height:54%;border-radius:2px;background:rgba(196,148,52,.75)"></div>
+              <div style="flex:1;height:30%;border-radius:2px;background:rgba(196,148,52,.5)"></div>
+              <div style="flex:1;height:70%;border-radius:2px;background:rgba(196,148,52,.9)"></div>
+              <div style="flex:1;height:40%;border-radius:2px;background:rgba(91,157,144,.6)"></div>
+              <div style="flex:1;height:88%;border-radius:2px;background:rgba(91,157,144,.95)"></div>
+              <div style="flex:1;height:52%;border-radius:2px;background:rgba(91,157,144,.6)"></div>
+              <div style="flex:1;height:26%;border-radius:2px;background:rgba(109,128,171,.5)"></div>
+              <div style="flex:1;height:64%;border-radius:2px;background:rgba(109,128,171,.85)"></div>
+              <div style="flex:1;height:44%;border-radius:2px;background:rgba(109,128,171,.55)"></div>
+              <div style="flex:1;height:74%;border-radius:2px;background:rgba(109,128,171,.9)"></div>
+              <div style="flex:1;height:36%;border-radius:2px;background:rgba(255,255,255,.3)"></div>
+              <div style="flex:1;height:58%;border-radius:2px;background:rgba(255,255,255,.36)"></div>
+              <div style="flex:1;height:28%;border-radius:2px;background:rgba(255,255,255,.26)"></div>
+              <div style="flex:1;height:48%;border-radius:2px;background:rgba(255,255,255,.32)"></div>
+            </div>
+            <div style="position:relative;height:5px;border-radius:99px;background:rgba(255,255,255,.18);margin-bottom:13px">
+              <div style="position:absolute;left:0;top:0;bottom:0;width:11%;border-radius:99px;background:linear-gradient(90deg,#c49434,#c4526b);box-shadow:0 0 14px rgba(196,82,107,.7)"></div>
+              <div style="position:absolute;left:11%;top:-4.5px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(196,82,107,.4),0 2px 8px rgba(0,0,0,.6)"></div>
+              <div style="position:absolute;left:24%;top:-2px;width:2px;height:9px;border-radius:2px;background:#c49434"></div>
+              <div style="position:absolute;left:38%;top:-2px;width:2px;height:9px;border-radius:2px;background:#5b9d90"></div>
+              <div style="position:absolute;left:57%;top:-2px;width:2px;height:9px;border-radius:2px;background:#6d80ab"></div>
+              <div style="position:absolute;left:72%;top:-2px;width:2px;height:9px;border-radius:2px;background:#c49434"></div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:14px">
+              <div style="display:flex;align-items:center;gap:13px">
+                <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(150deg,#c4526b,#a3264a);box-shadow:0 8px 20px -10px rgba(163,38,74,.95);display:flex;align-items:center;justify-content:center">
+                  <svg width="11" height="13" viewBox="0 0 11 13"><path d="M0 0l11 6.5L0 13z" fill="#fff"></path></svg>
+                </div>
+                <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;color:#fff;white-space:nowrap;flex:none">2:59 <span style="opacity:.5">/ 27:00</span></span>
+                <span style="padding:3px 8px;border:1px solid rgba(255,255,255,.18);border-radius:7px;font-size:11px;color:rgba(255,255,255,.72);white-space:nowrap;flex:none">1.0×</span>
+              </div>
+              <div style="display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:8px">
+                <span style="padding:5px 10px;background:rgba(91,157,144,.18);border:1px solid rgba(91,157,144,.45);border-radius:8px;font-size:11px;font-family:'Noto Sans Tamil',sans-serif;color:#7fd8c8;white-space:nowrap;flex:none">தமிழ் CC</span>
+                <span style="padding:5px 10px;border:1px solid rgba(255,255,255,.18);border-radius:8px;font-size:11px;color:rgba(255,255,255,.72);white-space:nowrap;flex:none">Clip</span>
+                <span style="padding:5px 10px;border:1px solid rgba(255,255,255,.18);border-radius:8px;font-size:11px;color:rgba(255,255,255,.72);white-space:nowrap;flex:none">Full screen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:linear-gradient(90deg,rgba(163,38,74,.10),rgba(109,128,171,.10) 58%,rgba(91,157,144,.12));border-top:1px solid rgba(26,26,28,.07)">
+          <div style="width:38px;height:38px;flex:none;border-radius:11px;padding:1.6px;background:linear-gradient(150deg,#c49434,#a3264a)">
+            <div style="width:100%;height:100%;border-radius:9.4px;background:#fff;display:flex;align-items:center;justify-content:center;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8px;color:rgba(26,26,28,.4);text-align:center;line-height:1.1">face<br>ID</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;min-width:0">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:14px;font-weight:600;letter-spacing:-0.012em">Udhayanidhi Stalin</span>
+              <span style="padding:2px 8px;border-radius:99px;background:rgba(47,122,109,.12);border:1px solid rgba(47,122,109,.28);color:#2a6b60;font-size:10.5px;font-weight:600">face verified</span>
+            </div>
+            <div style="font-size:11.5px;color:rgba(26,26,28,.5)">Leader of the Opposition · DMK · speaking 2:38–3:03</div>
+          </div>
+          <div style="margin-left:auto;display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:8px">
+            <span style="padding:6px 12px;background:#fff;border:1px solid rgba(26,26,28,.11);border-radius:9px;font-size:12px;font-weight:500;box-shadow:0 1px 2px rgba(26,26,28,.05);white-space:nowrap;flex:none">Previous speaker</span>
+            <span style="padding:6px 12px;background:#fff;border:1px solid rgba(26,26,28,.11);border-radius:9px;font-size:12px;font-weight:500;box-shadow:0 1px 2px rgba(26,26,28,.05);white-space:nowrap;flex:none">Next speaker</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:#fff;border:1px solid rgba(26,26,28,.09);border-radius:20px;box-shadow:0 1px 3px rgba(26,26,28,.06);overflow:hidden">
+        <div style="display:flex;align-items:center;gap:12px;padding:13px 18px;border-bottom:1px solid rgba(26,26,28,.07)">
+          <span style="font-size:13.5px;font-weight:600;letter-spacing:-0.012em">Transcript</span>
+          <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:rgba(26,26,28,.38)">312 turns · 27 speakers</span>
+          <div style="margin-left:auto;display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:8px;min-width:0">
+            <div style="display:flex;align-items:center;gap:7px;height:29px;padding:0 11px;background:rgba(26,26,28,.05);border-radius:9px;flex:1 1 140px;min-width:120px;max-width:220px;overflow:hidden">
+              <svg width="12" height="12" viewBox="0 0 12 12" style="opacity:.35"><circle cx="5" cy="5" r="3.6" fill="none" stroke="#1a1a1c" stroke-width="1.3"></circle><path d="M8 8l3 3" stroke="#1a1a1c" stroke-width="1.3" stroke-linecap="round"></path></svg>
+              <span style="font-size:12.5px;color:rgba(26,26,28,.38);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Search this session…</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:2px;padding:2px;background:rgba(26,26,28,.05);border-radius:9px">
+              <span style="padding:5px 10px;background:#fff;border-radius:7px;font-size:11.5px;font-weight:600;box-shadow:0 1px 2px rgba(26,26,28,.08);font-family:'Noto Sans Tamil',sans-serif">தமிழ் + EN</span>
+              <span style="padding:5px 10px;border-radius:7px;font-size:11.5px;color:rgba(26,26,28,.5);font-family:'Noto Sans Tamil',sans-serif">தமிழ்</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:66px minmax(0,1fr);gap:16px;padding:14px 18px;background:linear-gradient(90deg,rgba(163,38,74,.07),rgba(163,38,74,0));border-left:2px solid #a3264a">
+          <div style="display:flex;flex-direction:column;gap:5px">
+            <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:#8e1c39;font-weight:600">5:35</span>
+            <span style="font-size:10.5px;color:rgba(26,26,28,.4)">S012</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:12px;font-weight:600">Udhayanidhi Stalin</span>
+              <span style="font-size:11px;color:rgba(26,26,28,.42)">DMK</span>
+              <span style="padding:1px 7px;border-radius:99px;background:rgba(47,122,109,.12);color:#2a6b60;font-size:10px;font-weight:600">face ✓</span>
+            </div>
+            <div style="font-family:'Noto Sans Tamil',sans-serif;font-size:15px;line-height:1.55;text-wrap:pretty">அதற்கான புதிய சட்டத்திருத்தம் இந்த ஆண்டு வரலைன்னா, 2027-ல் மக்கள் தொகை அடிப்படையில் எம்பிக்கள் தொகுதிகள் நிர்ணயம் செய்யப்படுவதற்கான வாய்ப்பு ஏற்பட்டுவிடும்.</div>
+            <div style="font-size:12.5px;line-height:1.5;color:rgba(26,26,28,.55);text-wrap:pretty">If a new amendment does not come this year, there will be an opportunity in 2027 to determine MP constituencies on the basis of population.</div>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:66px minmax(0,1fr);gap:16px;padding:14px 18px;border-top:1px solid rgba(26,26,28,.06)">
+          <div style="display:flex;flex-direction:column;gap:5px">
+            <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:rgba(26,26,28,.5)">5:49</span>
+            <span style="font-size:10.5px;color:rgba(26,26,28,.4)">S013</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:12px;font-weight:600">Udhayanidhi Stalin</span>
+              <span style="font-size:11px;color:rgba(26,26,28,.42)">DMK</span>
+              <span style="padding:1px 7px;border-radius:99px;background:rgba(47,122,109,.12);color:#2a6b60;font-size:10px;font-weight:600">face ✓</span>
+            </div>
+            <div style="font-family:'Noto Sans Tamil',sans-serif;font-size:15px;line-height:1.55;text-wrap:pretty">அப்படி செய்வதற்கான அதிகாரத்தை அரசியலமைப்பு வழங்கி இருக்குன்னு சட்ட வல்லுநர்கள் தொடர்ந்து கூறி வருகிறார்கள்.</div>
+            <div style="font-size:12.5px;line-height:1.5;color:rgba(26,26,28,.55);text-wrap:pretty">Legal experts continue to say that the Constitution has provided the authority to do so.</div>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:66px minmax(0,1fr);gap:16px;padding:14px 18px;border-top:1px solid rgba(26,26,28,.06)">
+          <div style="display:flex;flex-direction:column;gap:5px">
+            <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:rgba(26,26,28,.5)">6:08</span>
+            <span style="font-size:10.5px;color:rgba(26,26,28,.4)">S025</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:12px;font-weight:600">Hon'ble Speaker</span>
+              <span style="font-size:11px;color:rgba(26,26,28,.42)">Chair</span>
+              <span style="padding:1px 7px;border-radius:99px;background:rgba(61,79,125,.12);color:#33456f;font-size:10px;font-weight:600">chair mic</span>
+            </div>
+            <div style="font-family:'Noto Sans Tamil',sans-serif;font-size:15px;line-height:1.55;text-wrap:pretty">1971 மக்கள் தொகை அடிப்படையிலேயே இந்தப் பணி நடைபெற வேண்டும் என்பதே இந்த அவையின் நிலைப்பாடு.</div>
+            <div style="font-size:12.5px;line-height:1.5;color:rgba(26,26,28,.55);text-wrap:pretty">The position of this House is that the exercise must be based on the 1971 population.</div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;justify-content:center;padding:11px;border-top:1px solid rgba(26,26,28,.06);font-size:12px;color:rgba(26,26,28,.42)">Showing 3 of 312 turns · scroll to continue</div>
+      </div>
+    </section>
+
+    <aside style="display:flex;flex-direction:column;gap:14px;position:sticky;top:20px">
+      <div style="display:flex;flex-direction:column;background:#fff;border:1px solid rgba(26,26,28,.09);border-radius:20px;box-shadow:0 1px 3px rgba(26,26,28,.06),0 26px 60px -40px rgba(52,42,34,.45);overflow:hidden">
+
+        <div style="display:flex;align-items:center;gap:10px;padding:13px 18px;background:linear-gradient(90deg,rgba(163,38,74,.10),rgba(109,128,171,.10));border-bottom:1px solid rgba(26,26,28,.07)">
+          <span style="font-size:13.5px;font-weight:600;letter-spacing:-0.012em">Ask the record</span>
+          <span style="padding:2px 8px;border-radius:99px;background:#fff;border:1px solid rgba(163,38,74,.24);color:#8e1c39;font-size:10.5px;font-weight:600">every answer cites the video</span>
+          <span style="margin-left:auto;font-size:12px;color:rgba(26,26,28,.42)">Clear</span>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:16px;padding:18px">
+          <div style="display:flex;justify-content:flex-end">
+            <div style="max-width:86%;padding:9px 13px;background:linear-gradient(150deg,#f1efe9,#eae7df);border:1px solid rgba(61,79,125,.16);border-radius:15px 15px 5px 15px;font-size:13.5px;line-height:1.45">What did Udhayanidhi Stalin say about delimitation?</div>
+          </div>
+
+          <div style="font-size:14px;line-height:1.75;text-wrap:pretty">Udhayanidhi Stalin, Leader of the Opposition, addressed delimitation in five segments. He stated that Tamil Nadu must not be affected by constituency delimitation<span style="display:inline-flex;align-items:center;gap:4px;margin:0 3px;padding:1px 7px;background:linear-gradient(150deg,rgba(163,38,74,.12),rgba(196,148,52,.12));border:1px solid rgba(163,38,74,.24);border-radius:7px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;font-weight:600;color:#8e1c39;vertical-align:1px"><svg width="6" height="7" viewBox="0 0 6 7"><path d="M0 0l6 3.5L0 7z" fill="#8e1c39"></path></svg>S004 · 0:39</span>, referred to a presentation given on <span style="font-family:'Noto Sans Tamil',sans-serif">மார்ச் 22-ஆம் தேதி</span><span style="display:inline-flex;align-items:center;gap:4px;margin:0 3px;padding:1px 7px;background:linear-gradient(150deg,rgba(163,38,74,.12),rgba(196,148,52,.12));border:1px solid rgba(163,38,74,.24);border-radius:7px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;font-weight:600;color:#8e1c39;vertical-align:1px"><svg width="6" height="7" viewBox="0 0 6 7"><path d="M0 0l6 3.5L0 7z" fill="#8e1c39"></path></svg>S010 · 3:01</span>, and demanded that the freeze in place since 1971 be extended by a further 25 years<span style="display:inline-flex;align-items:center;gap:4px;margin:0 3px;padding:1px 7px;background:linear-gradient(150deg,rgba(47,122,109,.14),rgba(61,79,125,.12));border:1px solid rgba(47,122,109,.28);border-radius:7px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;font-weight:600;color:#2a6b60;vertical-align:1px"><svg width="6" height="7" viewBox="0 0 6 7"><path d="M0 0l6 3.5L0 7z" fill="#2a6b60"></path></svg>S012 · 3:46</span>. He insisted any such exercise be based on the 1971 population<span style="display:inline-flex;align-items:center;gap:4px;margin:0 3px;padding:1px 7px;background:linear-gradient(150deg,rgba(61,79,125,.14),rgba(109,128,171,.12));border:1px solid rgba(61,79,125,.28);border-radius:7px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;font-weight:600;color:#33456f;vertical-align:1px"><svg width="6" height="7" viewBox="0 0 6 7"><path d="M0 0l6 3.5L0 7z" fill="#33456f"></path></svg>S013 · 4:03</span>.</div>
+
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px;color:rgba(26,26,28,.42)">
+            <span>5 citations</span><span style="opacity:.4">·</span><span>speaker matched by face + voice</span><span style="opacity:.4">·</span><span>1.8s</span>
+          </div>
+
+          <div style="border:1px solid rgba(26,26,28,.09);border-radius:15px;overflow:hidden;background:linear-gradient(180deg,#fdfcfa,#f7f5f1)">
+            <div style="display:flex;align-items:center;gap:11px;padding:12px 13px;border-bottom:1px solid rgba(26,26,28,.07)">
+              <div style="width:38px;height:38px;flex:none;border-radius:11px;padding:1.6px;background:linear-gradient(150deg,#5b9d90,#3d4f7d)">
+                <div style="width:100%;height:100%;border-radius:9.4px;background:#fff;display:flex;align-items:center;justify-content:center;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8px;color:rgba(26,26,28,.4);text-align:center;line-height:1.15">face<br>crop</div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
+                <span style="font-size:13px;font-weight:600;letter-spacing:-0.01em">Udhayanidhi Stalin</span>
+                <span style="font-size:11.5px;color:rgba(26,26,28,.5)">DMK · Leader of the Opposition</span>
+              </div>
+              <div style="margin-left:auto;display:flex;align-items:center;gap:9px">
+                <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;font-weight:600;color:#8e1c39">0:39</span>
+                <span style="width:27px;height:27px;border-radius:50%;background:linear-gradient(150deg,#c4526b,#a3264a);box-shadow:0 6px 14px -7px rgba(163,38,74,.9);display:flex;align-items:center;justify-content:center"><svg width="7" height="8" viewBox="0 0 7 8"><path d="M0 0l7 4-7 4z" fill="#fff"></path></svg></span>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;padding:13px">
+              <div style="font-family:'Noto Sans Tamil',sans-serif;font-size:14px;line-height:1.6;text-wrap:pretty">மாண்புமிகு பேரவைத் தலைவர் அவர்களே, தொகுதி மறுவரையறை எக்காரணம் கொண்டும் நம்முடைய தமிழ்நாட்டைப் பாதிக்கக்கூடாது என்பதுதான் எங்களுடைய உறுதியான நிலைப்பாடு.</div>
+              <div style="font-size:12.5px;line-height:1.55;color:rgba(26,26,28,.55);text-wrap:pretty">“Honourable Speaker, our firm stance is that under no circumstances should our Tamil Nadu be affected by delimitation.”</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:7px;padding:0 18px 14px">
+          <span style="padding:6px 12px;background:#fff;border:1px solid rgba(163,38,74,.26);border-radius:99px;font-size:12.5px;color:#8e1c39;font-weight:500">Who else spoke on delimitation?</span>
+          <span style="padding:6px 12px;background:#fff;border:1px solid rgba(196,148,52,.34);border-radius:99px;font-size:12.5px;color:#7d5c17;font-weight:500">Women's reservation</span>
+          <span style="padding:6px 12px;background:#fff;border:1px solid rgba(47,122,109,.32);border-radius:99px;font-size:12.5px;color:#2a6b60;font-weight:500;font-family:'Noto Sans Tamil',sans-serif">1971 மக்கள் தொகை?</span>
+          <span style="padding:6px 12px;background:#fff;border:1px solid rgba(61,79,125,.3);border-radius:99px;font-size:12.5px;color:#33456f;font-weight:500">Summarise this session</span>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:10px;padding:14px 18px;background:linear-gradient(180deg,#fbfaf7,#f4f2ed);border-top:1px solid rgba(26,26,28,.07)">
+          <div style="display:flex;align-items:center;gap:9px;flex:1;height:40px;padding:0 14px;background:#fff;border:1px solid rgba(26,26,28,.12);border-radius:13px;box-shadow:0 1px 2px rgba(26,26,28,.05)">
+            <svg width="14" height="14" viewBox="0 0 14 14" style="flex:none;opacity:.4"><path d="M7 1v8M4 6l3 3 3-3M2 12h10" fill="none" stroke="#1a1a1c" stroke-width="1.3" stroke-linecap="round"></path></svg>
+            <span style="font-size:13.5px;color:rgba(26,26,28,.38);font-family:'Noto Sans Tamil',sans-serif">Ask about this session — English or தமிழ்…</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:7px;height:40px;padding:0 18px;background:linear-gradient(150deg,#a3264a,#7a1531);color:#fff;border-radius:13px;box-shadow:0 10px 22px -12px rgba(122,21,49,.95);font-size:13.5px;font-weight:600">Ask</div>
+        </div>
+      </div>
+
+      <div style="padding:13px 16px;background:rgba(255,255,255,.66);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(26,26,28,.08);border-radius:16px">
+        <div style="font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:rgba(26,26,28,.4)">Retrieval trace</div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+          <div style="display:flex;align-items:center;gap:9px;font-size:12px">
+            <span style="width:6px;height:6px;border-radius:50%;background:#a3264a;flex:none"></span>
+            <span style="flex:1">Transcript embedding search</span>
+            <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:rgba(26,26,28,.45)">42 hits</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:9px;font-size:12px">
+            <span style="width:6px;height:6px;border-radius:50%;background:#c49434;flex:none"></span>
+            <span style="flex:1">Face + voice speaker resolution</span>
+            <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:rgba(26,26,28,.45)">27 known</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:9px;font-size:12px">
+            <span style="width:6px;height:6px;border-radius:50%;background:#2f7a6d;flex:none"></span>
+            <span style="flex:1">Segment rerank &amp; citation bind</span>
+            <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:rgba(26,26,28,.45)">5 kept</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}"></script>
+</body>
+</html>

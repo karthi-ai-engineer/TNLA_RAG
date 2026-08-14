@@ -1,0 +1,13 @@
+# Secrets — never commit
+.env
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Runtime data — everything under data/ is per-machine: source videos,
+# generated artifacts, the API response cache, and browser proxies.
+# assets/roster/ (curated member data + portraits) IS committed.
+data/
