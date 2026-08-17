@@ -1,13 +1,26 @@
 # Secrets — never commit
 .env
+.env.local
 
 # Python
 .venv/
 venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
 
 # Runtime data — everything under data/ is per-machine: source videos,
 # generated artifacts, the API response cache, and browser proxies.
 # assets/roster/ (curated member data + portraits) IS committed.
 data/
+
+# Logs
+*.log
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -90,6 +90,10 @@ def main() -> int:
     ap.add_argument("--video-id", default=None, help="defaults to the filename stem")
     ap.add_argument("--force", action="store_true", help="redo every phase")
     ap.add_argument("--serve", action="store_true", help="start the demo UI afterwards")
+    ap.add_argument("--host", default="0.0.0.0",
+                    help="UI bind address for --serve: 0.0.0.0 (default) serves other "
+                         "devices on the network, 127.0.0.1 restricts it to this machine")
+    ap.add_argument("--port", type=int, default=8000, help="UI port for --serve")
     ap.add_argument("--skip-faceverify", action="store_true",
                     help="skip the face-lineup pass (attribution keeps text evidence only)")
     args = ap.parse_args()
@@ -192,12 +196,14 @@ def main() -> int:
     log.info("=" * 74)
     log.info("READY in %s  |  %s", f"{(time.time()-t0)/60:.1f} min", usage)
     log.info("Artifacts: %s", config.artifact_dir(vid))
-    log.info("Start the demo:   python serve.py     then open http://127.0.0.1:8000")
+    log.info("Start the demo:   python serve.py")
     log.info("=" * 74)
 
     if args.serve:
         import uvicorn
-        uvicorn.run("vrag.app:app", host="127.0.0.1", port=8000, log_level="warning")
+        from vrag.net import startup_banner
+        print(startup_banner(args.host, args.port))
+        uvicorn.run("vrag.app:app", host=args.host, port=args.port, log_level="warning")
     return 0
 
 

@@ -14,7 +14,7 @@ import logging
 import pathlib
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, HTTPException, UploadFile
+from fastapi import FastAPI, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -147,19 +147,38 @@ def frame(video_id: str, name: str):
     return FileResponse(p, media_type="image/jpeg")
 
 
+LOOPBACK = {"127.0.0.1", "::1", "localhost"}
+
+# Injected for viewers on other devices.  Ingest spends real Gemini money, so
+# the entry point is shown only on the machine running the server — a guest at
+# a demo cannot start a run by mis-clicking a tab.
+HIDE_LOCAL_ONLY = "<style>[data-local-only]{display:none !important}</style></head>"
+
+
+def is_local(request: Request) -> bool:
+    return bool(request.client) and request.client.host in LOOPBACK
+
+
 @app.get("/")
-def index_page():
+def index_page(request: Request):
     html = (config.ROOT / "web" / "index.html")
     if not html.exists():
         raise HTTPException(500, "web/index.html missing")
-    return HTMLResponse(html.read_text(encoding="utf-8"))
+    page = html.read_text(encoding="utf-8")
+    if not is_local(request):
+        page = page.replace("</head>", HIDE_LOCAL_ONLY, 1)
+    return HTMLResponse(page)
 
 
 # ---------------------------------------------------------------------------
 # Ingest UI + job control
 # ---------------------------------------------------------------------------
 @app.get("/ingest")
-def ingest_page():
+def ingest_page(request: Request):
+    if not is_local(request):
+        return HTMLResponse(
+            "<h1>Not available</h1><p>Ingest runs only on the machine hosting "
+            'this demo.</p><p><a href="/">Back to the demo</a></p>', status_code=403)
     html = (config.ROOT / "web" / "ingest.html")
     if not html.exists():
         raise HTTPException(500, "web/ingest.html missing")
