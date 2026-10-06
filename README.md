@@ -1,12 +1,29 @@
+<div align="center">
+
+<img src="docs/images/tnla-poster.jpg" alt="Video RAG for the Tamil Nadu Legislative Assembly: poster with the சட்டப்பேரவை RAG emblem, system highlights and the 9-stage pipeline" width="560">
+
 # 🎥 TNLA Video RAG
 
+### Ask a 4-hour Assembly session anything, in English or Tamil.<br>Every answer comes with clickable proof from the video.
+
 <p>
-  <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white">
-  <img alt="Gemini" src="https://img.shields.io/badge/LLM-Gemini-4285F4?logo=google&logoColor=white">
-  <img alt="FastAPI" src="https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white">
-  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-green">
-  <img alt="Language: Tamil" src="https://img.shields.io/badge/audio-Tamil-FF6B35">
+  <img alt="Python 3.11+" src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img alt="Gemini" src="https://img.shields.io/badge/LLM-Gemini-4285F4?style=for-the-badge&logo=googlegemini&logoColor=white">
+  <img alt="FastAPI" src="https://img.shields.io/badge/API-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+  <img alt="Knowledge graph: NetworkX and Neo4j" src="https://img.shields.io/badge/Graph-NetworkX_%C2%B7_Neo4j-4581C3?style=for-the-badge&logo=neo4j&logoColor=white">
+  <img alt="Audio: Tamil" src="https://img.shields.io/badge/Audio-Tamil-FF6B35?style=for-the-badge">
+  <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge">
 </p>
+
+**[✨ What it does](#-what-it-does)** · **[🎬 See it in action](#-the-experience)** · **[🧠 How it works](#-how-it-works)** · **[🚀 Quickstart](#-quickstart)**
+
+</div>
+
+<br>
+
+| 🧑‍⚖️ **234 members** | 🌐 **2 languages** | 🎯 **Every answer cited** | 💰 **Under $1** |
+|:---:|:---:|:---:|:---:|
+| identified by name, party and face | ask in English or Tamil | click a citation → the video jumps there | to ingest a 27-minute video |
 
 > An AI-powered **"ask-the-video"** system for Tamil Nadu Legislative Assembly footage.
 > It *listens* to hours of Tamil speech, *reads* what's on screen, *recognizes* who is speaking —
@@ -47,6 +64,12 @@ maps ids to timestamps, and an answer with no valid evidence is shown as a **ref
 ## 🎬 The experience
 
 A clean web app — **video player on the left, chat on the right**, no build step, works offline:
+
+<p align="center">
+  <img src="docs/images/demo-chat.png" alt="TNLA Video RAG web app: Assembly video on the left with a live Tamil and English transcript; on the right, an answer about Udhayanidhi Stalin with clickable segment timestamps and a face-verified speaker card" width="100%">
+  <br>
+  <sub>Every claim links to a segment chip like <code>S010 ▸ 3:01</code>; the speaker card shows the face-verified match.</sub>
+</p>
 
 - **Ask → get answer chips like `▸ S012 · 3:46` → click → the player seeks to that second.**
 - A **live transcript** scrolls in sync with playback — Tamil verbatim + English gloss, with each speaker's **name, party and official portrait**.
@@ -172,7 +195,7 @@ New-NetFirewallRule -DisplayName "TNLA Video RAG" -Direction Inbound -Protocol T
 ## 🧩 Project structure
 
 ```
-video_rag/
+TNLA_RAG/
 ├── ingest.py            # ONE command: full pipeline, resumable, phase-skipping
 ├── serve.py             # the demo UI server (player + chat + graph + ingest dashboard)
 ├── vrag/                # the library — one module per pipeline stage
@@ -238,6 +261,7 @@ generated artifacts — everything regenerates with one `python ingest.py` run.
 
 ## 📄 License & data
 
-Assembly footage belongs to its broadcasters — supply your own recording and respect its license; do not
-redistribute copyrighted material. Member roster data and portraits are from official public sources.
-Code is provided as-is for educational and demonstration purposes.
+- **Code:** [MIT License](LICENSE), provided as-is for educational and demonstration purposes.
+- **Footage:** Assembly footage belongs to its broadcasters. Supply your own recording and respect its
+  license; do not redistribute copyrighted material.
+- **Roster:** member names and portraits are from official public sources.
