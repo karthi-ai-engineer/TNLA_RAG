@@ -21,6 +21,10 @@
 
 <br>
 
+### ▶️ Watch the demo (2 min)
+
+https://github.com/user-attachments/assets/e51aad45-9ebc-4104-b750-575162d158b0
+
 | 🧑‍⚖️ **234 members** | 🌐 **2 languages** | 🎯 **Every answer cited** | 💰 **Under $1** |
 |:---:|:---:|:---:|:---:|
 | identified by name, party and face | ask in English or Tamil | click a citation → the video jumps there | to ingest a 27-minute video |
