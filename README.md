@@ -19,6 +19,12 @@
 
 </div>
 
+<p align="center">
+  <a href="https://buymeacoffee.com/karthiaienq"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1400&color=F59E0B&center=true&vCenter=true&width=560&lines=Found%20this%20useful%3F%20Buy%20me%20a%20coffee%20%E2%98%95;Every%20coffee%20fuels%20the%20next%20feature%20%F0%9F%9A%80" alt="Found this useful? Buy me a coffee" /></a>
+  <br/>
+  <a href="https://buymeacoffee.com/karthiaienq"><img src="https://raw.githubusercontent.com/karthi-ai-engineer/karthi-ai-engineer/main/assets/buy-me-a-coffee.svg" alt="Buy me a coffee" width="240" /></a>
+</p>
+
 <br>
 
 ### ▶️ Watch the demo (2 min)
